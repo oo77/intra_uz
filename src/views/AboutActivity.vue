@@ -18,7 +18,7 @@
     <div v-else>
       <TextContentStyle :content="act.content1" :title="act.title"/>
       <q-img :src="act.img1" class="rounded-30px mx-3% w-94% min-h-fit mb-30px" fit="contain"/>
-      <p class="text-justify text-16px ma-0 mx-5%" lg="text-20px  mx-0">{{ lang.getLang(act.content1) }}</p>
+      <p class="text-justify text-16px ma-0 mx-5%" lg="text-20px  mx-0">{{ lang.getLang(act.content2) }}</p>
       <q-img :src="act.img2" class=" rounded-30px mx-3% w-94% min-h-fit my-30px" fit="contain"/>
     </div>
   </div>
