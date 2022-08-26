@@ -30,7 +30,7 @@
           <q-card class="transparent w-330px h-300px flex justify-center overflow-hidden shadow-0"
                   @click="path(act)">
             <q-img :src="act.url" class="h-60% w-90% mt-30px animate-bounce" fit="contain"/>
-            <p class="text-26px font-600 mt-20px text-center">{{ lang.getLang(act.name) }}</p>
+            <p class="text-26px font-600 text-center">{{ lang.getLang(act.name) }}</p>
 
           </q-card>
 
