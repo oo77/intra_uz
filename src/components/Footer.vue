@@ -86,7 +86,9 @@
         </li>
       </ul>
     </div>
-    <a tag="div" href="https://uztech.uz/" class="no-underline c-slate-200 text-center text-8px py-10px q-mx-auto w-100vw" md="text-10px"> 2022 @UzTech все права защищены </a>
+    <div class="w-full flex justify-center">
+      <a tag="div" target="_blank" href="https://uztech.uz/" class="no-underline c-slate-200 text-center text-8px py-10px q-mx-auto" md="text-10px"> 2022 @UzTech все права защищены </a>
+    </div>
   </div>
 </template>
 
