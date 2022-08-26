@@ -6,7 +6,11 @@
   "author": "ozodbek10",
   "private": true,
   "scripts": {
-    "run:ssr": "node dist/ssr"
+    "start": "node dist/ssr",
+    "dev": "quasar dev",
+    "dev:ssr": "quasar dev -m ssr",
+    "build": "quasar build",
+    "build:ssr": "quasar build -m ssr"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
