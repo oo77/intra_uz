@@ -1,0 +1,47 @@
+<template>
+  <q-layout view="hHh lpR fFf" >
+    <q-header>
+      <navbar/>
+    </q-header>
+
+    <q-page-container>
+      <q-img :src="images.typeProdBack" class="absolute w-full top-900px" fit="contain"/>
+      <router-view/>
+      <Footer/>
+      <q-page-scroller :offset="[18, 18]" :scroll-offset="150"  position="bottom-right">
+        <q-btn
+          class="animate-bounce z-max fixed bg-white right-30px bottom-30px"
+          hover="c-green"
+          icon="fa-solid fa-chevron-up"
+
+          padding="md"
+          round
+          unelevated="false"
+        />
+      </q-page-scroller>
+    </q-page-container>
+  </q-layout>
+</template>
+
+
+<script lang="ts" setup>
+import {images} from "src/utils/ImgLocation";
+import Navbar from "components/Navbar.vue";
+import Footer from "components/Footer.vue";
+import {onMounted} from "vue";
+
+onMounted(() => {
+  // let date = new Date()
+  // // const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  // // @ts-ignore
+  // const timeZones = Intl.supportedValuesOf('timeZone')
+})
+
+</script>
+
+
+<style scoped>
+.z-max {
+  z-index: 1000;
+}
+</style>
