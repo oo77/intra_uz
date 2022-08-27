@@ -93,6 +93,7 @@ module.exports = configure(function (ctx) {
         }
       },
 
+
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
@@ -105,7 +106,8 @@ module.exports = configure(function (ctx) {
 
       // Quasar plugins
       plugins: [
-        'BottomSheet'
+        'BottomSheet',
+        'Meta'
       ]
     },
 
