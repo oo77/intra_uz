@@ -31,14 +31,14 @@ module.exports = configure(function (ctx) {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: [
-      'app.css'
     ],
-    animations: 'all',
 
+    //TODO add Monserrat font
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       'material-icons',
       'fontawesome-v6',// optional, you are not bound to it
+      'roboto-font'
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
