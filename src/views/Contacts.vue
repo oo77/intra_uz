@@ -1,5 +1,5 @@
 <template>
-<div class="flex justify-center mb-30px z-1 ">
+  <div class="flex justify-center mb-30px z-1 ">
     <q-img :src="images.contactUsMain" class="w-full min-h-fit" fit="cover"/>
     <div>
       <p class="text-center c-#39B44A text-26px font-700 mt-20px mb-20px" sm="mb-30px mt-40px text-32px">Свяжитесь с
@@ -27,16 +27,16 @@
         <div class="w-95% grid grid-rows-7" lg="w-50% mr-20px">
           <q-input v-model="cred.company" class="mb-10px" label="Компания:"/>
           <q-input v-model="cred.fio" class="mb-10px" label="Ф.И.О:"/>
-          <q-input v-model="cred.role" class="mb-10px" label="Должность:"/>
-          <q-input v-model="cred.phone" class="my-10px" label="Телефон" mask="(###)- ## - ### - ####" unmasked-value/>
-          <q-input v-model="cred.mail" class="my-10px" label="Почта:"/>
+          <q-input v-model="cred.position" class="mb-10px" label="Должность:"/>
+          <q-input v-model="cred.phone" class="my-10px" label="Телефон" prefix="+998" mask="## ### ## ##"/>
+          <q-input v-model="cred.contact" class="my-10px" type="email" label="Почта:"/>
           <div class="w-100% h-20px">
             <q-input
-              v-model="text"
+              v-model="cred.message"
               filled
+              label="Сообщение"
               rows="1"
               type="textarea"
-              label="Сообщение"
             />
           </div>
 
@@ -55,15 +55,26 @@
 import {ref} from 'vue'
 import {images} from "src/utils/ImgLocation";
 import Location from "components/Location.vue";
+import {useContactsMeta} from "src/meta/contacts";
 
+useContactsMeta()
 const cred = ref({})
+// @ts-ignore
 
 function sendMail(cred: any) {
-
-// fetch('/mail', {
-//   method: 'post',
-//   body: cred,
-// }).then((res)=>{}).catch((e)=>{})
+  if (!cred.phone) {
+    return
+  }
+  cred.phone = `+998${cred.phone.replaceAll(' ','')}`
+  fetch('/send', {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(cred)
+  }).then(res=> {}).catch(err=>{
+    console.warn(err)
+  })
 }
 
 

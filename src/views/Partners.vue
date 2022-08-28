@@ -19,8 +19,9 @@ import PartnersSlide from 'src/components/slidersComponent/PartnersSlide.vue'
 import {images} from "src/utils/ImgLocation";
 import {useLanguageStore} from "stores/lang";
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
+import {useOurPartnersMeta} from "src/meta/our_partners";
 const lang = useLanguageStore()
-
+useOurPartnersMeta()
 </script>
 
 <style scoped>

@@ -16,6 +16,7 @@
                 v-close-popup
                 :to="link.url"
                 clickable
+                class="pa-10px"
                 hover="cursor-pointer bg-#39B44A c-white"
         >
           {{ lang.translate[link.title] }}

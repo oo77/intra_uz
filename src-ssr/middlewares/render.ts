@@ -1,5 +1,6 @@
 import {RenderError} from '@quasar/app-vite';
 import {ssrMiddleware} from 'quasar/wrappers';
+import {newMessageOptions, sendMessage} from "app/src-ssr/service/telegram_service";
 
 // This middleware should execute as last one
 // since it captures everything and tries to
@@ -9,12 +10,16 @@ export default ssrMiddleware(({app, resolve, render, serve}) => {
   // we capture any other Express route and hand it
   // over to Vue and Vue Router to render our page
 
-  // app.post('/mail', (req, res) => {
-  //   console.log(req.body)
-  //
-  //   res.send('ok')
-  // })
-  //
+  app.post('/send', (req, res) => {
+    const messageOptions = newMessageOptions(req.body)
+    if (!messageOptions) {
+      res.status(400)
+      return res.send('incorrect request')
+    }
+    sendMessage(messageOptions)
+    res.send('ok')
+  })
+
 
   app.get(resolve.urlPath('*'), (req, res) => {
     res.setHeader('Content-Type', 'text/html');
