@@ -14,7 +14,9 @@ import {useProducts} from 'stores/products'
 import {useRouter} from 'vue-router'
 import ProductList from "components/ProductList.vue"
 import TypesOfActivity from "components/TypesOfActivity.vue"
+import {useOurProductsMeta} from "src/meta/our_products";
 
+useOurProductsMeta()
 
 const router = useRouter();
 const path = (prod) => {

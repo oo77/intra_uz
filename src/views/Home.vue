@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+import {useHomeMeta} from  'src/meta/home_meta'
 import {images} from 'src/utils/ImgLocation'
 import MainImg from "components/MainImg.vue";
 import AboutSection from "components/AboutSection.vue";
@@ -20,6 +21,8 @@ import Locations from "components/Location.vue";
 import Gallery1 from "components/Gallery.vue";
 import StatisticCounter from "components/StatisticCounter.vue"
 import Gallery from "components/Gallery.vue";
+
+useHomeMeta()
 
 </script>
 

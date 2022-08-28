@@ -32,7 +32,10 @@ import {images} from "src/utils/ImgLocation";
 import {useLanguageStore} from "stores/lang";
 import proudPNG from 'assets/icons/proudTrue.png'
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
+import {useAboutCompanyMeta} from "src/meta/about_company";
 
+
+useAboutCompanyMeta()
 const lang = useLanguageStore()
 
 const prides = [

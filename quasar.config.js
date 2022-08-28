@@ -88,8 +88,6 @@ module.exports = configure(function (ctx) {
       config: {
         brand: {
           primary: "#39B44A",
-
-
         }
       },
 
@@ -131,6 +129,8 @@ module.exports = configure(function (ctx) {
     ssr: {
       // ssrPwaHtmlFilename: 'offline.html', // do NOT use index.html as name!
       // will mess up SSR
+
+
 
       // extendSSRWebserverConf (esbuildConf) {},
       // extendPackageJson (json) {},
