@@ -16,7 +16,6 @@
 
           padding="md"
           round
-          unelevated="false"
         />
       </q-page-scroller>
     </q-page-container>
