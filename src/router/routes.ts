@@ -24,7 +24,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/contacts',
     name: 'Contacts',
-    component: () => import('src/views/ContactTmp.vue'),
+    component: () => import('src/views/Contact.vue'),
   },
   {
     path: '/activty',
