@@ -10,8 +10,8 @@
 
 
   <!--    Dialogiviy okno -->
-  <q-dialog persistent v-model="openDialog" class="" transition-duration="500">
-    <q-card class="text-center bg-#39B44A c-white">
+  <q-dialog persistent v-model="openDialog" transition-duration="500">
+    <q-card square="false" class="text-center bg-#39B44A c-white rounded-xl">
       <q-icon @click="openDialog=false" class="absolute right-0 c-black opacity-70"  name="close" size="xl"></q-icon>
       <img class="bg-white" :src="currentProd.url">
 

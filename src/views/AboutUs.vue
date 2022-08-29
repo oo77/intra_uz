@@ -3,7 +3,7 @@
     <q-img :src="images.aboutCompanyMain" class="w-full min-h-fit" fit="cover"/>
       <div class="container q-mx-auto my-30px" lg="mt-50px">
         <text-content-style :title="'aboutCompanyTitle'" :content="'aboutCompanyContent'"/>
-        <AboutUsSlider class="mb-20px q-mx-auto" lg="mb-70px"/>
+        <AboutUsSlider class="mb-20px q-mx-auto" lg="mb-50px"/>
 
         <text-content-style :title="'valueOfCompanyTitle'" :content="'valueOfCompanyContent'"/>
 

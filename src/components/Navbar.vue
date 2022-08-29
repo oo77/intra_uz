@@ -3,7 +3,7 @@
     <!-- Menu Dropdown -->
     <q-btn-dropdown
       class="lt-md c-black"
-      content-class="w-50 rounded-xl h-hit"
+      content-class="w-40 rounded-xl h-hit"
       rounded
       dropdown-icon="menu"
       size="md"

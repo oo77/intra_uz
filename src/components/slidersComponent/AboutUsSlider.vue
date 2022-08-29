@@ -10,7 +10,7 @@
     control-color="primary"
     infinite
     md="rounded-40px mx-0"
-    navigation
+    :navigation="$q.screen.gt.sm"
     no-route-fullscreen-exit
     swipeable
     transition-next="slide-left"
