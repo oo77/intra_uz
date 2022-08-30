@@ -3,37 +3,6 @@ import {images} from "src/utils/ImgLocation";
 
 export const useProducts = defineStore('products', {
   state: () => ({
-      otherProducts:
-       [
-         {
-           id: 1,
-           //@ts-ignore
-           url: images.freez1,
-           title: 'freezeProduct1',
-           description: "freezeProductDes1"
-         },
-         {
-           id: 2,
-           //@ts-ignore
-           url: images.semi1,
-           title: 'semiProduct1',
-           description: "semiProductDes1"
-         },
-         {
-           id: 3,
-           //@ts-ignore
-           url: images.sub1,
-           title: 'subProduct1',
-           description: "subProductDes1"
-         },
-         {
-           id: 4,
-           //@ts-ignore
-           url: images.sub2,
-           title: 'subProduct2',
-           description: "subProductDes2"
-         },
-       ],
       freezeProducts:
         [
           {
@@ -63,7 +32,8 @@ export const useProducts = defineStore('products', {
             url: images.freez4,
             title: 'freezeProduct4',
             description: "freezeProductDes4"
-          }
+          },
+
         ],
       semiProducts:
         [
@@ -132,7 +102,6 @@ export const useProducts = defineStore('products', {
 
   ),
   getters: {
-    getOtherProducts: state => state.otherProducts,
     getFreezeProducts: state => state.freezeProducts,
     getSemiProducts: state => state.semiProducts,
     getSubProducts: state => state.subProducts,

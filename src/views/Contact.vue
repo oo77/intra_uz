@@ -86,7 +86,7 @@
         </q-card-section>
         <q-card-actions class="flex justify-center" md="justify-end">
           <q-btn
-            class="py-5 px-20 rounded-10px"
+            class="py-5 px-20 rounded-10px normal-case"
             color="#39B44A"
             @click="sendMail(cred)"
           >Отправить

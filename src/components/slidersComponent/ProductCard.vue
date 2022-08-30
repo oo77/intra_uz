@@ -5,7 +5,7 @@
       <q-img :src="prod.url" fit="contain" />
     </q-card-section>
     <q-card-section class="pa-0 order-1 " sm="order-2">
-      <p class="font-600 text-22px text-center ma-0 pb-10px" sm="border-t-3px border-slate-400">{{ lang.getLang(prod.title) }}</p>
+      <p class="font-600 text-22px text-center ma-0 pb-10px w-75" sm="border-t-3px border-slate-400">{{ lang.getLang(prod.title) }}</p>
       <div :class="{'active':hover}" class="q-mx-auto none"></div>
     </q-card-section>
   </q-card>
