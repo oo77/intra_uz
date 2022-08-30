@@ -84,10 +84,10 @@ export default {
   otherProducts: 'Разные продукты:',
 
   freezeProducts: 'Охлажденная, замороженная продукция:',
-  freezeProduct1: 'Ножки кролика',
-  freezeProduct2: 'Полутушка кролика',
-  freezeProduct3: 'Спинка кролика',
-  freezeProduct4: 'Филе кролика',
+  freezeProduct1: 'Ножки кролика \n',
+  freezeProduct2: 'Полутушка кролика \n',
+  freezeProduct3: 'Спинка кролика \n',
+  freezeProduct4: 'Филе кролика \n',
   freezeProductDes1:
     "Срок годности: при t от +2°C до +4°C - 18 суток\n" +
     "\n" +
@@ -114,10 +114,10 @@ export default {
     "Энергетическая ценность: 199 ккал.",
 
   semiProducts: 'Полуфабрикаты охлажденные рубленные:',
-  semiProduct1: "Шницель из мяса кролика",
-  semiProduct2: "Котлета из мяса кролика",
-  semiProduct3: "Фрикадельки",
-  semiProduct4: "Котлета",
+  semiProduct1: "Шницель ",
+  semiProduct2: "Котлета  ",
+  semiProduct3: "Фрикадельки  ",
+  semiProduct4: "Котлета  ",
   semiProductDes1:
     "Срок годности: при t от +2°C до +4°C - 5 суток\n" +
     "\n" +

@@ -2,7 +2,7 @@
   <q-img :src="images.AboutUsMain" class="w-full min-h-fit" fit="cover"/>
   <div class="container q-mx-auto z-1">
     <TypesOfActivity class="mt-20px" md="mt-50px"/>
-    <ProductList :products="products.getOtherProducts" title="otherProducts"/>
+    <ProductList :products="[...products.getFreezeProducts, ...products.getSubProducts, ...products.getSemiProducts]" title="otherProducts" :slide="true"/>
   </div>
 </template>
 
