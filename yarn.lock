@@ -1026,6 +1026,11 @@ core-util-is@~1.0.0:
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz"
   integrity sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==
 
+countries-phone-masks@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/countries-phone-masks/-/countries-phone-masks-1.0.5.tgz#ccfe26f1be78d11988f2342b48954e12ae212198"
+  integrity sha512-UHVD+aBvZb1RojC6bZmSgGD+YQF8n3mrX64AWB51g1OVmZuMK0ROK/Db6PKH9p7pPpzaxU8AWfQcC9LHC3qY0g==
+
 crc-32@^1.2.0:
   version "1.2.2"
   resolved "https://registry.npmjs.org/crc-32/-/crc-32-1.2.2.tgz"

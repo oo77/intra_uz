@@ -1,5 +1,5 @@
 <template>
-  <q-img :src="images.contactUsMain" class="w-full min-h-fit" fit="cover"/>
+  <q-img :src="images.contactUsMain" class="w-full min-h-fit" fit="cover" />
 
   <div class="text-center font-600 text-26px sm:text-32px c-#39B44A my-8">
     Свяжитесь с нами
@@ -39,7 +39,9 @@
           <q-form ref="form">
             <q-input
               v-model="cred.company"
-              :rules="[max('Название компании не может быть больше 32 символов', 32)]"
+              :rules="[
+                max('Название компании не может быть больше 32 символов', 32),
+              ]"
               label="Компания:"
               lazy-rules
             />
@@ -52,35 +54,61 @@
               label="Ф.И.О:"
               lazy-rules
             />
+
             <q-input
               v-model="cred.position"
               :rules="[max('Должность не может быть больше 32 символов', 32)]"
               label="Должность:"
               lazy-rules
             />
-            <q-input
-              v-model="cred.phone"
-              :rules="[min('Должность не может быть меньше 9 символов', 9)]"
-              label="Телефон:"
-              lazy-rules
-              mask="+### ## ### ## ##"
-            />
+   
+
             <q-input
               v-model="cred.contact"
               label="Почта:"
               lazy-rules
+              :rules="[emailLazy('incorrect Email')]"
             />
+            <q-select
+              v-if="!currentCountry"
+              v-model="currentCountry"
+              :options="countryOptions"
+              option-label="name"
+              label="Код страны:"
+              clearable
+              use-input
+              @filter="filterFn"
+            />
+
+            <q-input
+              v-else
+              autofocus
+              v-model="cred.phone"
+              label="Телефон:"
+              :prefix="currentCountry.code"
+              lazy-rules
+              :mask="currentCountry.mask"
+            >
+              <template v-slot:append class="gap-5">
+                <q-icon @click="currentCountry=null" name="fa-solid fa-circle-xmark" size="xs"/>
+                <q-avatar>
+                  <img :src="currentCountry.flag" />
+                </q-avatar>
+              </template>
+            </q-input>
+
+
             <q-input
               v-model="cred.message"
               :rules="[
                 min('Сообщение не может быть меньше 0 символов', 0),
                 max('Сообщение не может быть больше 191 символов', 191),
               ]"
-              filled
               label="Сообщение"
               lazy-rules
               rows="1"
               type="textarea"
+              class="mt-10px"
             />
           </q-form>
         </q-card-section>
@@ -89,9 +117,8 @@
             class="py-5 px-20 rounded-10px normal-case"
             color="#39B44A"
             @click="sendMail(cred)"
-          >Отправить
-          </q-btn
-          >
+            >Отправить
+          </q-btn>
         </q-card-actions>
       </q-card>
     </q-card-section>
@@ -115,14 +142,17 @@
       </q-card-section>
     </q-card>
   </q-dialog>
-  <location class="my-5"/>
+  <location class="my-5" />
 </template>
 
 <script lang="ts" setup>
-import {ref} from "vue";
-import {useContactsMeta} from "src/meta/contacts";
-import {images} from "src/utils/ImgLocation";
+import { ref } from "vue";
+import { useContactsMeta } from "src/meta/contacts";
+import { images } from "src/utils/ImgLocation";
 import Location from "components/Location.vue";
+import countries from "countries-phone-masks";
+
+const currentCountry = ref();
 
 useContactsMeta();
 let openDialog = ref(false);
@@ -135,6 +165,21 @@ const cred = ref({
   message: "",
 });
 const form = ref(null);
+const countryOptions = ref(null);
+
+function test() {}
+
+function filterFn(val, update, abort) {
+  update(() => {
+    if (val === "") {
+      return (countryOptions.value = countries);
+    }
+    const tmp = val.toLowerCase()
+    countryOptions.value = countries.filter(
+      ({ name, code, iso }) => name.toLowerCase().includes(tmp) || code.toLowerCase().includes(tmp) || iso.toLowerCase().includes(tmp)
+    );
+  });
+}
 
 function length(message: string, len: number) {
   return (value: string) => {
@@ -145,15 +190,18 @@ function length(message: string, len: number) {
   };
 }
 
-function email(message: string) {
+function emailLazy(message: string) {
   return (value: string) => {
-    return (
-      (value &&
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          value
-        )) ||
-      message
-    );
+    if (!value) {
+      return true;
+    }
+
+    const isValid =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+        value
+      );
+
+    return isValid || message;
   };
 }
 
@@ -178,9 +226,11 @@ function max(message: string, len: number) {
 async function sendMail(cred: any) {
   //@ts-ignore
   const valid = await form.value.validate();
-  if (!valid) {
+  if (!valid || currentCountry.value ) {
     return;
   }
+
+cred.country = currentCountry.value.name  
   await fetch("/send", {
     method: "post",
     headers: {
@@ -188,17 +238,18 @@ async function sendMail(cred: any) {
     },
     body: JSON.stringify(cred),
   })
-    .then((res) => {
-    })
+    .then((res) => {})
     .catch((err) => {
       console.warn(err);
-    })
-  openDialog.value = true,
-    cred.company = null,
-    cred.fio = null,
-    cred.position = null,
-    cred.phone = null,
-    cred.contact = null,
-    cred.message = null;
+    }).finally(()=>{
+      (openDialog.value = true),
+    (cred.company = null),
+    (cred.fio = null),
+    (cred.position = null),
+    (cred.phone = null),
+    (cred.contact = null),
+    (cred.message = null);
+    });
+  
 }
 </script>

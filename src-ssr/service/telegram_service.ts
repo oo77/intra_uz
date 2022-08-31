@@ -1,59 +1,58 @@
-import TelegramBot from 'node-telegram-bot-api'
+import TelegramBot from "node-telegram-bot-api";
 
-const telegramBot = new TelegramBot("5613249605:AAEGalNnATNDw9Jfds5YLNZN7Y3g9kwOnc8")
+const telegramBot = new TelegramBot(
+  "5613249605:AAEGalNnATNDw9Jfds5YLNZN7Y3g9kwOnc8"
+);
 
 interface MessageOptions {
-  company: string
-  fio: string
-  position: string
-  phone: string
-  contact: string
-  message: string
+  company: string;
+  fio: string;
+  position: string;
+  phone: string;
+  contact: string;
+  message: string;
+  country: string;
 }
 
-const keys = [
-  'company',
-  'fio',
-  'position',
-  'phone',
-  'contact',
-  'message'
-]
+const keys = ["fio", "phone", "message", "country"];
 
+const none = "Неизвестно";
 
 export function newMessageOptions(body: any): MessageOptions | undefined {
-
-  if (!body || typeof body != 'object' || keys.some(key => !body[key])) {
-    return undefined
+  if (!body || typeof body != "object" || keys.some((key) => !body[key])) {
+    return undefined;
   }
 
   return {
-    company: body.company,
     fio: body.fio,
-    position: body.position,
     phone: body.phone,
-    contact: body.contact,
-    message: body.message,
-  }
-
+    company: body.company || none,
+    position: body.position || none,
+    contact: body.contact || none,
+    message: body.message || none,
+    country: body.country 
+  };
 }
 
 export function sendMessage(messageOptions: MessageOptions) {
   try {
-    telegramBot.sendMessage(-634159650, `
-Компания:   ${messageOptions.company}
-
+    telegramBot.sendMessage(
+      -634159650,
+      `
 ФИО:   ${messageOptions.fio}
 
-Должность:   ${messageOptions.position}
+Cтрана: ${messageOptions.country}
 
 Телефон:   ${messageOptions.phone}
+
+Компания:   ${messageOptions.company}
+
+Должность:   ${messageOptions.position}
 
 Почта:  ${messageOptions.contact}
 
 Сообщение:  ${messageOptions.message} \n
-    `)
-  } catch (e) {
-
-  }
+    `
+    );
+  } catch (e) {}
 }
