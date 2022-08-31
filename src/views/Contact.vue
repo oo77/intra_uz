@@ -1,5 +1,5 @@
 <template>
-  <q-img :src="images.contactUsMain" class="w-full min-h-fit" fit="cover" />
+  <q-img :src="images.contactUsMain" class="w-full min-h-fit" fit="cover"/>
 
   <div class="text-center font-600 text-26px sm:text-32px c-#39B44A my-8">
     Свяжитесь с нами
@@ -61,7 +61,7 @@
               label="Должность:"
               lazy-rules
             />
-   
+
 
             <q-input
               v-model="cred.contact"
@@ -92,7 +92,7 @@
               <template v-slot:append class="gap-5">
                 <q-icon @click="currentCountry=null" name="fa-solid fa-circle-xmark" size="xs"/>
                 <q-avatar>
-                  <img :src="currentCountry.flag" />
+                  <img :src="currentCountry.flag"/>
                 </q-avatar>
               </template>
             </q-input>
@@ -117,7 +117,7 @@
             class="py-5 px-20 rounded-10px normal-case"
             color="#39B44A"
             @click="sendMail(cred)"
-            >Отправить
+          >Отправить
           </q-btn>
         </q-card-actions>
       </q-card>
@@ -142,14 +142,15 @@
       </q-card-section>
     </q-card>
   </q-dialog>
-  <location class="my-5" />
+  <location class="my-5"/>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-import { useContactsMeta } from "src/meta/contacts";
-import { images } from "src/utils/ImgLocation";
+import {ref} from "vue";
+import {useContactsMeta} from "src/meta/contacts";
+import {images} from "src/utils/ImgLocation";
 import Location from "components/Location.vue";
+//@ts-ignore
 import countries from "countries-phone-masks";
 
 const currentCountry = ref();
@@ -167,8 +168,6 @@ const cred = ref({
 const form = ref(null);
 const countryOptions = ref(null);
 
-function test() {}
-
 function filterFn(val, update, abort) {
   update(() => {
     if (val === "") {
@@ -176,7 +175,11 @@ function filterFn(val, update, abort) {
     }
     const tmp = val.toLowerCase()
     countryOptions.value = countries.filter(
-      ({ name, code, iso }) => name.toLowerCase().includes(tmp) || code.toLowerCase().includes(tmp) || iso.toLowerCase().includes(tmp)
+      ({
+         name,
+         code,
+         iso
+       }) => name.toLowerCase().includes(tmp) || code.toLowerCase().includes(tmp) || iso.toLowerCase().includes(tmp)
     );
   });
 }
@@ -226,11 +229,15 @@ function max(message: string, len: number) {
 async function sendMail(cred: any) {
   //@ts-ignore
   const valid = await form.value.validate();
-  if (!valid || currentCountry.value ) {
+  if (!valid || !currentCountry.value) {
+    console.log(valid, currentCountry.value)
     return;
   }
 
-cred.country = currentCountry.value.name  
+  cred.country = currentCountry.value.name
+
+  cred.phone = `${currentCountry.value.code}${cred.phone.replaceAll(/(\)|\(|\-| )/g, "")}`
+
   await fetch("/send", {
     method: "post",
     headers: {
@@ -238,18 +245,20 @@ cred.country = currentCountry.value.name
     },
     body: JSON.stringify(cred),
   })
-    .then((res) => {})
+    .then((res) => {
+    })
     .catch((err) => {
       console.warn(err);
-    }).finally(()=>{
-      (openDialog.value = true),
-    (cred.company = null),
-    (cred.fio = null),
-    (cred.position = null),
-    (cred.phone = null),
-    (cred.contact = null),
-    (cred.message = null);
+    }).finally(() => {
+      openDialog.value = true
+      cred.company = null
+      cred.fio = null
+      cred.position = null
+      cred.phone = null
+      cred.contact = null
+      cred.message = null
+      currentCountry.value = null
     });
-  
+
 }
 </script>
