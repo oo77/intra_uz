@@ -27,9 +27,14 @@ const routes: RouteRecordRaw[] = [
     component: () => import('src/views/Contact.vue'),
   },
   {
-    path: '/activty',
-    name: 'Activty',
+    path: '/activity',
+    name: 'Activity',
     component: () => import('src/views/AboutActivity.vue'),
+  },
+  {
+    path: '/sternBase/:name',
+    name: 'SternBase',
+    component: () => import('src/views/SternBase.vue'),
   },
   // Always leave this as last one,
   // but you can also remove it

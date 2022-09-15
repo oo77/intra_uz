@@ -1,86 +1,85 @@
 <template>
-  <q-img :src="act.mainImgUrl" class="w-full min-h-fit" fit="cover"/>
-  <div class="container q-mx-auto mt-30px" md="mt-50px">
+  <div v-if="isSternBase"
+       class="grid grid-cols-2 gap-0">
+
+    <BreedCardMain v-for="stern of typeOfsternBase"
+                   :typeOfBreed="stern"
+                   @goToPage="goTo"
+    />
+  </div>
+
+  <q-img v-else :src="activity.mainImg"
+         class="w-full min-h-fit"
+         fit="cover"/>
+
+  <div class="container q-mx-auto mt-30px"
+       md="mt-50px">
 
     <div v-if="isRabbit">
-      <TextContentStyle :content="act.content" :title="act.title"/>
+      <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
+                        :title="activity.rabbitBreed.title[lang.prefix]"/>
 
-      <TextContentStyle :content="'labaratoryContent'" :title="'labaratory'" class="col text-center"/>
-      <q-img :src="images.mainImgSlyad16" class="rounded-30px mx-3% w-94% min-h-fit mb-30px" fit="cover"/>
+      <TextContentStyle :content="activity.laboratory.content[lang.prefix]"
+                        :title="activity.laboratory.title[lang.prefix]"
+      />
 
-      <TextContentStyle :content="'slaughterContent'" :title="'slaughter'"/>
-      <q-img :src="images.mainImgSlyad14" class="rounded-30px mx-3% w-94% min-h-fit mb-30px" fit="cover"/>
-      <ProductList :products="products.getFreezeProducts" title="freezeProducts"/>
-      <ProductList :products="products.getSemiProducts" title="semiProducts"/>
-      <ProductList :products="products.getSubProducts" title="subProducts"/>
+      <q-img :src="activity.laboratory.image"
+             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
+             fit="cover"/>
+
+      <TextContentStyle :content="activity.slaughter.content[lang.prefix]"
+                        :title="activity.slaughter.title[lang.prefix]"/>
+
+      <q-img :src="activity.slaughter.image"
+             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
+             fit="cover"/>
+
+      <ProductList :products="Products.freezeProducts" :title="ProductsTitle.freezeProducts"/>
+      <ProductList :products="Products.subProducts" :title="ProductsTitle.subProducts"/>
+      <ProductList :products="Products.semiProducts" :title="ProductsTitle.semiProducts"/>
+
     </div>
 
     <div v-else>
-      <TextContentStyle :content="act.content1" :title="act.title"/>
-      <q-img :src="act.img1" class="rounded-30px mx-3% w-94% min-h-fit mb-30px" fit="contain"/>
-      <p class="text-justify text-16px ma-0 mx-5%" lg="text-20px  mx-0">{{ lang.getLang(act.content2) }}</p>
-      <q-img :src="act.img2" class=" rounded-30px mx-3% w-94% min-h-fit my-30px" fit="contain"/>
+      <TextContentStyle :content="activity.content1[lang.prefix]"
+                        :title="activity.title[lang.prefix]"/>
+      <q-img :src="activity.image[0]"
+             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
+             fit="contain"/>
+      <p class="text-justify text-16px ma-0 mx-5%"
+         lg="text-20px  mx-0"
+         v-html="activity.content2[lang.prefix]"/>
+
+      <q-img :src="activity.image[1]"
+             class=" rounded-30px mx-3% w-94% min-h-fit my-30px"
+             fit="contain"/>
     </div>
+
   </div>
 
 </template>
 
-<script setup>
-import {images} from "src/utils/ImgLocation";
-import {onMounted} from "vue";
-import {useRoute} from 'vue-router'
-import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
+<script setup lang="ts">
 import ProductList from "components/ProductList.vue"
-import {useProducts} from 'stores/products'
+import BreedCardMain from "components/slidersComponent/BreedCardMain.vue";
+import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
+import {Activity} from 'src/data/Activity/Activity'
+import {Products, ProductsTitle} from "src/data/Products/Products";
 import {useLanguageStore} from "stores/lang";
+import {useRoute, useRouter} from 'vue-router'
+
 
 const lang = useLanguageStore()
-const products = useProducts()
 const route = useRoute()
+const router = useRouter()
+const activity = Activity.find((act) => act.name == route.query.name)
+const isSternBase = route.query.name == 'sternBase'
+const isRabbit = route.query.name == 'rabbit'
+const typeOfsternBase = activity?.typeOfsternBase
 
-
-const typeActivty = [
-  {id: 1, name: 'rabbitBreed', title: 'rabbitBreed', content: 'rabbitBreedContent', mainImgUrl: images.rabbitFeedMain},
-  {
-    id: 2,
-    name: 'rabbitFeed',
-    title: 'rabbitFeed',
-    content1: 'rabbitFeedContent1',
-    content2: 'rabbitFeedContent2',
-    img1: images.rabbitFeedimg1,
-    img2: images.rabbitFeedimg2,
-    mainImgUrl: images.rabbitBreed
-  },
-  {
-    id: 3,
-    name: 'greenHouseProd',
-    title: 'greenHouseProd',
-    content1: 'greenHouseProdContent1',
-    content2: 'greenHouseProdContent2',
-    img1: images.greenHouseProdimg1,
-    img2: images.greenHouseProdimg2,
-    mainImgUrl: images.greenHouse
-  },
-  {
-    id: 4,
-    name: 'mineralFert',
-    title: 'mineralFert',
-    content1: 'mineralFertContent1',
-    content2: 'mineralFertContent2',
-    img1: images.mineralFertimg1,
-    img2: images.mineralFertimg2,
-    mainImgUrl: images.rabbitBoynya
-  },
-]
-
-
-const act = typeActivty.find((act) => act.name == route.query.name)
-const isRabbit = route.query.name == 'rabbitBreed'
-
-
-onMounted(() => {
-  console.log(act)
-})
+function goTo(stern: any) {
+  router.push(stern.route)
+}
 
 </script>
 

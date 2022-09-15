@@ -12,32 +12,31 @@
       unelevated
     >
       <q-list>
-        <q-item v-for="link in links"
+        <q-item v-for="link in Links"
                 v-close-popup
-                :to="link.url"
+                :to="link.route"
                 clickable
                 class="pa-10px"
                 hover="cursor-pointer bg-#39B44A c-white"
-        >
-          {{ lang.translate[link.title] }}
-        </q-item>
+                v-html="link.routeName[lang.prefix]"
+        />
       </q-list>
     </q-btn-dropdown>
 
     <!-- nav icon-->
     <router-link to="/">
-      <q-img :src="images.logo" class="w-25vw max-w-174px" fit="contain"/>
+      <q-img :src="logo" class="w-25vw max-w-174px" fit="contain"/>
     </router-link>
 
     <!--    nav menu XS and SM  hidden-->
     <div class="flex flex-row gap-5 gt-sm">
-      <q-btn v-for="link in links" :class="{'bg-primary c-white drop-shadow-lg':active(link.url)}"
-             :to="link.url"
+      <q-btn v-for="link in Links" :class="{'bg-primary c-white drop-shadow-lg':active(link.route)}"
+             :to="link.route"
              class="normal-case text-18px rounded-lg transition-duration-500 c-black"
              hover="bg-#39B44A opacity-70 c-white shadow-12 transition-duration-100 "
              dense
              unelevated>
-        {{ lang.getLang(link.title) }}
+        {{ link.routeName[lang.prefix] }}
       </q-btn>
     </div>
 
@@ -56,10 +55,10 @@
           <q-icon name="language" size="md"/>
         </q-item>
 
-        <q-item v-for="i in ['uz', 'ru', 'en']" :active="lang.isPrefix(i.toString())"
+        <q-item v-for="i in ['uz', 'ru', 'en']" :active="lang.isPrefix(i)"
                 clickable
                 hover="cursor-pointer bg-#39B44A c-white"
-                @click="lang.setLang(i.toString())"
+                @click="lang.setLang(i)"
         >
           <p class="text-center ma-0 q-mx-auto"> {{ i.toUpperCase() }}</p>
         </q-item>
@@ -72,30 +71,16 @@
 </template>
 
 <script lang="ts" setup>
-
-import {useLanguageStore} from 'stores/lang'
-import {images} from 'src/utils/ImgLocation'
+import {Links, logo, logoBlack} from "src/data/BarsData/Lang";
 import {useRoute} from 'vue-router'
+import {useLanguageStore} from "stores/lang";
 
 const lang = useLanguageStore()
-
 const route = useRoute()
-
-const links = [
-  {url: '/', title: 'home'},
-  {url: '/aboutUs', title: 'aboutUs'},
-  {url: '/products', title: 'products'},
-  {url: '/partners', title: 'partners'},
-  {url: '/contacts', title: 'contacts'},
-]
-
 const active = (path: string) => {
   return route.path == path
 }
 
-function test() {
-  console.log('test')
-}
 
 </script>
 

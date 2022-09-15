@@ -4,12 +4,16 @@
     transition="fade"
   >
     <div class="container q-mx-auto flex justify-center">
-      <p class="text-center  text-26px c-#39B44A mb-10px font-600" md="mb-30px text-32px">{{ lang.getLang('location') }}</p>
-      <q-img :src="images.location"
+      <p class="text-center  text-26px c-#39B44A mb-10px font-600"
+         md="mb-30px text-32px"
+         v-html="Titles.location[lang.prefix]"/>
+
+      <q-img :src="location"
              class="rounded-10px  w-95%"
              fit="cover"
              md="rounded-40px mx-0"
              @click="dialogLocation=true"/>
+
       <q-dialog v-model="dialogLocation">
         <q-card class="">
           <iframe
@@ -20,13 +24,15 @@
             width="400"></iframe>
         </q-card>
       </q-dialog>
+
     </div>
   </q-intersection>
 </template>
 
 <script lang="ts" setup>
 import {useLanguageStore} from 'stores/lang'
-import {images} from "src/utils/ImgLocation";
+import {location} from "src/data/Home/PhotoList";
+import {Titles} from "src/data/Home/Titles";
 import {ref} from "vue";
 
 const dialogLocation = ref(false)

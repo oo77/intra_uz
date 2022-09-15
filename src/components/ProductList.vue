@@ -1,60 +1,58 @@
 <template>
   <!--  Razlichniye producti   -->
-  <q-intersection once transition="slide-up" class="mb-20px">
+  <q-intersection class="mb-20px" once transition="slide-up">
     <p
       class="c-#39B44A text-center text-26px mt-50px font-600 text-center px-5%"
       md="text-left pa-0 mb-10px text-32px"
-    >
-      {{ lang.getLang(title) }}
-    </p>
+      v-html="title[lang.prefix]"
+    />
 
-    <div class="slider transparent" v-if="slide && $q.screen.gt.sm">
+    <div v-if="slide && $q.screen.gt.sm" class="slider transparent">
       <div class="slide-track transparent">
-        <product-card v-for="prod in products" :prod="prod" @target="dialog" />
+        <product-card v-for="prod in products" :product="prod" @target="dialog"/>
+        <product-card v-for="prod in products" :product="prod" @target="dialog"/>
+        <product-card v-for="prod in products" :product="prod" @target="dialog"/>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 gap-10" xl="grid-cols-4" sm="grid-cols-2" v-else>
-      <product-card v-for="prod in products" :prod="prod" @target="dialog" />
+    <div v-else class="grid grid-cols-1 gap-10" sm="grid-cols-2" xl="grid-cols-4">
+      <product-card v-for="prod in products" :product="prod" @target="dialog"/>
     </div>
 
   </q-intersection>
 
   <!--    Dialogiviy okno -->
-  <q-dialog persistent v-model="openDialog" transition-duration="500">
-    <q-card square="false" class="text-center bg-#39B44A c-white rounded-xl">
+  <q-dialog v-model="openDialog" persistent transition-duration="500">
+    <q-card :square="false" class="text-center bg-#39B44A c-white rounded-xl">
       <q-icon
-        @click="openDialog = false"
         class="absolute right-0 c-black opacity-70"
         name="close"
         size="xl"
+        @click="openDialog = false"
       ></q-icon>
-      <img class="bg-white" :src="currentProd.url" />
+      <img :src="currentProd.image" alt="" class="bg-white"/>
 
       <q-card-section class="">
-        <div class="text-h7 font-600" md="text-32px">
-          {{ lang.getLang(currentProd.title) }}
-        </div>
-        <div class="q-mx-auto rounded-xl w-80px h-5px bg-white mt-5px"></div>
+        <div class="text-h7 font-600"
+             md="text-32px"
+             v-html="currentProd.title"/>
+        <div class="q-mx-auto rounded-xl w-80px h-5px bg-white mt-5px"/>
+
       </q-card-section>
 
-      <q-card-section class="q-pt-none text-h7" md="text-20px">
-        {{ lang.getLang(currentProd.description) }}
-      </q-card-section>
+      <q-card-section class="q-pt-none text-h7"
+                      md="text-20px"
+                      v-html="currentProd.description[lang.prefix]"/>
     </q-card>
   </q-dialog>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { useLanguageStore } from "stores/lang";
+import {ref} from "vue";
+import {useLanguageStore} from "stores/lang";
 import ProductCard from "components/slidersComponent/ProductCard.vue";
 
-const { products, title, slide } = defineProps({
-  products: Array,
-  title: String,
-  slide: Boolean,
-});
+const {products, title, slide} = defineProps(['products', 'title', 'slide']);
 
 const lang = useLanguageStore();
 
@@ -89,7 +87,7 @@ const dialog = (product) => {
 }
 
 
-$animationSpeed: 100s;
+$animationSpeed: 600s;
 
 // Animation
 @keyframes scroll {
@@ -111,11 +109,13 @@ $animationSpeed: 100s;
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: fit-content;
 
 
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
+    height: fit-content;
   }
 }
 
