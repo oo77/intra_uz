@@ -7,12 +7,9 @@
     >
       <div class="slider transparent">
         <div class="slide-track transparent">
-          <div v-for="img in Links" class="w-550px flex items-center mx-50px">
-            <q-img :src="img.url" fit="contain " class="transparent"/>
-          </div>
-          <div v-for="img in Links" class="slide w-550px flex items-center mx-50px">
-            <q-img :src="img.url" fit="contain"/>
-          </div>
+            <div v-for="partner in partners" class="w-180px flex items-center mx-50px">
+              <q-img :src="partner.logo" fit="contain" class="transparent"/>
+            </div>
         </div>
       </div>
     </q-intersection>
@@ -23,8 +20,8 @@
   >
     <div class="grid gap-10px mx-5% grid-cols-2 lt-md">
       <q-img
-        v-for="img in Links"
-        :src="img.url"
+        v-for="partner in PartnersInfo"
+        :src="partner.logo"
         class="min-w-100px border-1 border-#39B44A rounded-xl h-200px transparent"
         fit="contain"
       />
@@ -33,17 +30,11 @@
 
 </template>
 
-<script setup>
-import {images} from "src/utils/ImgLocation";
+<script setup lang="ts">
+import {PartnersInfo} from "src/data/Home/partners";
 
-const Links = [
-  {url: images.anaPartner,},
-  {url: images.CIROCALABRIApartner},
-  {url: images.FRAGOLApartner},
-  {url: images.MeneghinPArtner},
-  {url: images.PrimeranoPartner},
-  {url: images.SintPartner},
-]
+const partners = [...PartnersInfo, ...PartnersInfo,...PartnersInfo,...PartnersInfo]
+
 </script>
 
 <style lang="scss" scoped>
@@ -54,7 +45,7 @@ const Links = [
 }
 
 
-$animationSpeed: 20s;
+$animationSpeed: 120s;
 
 // Animation
 @keyframes scroll {
@@ -62,7 +53,7 @@ $animationSpeed: 20s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 6))
+    transform: translateX(calc(-250px * 30))
   }
 }
 
@@ -82,7 +73,7 @@ $animationSpeed: 20s;
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    width: calc(250px * 15);
+    width: calc(250px * 30);
   }
 }
 </style>

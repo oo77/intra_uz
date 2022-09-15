@@ -1,36 +1,58 @@
 <template>
   <section class="section">
     <div class="container q-mx-auto">
-      <p class="c-#39B44A text-26px ma-0 font-600 text-center" md="mb-30px text-32px">
-        {{ lang.getLang('areasOfActivity') }}</p>
 
-      <div class="grid grid-cols-2 mx-10% gap-40px  gt-sm" xl="mx-0 grid-cols-4">
-        <q-card v-for="act in typeActivty" class="transparent q-mx-auto b-0 shadow-0 w-80% h-90 transition-duration-100 "
-                hover="border-black border-b-5px  transition-duration-100 "
-                @click="path(act)">
-          <q-img :src="act.url" class="h-60% animate-bounce pa-10%" fit="contain"/>
-          <p class=" text-26px font-600 text-center pt-30px">{{ lang.getLang(act.name) }}</p>
+      <p class="c-#39B44A text-26px ma-0 font-600 text-center"
+         md="mb-30px text-32px"
+         v-html="Titles.typeOfActivity[lang.prefix]"
+      />
+
+      <div class="grid grid-cols-2 mx-10% gap-40px gt-sm"
+           xl="mx-0 grid-cols-4">
+
+        <q-card v-for="act in TypesOfActivtyCard"
+                class="transparent q-mx-auto b-0 shadow-0 w-80% h-90 transition-duration-100 "
+                hover="border-black border-b-5px  transition-duration-100 cursor-pointer"
+                @click="router.push(act.route)"
+        >
+          <q-img :src="act.image"
+                 class="h-60% animate-bounce pa-10%"
+                 fit="contain"/>
+
+          <p class=" text-26px font-600 text-center pt-30px"
+             v-html="act.title[lang.prefix]"/>
+
         </q-card>
+
       </div>
 
       <q-carousel
         v-model="slide"
-        :autoplay="auto"
         animated
         arrows
+        :autoplay="true"
         class="h-fit bg-transparent q-mx-auto lt-md"
         infinite
-        swipeable
+        :swipeable="true"
         transition-duration="500"
         transition-next="slide-left"
         transition-prev="slide-right"
       >
-        <q-carousel-slide v-for="act in typeActivty" :name="act.id" class="flex justify-center h-fit">
+
+        <q-carousel-slide
+          v-for="act in TypesOfActivtyCard"
+          :name="act.title[lang.prefix]"
+          class="flex justify-center h-fit">
 
           <q-card class="transparent w-330px h-300px flex justify-center overflow-hidden shadow-0"
-                  @click="path(act)">
-            <q-img :src="act.url" class="h-60% w-90% mt-30px animate-bounce" fit="contain"/>
-            <p class="text-26px font-600 text-center">{{ lang.getLang(act.name) }}</p>
+                  @click="router.push(act.route)">
+            <q-img :src="act.image"
+                   class="h-60% w-90% mt-30px animate-bounce"
+                   fit="contain"
+            />
+            <p class="text-26px font-600 text-center"
+               v-html="act.title[lang.prefix]"
+            />
 
           </q-card>
 
@@ -40,29 +62,16 @@
   </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+import {TypesOfActivtyCard} from "src/data/Home/about_activity"
+import {Titles} from "src/data/Home/Titles";
 import {ref} from 'vue'
 import {useLanguageStore} from 'stores/lang'
-import {images} from 'src/utils/ImgLocation'
 import {useRouter} from 'vue-router'
 
 const router = useRouter();
-
 const lang = useLanguageStore()
 let slide = ref(1)
-let auto = ref(true)
-
-const typeActivty = [
-  {id: 1, url: images.rabbitS, name: 'rabbitBreed'},
-  {id: 2, url: images.RabbitFeed, name: 'rabbitFeed'},
-  {id: 3, url: images.green1, name: 'greenHouseProd'},
-  {id: 4, url: images.MineralFeed, name: 'mineralFert'}
-]
-
-const path = (prod) => {
-  router.push('/activty?name=' + prod.name)
-}
-
 
 </script>
 
