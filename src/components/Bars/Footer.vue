@@ -17,7 +17,7 @@
 
       <div class="col gt-xs">
         <p class="text-14px c-white font-600" v-html="about.title[lang.prefix]"/>
-        <p class="text-14px c-white opacity-70" v-html="about.description[lang.prefix]"/>
+        <p class="text-12px c-white opacity-70" v-html="about.description[lang.prefix]"/>
       </div>
 
       <div class="col gt-sm">
