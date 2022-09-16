@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container" >
     <q-carousel
       v-model="slide"
       :autoplay="true"
@@ -25,7 +25,7 @@
              v-html="AboutActivity[item].title[prefix]"/>
           <p class="content xl:text-20px text-16px lg:text-left xl:text-left text-justify lg:text-left "
              v-html="filter(AboutActivity[item].description[prefix])"/>
-          <q-btn class="normal-case text-20px rounded-lg c-#39B44A w-30% justify-self-center transition-duration-400"
+          <q-btn class="normal-case text-20px rounded-lg c-#39B44A flex items-center justify-self-center transition-duration-400"
                  hover="bg-white shadow-sm shadow-#39B44A font-600 transition-duration-400"
                  md="justify-self-end"
                  unelevated

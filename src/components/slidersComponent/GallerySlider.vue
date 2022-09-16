@@ -2,11 +2,11 @@
   <q-carousel
     v-model="slide"
     :autoplay="true"
-    :swipeable="true"
     :navigation="$q.screen.gt.sm"
+    :swipeable="true"
     animated
     arrows
-    class="rounded-10px h-100 w-95%"
+    class="rounded-10px h-fit w-100%"
     control-color="primary"
     infinite
     md="rounded-40px mx-0"
@@ -16,8 +16,8 @@
   >
     <q-carousel-slide v-for="img in PhotoGalleryList.length"
                       :name="img"
-                      :img-src="PhotoGalleryList[img-1]"
                       class="rounded-10px md:rounded-40px h-100">
+      <q-img :src="PhotoGalleryList[img-1]" class="rounded-10px md:rounded-40px w-full h-fit" fit="contain"/>
     </q-carousel-slide>
   </q-carousel>
 </template>

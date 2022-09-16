@@ -10,17 +10,17 @@
       <div class="grid grid-cols-2 mx-10% gap-40px gt-sm"
            xl="mx-0 grid-cols-4">
 
-        <q-card v-for="act in TypesOfActivtyCard"
+        <q-card v-for="act in [0,1,2,3]"
                 class="transparent q-mx-auto b-0 shadow-0 w-80% h-90 transition-duration-100 "
                 hover="border-black border-b-5px  transition-duration-100 cursor-pointer"
-                @click="router.push(act.route)"
+                @click="router.push(TypesOfActivtyCard[act].route)"
         >
-          <q-img :src="act.image"
+          <q-img :src="TypesOfActivtyCard[act].image"
                  class="h-60% animate-bounce pa-10%"
                  fit="contain"/>
 
           <p class=" text-26px font-600 text-center pt-30px"
-             v-html="act.title[lang.prefix]"/>
+             v-html="TypesOfActivtyCard[act].title[lang.prefix]"/>
 
         </q-card>
 
@@ -40,18 +40,18 @@
       >
 
         <q-carousel-slide
-          v-for="act in TypesOfActivtyCard"
-          :name="act.title[lang.prefix]"
+          v-for="act in [0,1,2,3]"
+          :name="act"
           class="flex justify-center h-fit">
 
           <q-card class="transparent w-330px h-300px flex justify-center overflow-hidden shadow-0"
-                  @click="router.push(act.route)">
-            <q-img :src="act.image"
+                  @click="router.push(TypesOfActivtyCard[act].route)">
+            <q-img :src="TypesOfActivtyCard[act].image"
                    class="h-60% w-90% mt-30px animate-bounce"
                    fit="contain"
             />
             <p class="text-26px font-600 text-center"
-               v-html="act.title[lang.prefix]"
+               v-html="TypesOfActivtyCard[act].title[lang.prefix]"
             />
 
           </q-card>
