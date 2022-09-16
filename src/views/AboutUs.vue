@@ -14,9 +14,6 @@
       <AboutUsSlider class="mb-20px q-mx-auto"
                      lg="mb-50px"/>
 
-      <text-content-style :content="Content.values.description[lang.prefix]"
-                          :title="Content.values.title[lang.prefix]"/>
-
       <p class="text-center c-#39B44A text-26px font-700 ma-0 mt-30px mb-10px"
          lg="mt-50px text-32px"
          v-html="Content.pride.title[lang.prefix]"/>

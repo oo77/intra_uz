@@ -35,7 +35,7 @@
       <q-card-section class="">
         <div class="text-h7 font-600"
              md="text-32px"
-             v-html="currentProd.title"/>
+             v-html="currentProd.title[lang.prefix]"/>
         <div class="q-mx-auto rounded-xl w-80px h-5px bg-white mt-5px"/>
 
       </q-card-section>
