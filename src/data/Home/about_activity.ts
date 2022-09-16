@@ -46,7 +46,7 @@ const laboratory: ICard = {
     en: `Генетический центр работает в режиме онлайн с генетическим центром ANCI в Италии.`,
   },
   to: {
-    route: '/activity?name=laboratory',
+    route: '/activity?name=rabbit',
     uz: 'Подробнее',
     ru: 'Подробнее',
     en: 'Подробнее',
@@ -86,7 +86,7 @@ const sternBase: ICard = {
     en: `Наши кролики питаются комбинированными сухими кормами, приготовленными по специальной рецептуре, разработанной ведущими европейскими специалистами.`,
   },
   to: {
-    route: '/activity?name=sternBase',
+    route: '/activity?name=rabbit',
     uz: 'Подробнее',
     ru: 'Подробнее',
     en: 'Подробнее',
