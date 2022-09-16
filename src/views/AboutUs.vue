@@ -34,6 +34,16 @@
 
       <text-content-style :title="Content.partners.title[lang.prefix]" :content="Content.partners.description[lang.prefix]"/>
       <PartnersSlide/>
+      <p class="text-justify text-16px mx-5% mt-20px" sm="text-20px  mx-0"
+         v-html="PartnersContent.description2[lang.prefix]"/>
+      <div class="w-100% flex justify-center items-center animate-pulse my-30px">
+        <p class="ma-0 mx-10px font-600 "
+           v-html="PartnersContent.subscribe[lang.prefix]"/>
+
+        <q-btn :label="PartnersContent.press[lang.prefix]"
+               class="normal-case font-600 bg-#39B44A rounded-xl c-white"
+               to="/contacts"/>
+      </div>
     </div>
   </div>
 </template>
@@ -46,6 +56,7 @@ import {useLanguageStore} from "stores/lang";
 import proudPNG from 'assets/icons/proudTrue.png'
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
 import {useAboutCompanyMeta} from "src/meta/about_company";
+import {PartnersContent} from "src/data/Partners/partners";
 
 const prides = Content.pride.prides
 useAboutCompanyMeta()

@@ -1,3 +1,4 @@
+import PartnersMain from 'assets/icons/BackPartner.png'
 import {Partners} from "src/data/types";
 import anaPartner from 'assets/partners/anaPartner.png'
 import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.png'
@@ -5,40 +6,46 @@ import FRAGOLApartner from 'assets/partners/FRAGOLApartner.png'
 import MeneghinPArtner from 'assets/partners/MeneghinPArtner.png'
 import PrimeranoPartner from 'assets/partners/PrimeranoPartner.png'
 import SintPartner from 'assets/partners/SintPartner.png'
-import PartnersMain from 'assets/icons/BackPartner.png'
+import P4energyPartner from 'assets/partners/P4energyPartner.png'
+
 
 
 const PartnersInfo: Partners[] = [
   {
     name: 'Ana',
     url: '#',
-    logo: anaPartner
+    logo:anaPartner
   },
   {
     name: ':CIROCALABRI',
     url: '#',
-    logo: CIROCALABRIApartner
+    logo:CIROCALABRIApartner
   },
   {
     name: 'Ana',
     url: '#',
-    logo: FRAGOLApartner
+    logo:FRAGOLApartner
   },
   {
     name: 'Meneghin',
     url: '#',
-    logo: MeneghinPArtner
+    logo:MeneghinPArtner
   },
   {
     name: 'Primerano',
     url: '#',
-    logo: PrimeranoPartner
+    logo:PrimeranoPartner
   },
   {
     name: 'Sint',
     url: '#',
-    logo: SintPartner
-  }
+    logo:SintPartner
+  },
+  {
+    name: 'P4energy',
+    url: '#',
+    logo: P4energyPartner
+  },
 ]
 
 const PartnersContent = {
@@ -53,9 +60,9 @@ const PartnersContent = {
     uz: '',
   },
   description2: {
-    ru: `Агрохолдинг «Моя мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
-    en: `Агрохолдинг «Моя мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
-    uz: `Агрохолдинг «Моя мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
+    ru: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
+    en: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
+    uz: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
   },
   subscribe: {
     ru: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
