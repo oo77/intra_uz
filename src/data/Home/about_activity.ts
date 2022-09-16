@@ -145,6 +145,15 @@ const AboutActivity = [
 
 const TypesOfActivtyCard = [
   {
+    image: MineralFertilizersCard,
+    route: '/activity?name=mineralFertilizers',
+    title: {
+      uz: `Удобрения`,
+      ru: `Удобрения`,
+      en: `Удобрения`
+    },
+  },
+  {
     image: RabbitCard,
     route: '/activity?name=rabbit',
     title: {
@@ -171,17 +180,8 @@ const TypesOfActivtyCard = [
       en: 'Теплица'
     },
   },
-  {
-    image: MineralFertilizersCard,
-    route: '/activity?name=mineralFertilizers',
-    title: {
-      uz: `Удобрения`,
-      ru: `Удобрения`,
-      en: `Удобрения`
-    },
-  }
-]
 
+]
 
 
 export {
