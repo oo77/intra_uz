@@ -135,12 +135,12 @@ const slaughter: ICard = {
 
 
 const AboutActivity = [
+  slaughter,
   rabbit,
   laboratory,
   sternBase,
   mineralFertilizers,
-  greenhouse,
-  slaughter
+  greenhouse
 ] as ICard[]
 
 const TypesOfActivtyCard = [

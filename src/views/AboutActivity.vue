@@ -75,7 +75,7 @@ const router = useRouter()
 const activity = Activity.find((act) => act.name == route.query.name)
 const isSternBase = route.query.name == 'sternBase'
 const isRabbit = route.query.name == 'rabbit'
-const typeOfsternBase = activity.typeOfsternBase
+const typeOfsternBase = Activity.find((act) => act.name == 'sternBase').typeOfsternBase
 
 function goTo(stern: any) {
   router.push(stern.route)
