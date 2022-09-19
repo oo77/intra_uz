@@ -15,7 +15,7 @@ const PartnersInfo: Partners[] = [
     name: 'Ana',
     url: '#',
     logo:anaPartner,
-    link: ''
+    link: 'https://www.anci-aia.it/'
   },
   {
     name: ':CIROCALABRI',
