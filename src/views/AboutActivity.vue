@@ -1,6 +1,19 @@
 <template>
+
+  <div class="grid grid-cols-4 mx-5 gap-2 q-mx-auto lt-sm mt-5">
+    <div v-for="stern of typeOfsternBase" class="flex justify-center gap-3">
+      <q-icon
+        :name=" 'img:'+stern.icon"
+        class="w-50px h-50px cursor-pointer rounded-50% border-2 border-#39B44A pa-1"
+        style="color:red"
+        @click="goTo(stern)"/>
+    </div>
+
+
+  </div>
+
   <div v-if="isSternBase"
-       class="grid grid-cols-2 gap-0">
+       class="grid grid-cols-2 gap-0 gt-xs">
 
     <BreedCardMain v-for="stern of typeOfsternBase"
                    :typeOfBreed="stern"
@@ -59,7 +72,7 @@
 
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import ProductList from "components/ProductList.vue"
 import BreedCardMain from "components/slidersComponent/BreedCardMain.vue";
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'

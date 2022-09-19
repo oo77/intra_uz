@@ -6,13 +6,13 @@
   >
 
     <div
-      class="z-20 w-full h-full bottom-0 rounded-xl flex items-center justify-center opacity-100 duration-500 rounded-md  backdrop-blur-sm"
-      :class="{'w-20% h-40%':!active}"
+      class="z-20 w-full h-full bottom-0 rounded-xl flex items-center justify-center opacity-100 duration-500 rounded-md  backdrop-blur-3"
+      :class="{'w-30% h-50% backdrop-blur-1':!active}"
       >
 
       <q-icon :class="{'opacity-100 duration-1000 cursor-pointer':active}"
               :name=" 'img:'+typeOfBreed.icon"
-              class="h-90%  w-90% duration-1000"
+              class="h-100% w-50% duration-1000"
               style="color:red"
               @click="$emit('goToPage', typeOfBreed)"/>
 
