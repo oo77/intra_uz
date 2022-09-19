@@ -12,12 +12,12 @@ import rabbitMain from 'assets/activityImg/rabbitMain.jpg'
 import greenhouseMain from 'assets/activityImg/greenhouseMain.jpg'
 
 import activityRabbitImg from 'assets/activityImg/freed/sterns/rabbitSternMain.jpg'
-import activityRabbitIcon from 'assets/activityImg/freed/rabbitIcon.png'
-import activityCowIcon from 'assets/activityImg/freed/cowIcon.png'
+import activityRabbitIcon from 'assets/activityImg/freed/rabbitIcon.svg'
+import activityCowIcon from 'assets/activityImg/freed/cowIcon.svg'
 import activityCowImg from 'assets/activityImg/freed/sterns/cowSternMain.jpg'
-import activitySheepIcon from 'assets/activityImg/freed/sheepIcon.png'
+import activitySheepIcon from 'assets/activityImg/freed/sheepIcon.svg'
 import activitySheepImg from 'assets/activityImg/freed/sterns/sheepSternMain.jpg'
-import activityCoockIcon from 'assets/activityImg/freed/coockIcon.png'
+import activityCoockIcon from 'assets/activityImg/freed/coockIcon.svg'
 import activityCoockImg from 'assets/activityImg/freed/sterns/coockSternMain.jpg'
 
 

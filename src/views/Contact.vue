@@ -130,7 +130,7 @@
             class="py-5 px-20 rounded-10px normal-case"
             color="#39B44A"
             @click="sendMail(cred)"
-          >{{ labels.send[lang.prefix] }}
+          >{{ labels.send[lang.prefix].toUpperCase() }}
           </q-btn>
         </q-card-actions>
 

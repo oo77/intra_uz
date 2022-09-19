@@ -40,8 +40,8 @@
         <p class="ma-0 mx-10px font-600 "
            v-html="PartnersContent.subscribe[lang.prefix]"/>
 
-        <q-btn :label="PartnersContent.press[lang.prefix]"
-               class="normal-case font-600 bg-#39B44A rounded-xl c-white"
+        <q-btn v-html="PartnersContent.press[lang.prefix].toUpperCase()"
+               class="normal-case font-600 bg-#39B44A rounded-xl c-white flex items-center"
                to="/contacts"/>
       </div>
     </div>
