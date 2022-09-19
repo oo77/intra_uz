@@ -7,9 +7,9 @@
     >
       <div class="slider transparent">
         <div class="slide-track transparent">
-            <div v-for="partner in partners" class="w-180px flex items-center mx-50px">
-              <q-img :src="partner.logo" fit="contain" class="transparent"/>
-            </div>
+          <a v-for="partner in partners" :href="partner.link" class="w-180px flex items-center mx-50px" target="_blank">
+            <q-img :src="partner.logo" class="transparent" fit="contain"/>
+          </a>
         </div>
       </div>
     </q-intersection>
@@ -19,21 +19,23 @@
     transition="scale"
   >
     <div class="grid gap-10px mx-5% grid-cols-2 lt-md">
-      <q-img
-        v-for="partner in PartnersInfo"
-        :src="partner.logo"
-        class="min-w-100px border-1 border-#39B44A rounded-xl h-200px transparent"
-        fit="contain"
-      />
+      <a v-for="partner in PartnersInfo" :href="partner.link" target="_blank" >
+        <q-img
+          :src="partner.logo"
+          class="min-w-100px border-1 border-#39B44A rounded-xl h-200px transparent"
+          fit="contain"
+        />
+      </a>
+
     </div>
   </q-intersection>
 
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import {PartnersInfo} from "src/data/Home/partners";
 
-const partners = [...PartnersInfo, ...PartnersInfo,...PartnersInfo,...PartnersInfo]
+const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...PartnersInfo]
 
 </script>
 

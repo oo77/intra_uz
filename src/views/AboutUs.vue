@@ -21,7 +21,7 @@
       <div class="mb-50px">
 
         <ul v-for="p in prides"
-            class="list-none border-b-1 border-slate-200 pa-0 flex justify-center items-center text-center"
+            class="list-none border-b-1 border-slate-200 pa-0 flex justify-center text-left mx-3"
             lg="justify-between text-left">
 
           <li class="w-80% text-16px"
@@ -40,9 +40,11 @@
         <p class="ma-0 mx-10px font-600 "
            v-html="PartnersContent.subscribe[lang.prefix]"/>
 
-        <q-btn v-html="PartnersContent.press[lang.prefix].toUpperCase()"
-               class="normal-case font-600 bg-#39B44A rounded-xl c-white flex items-center"
-               to="/contacts"/>
+        <q-btn class=" py-1 px-3 rounded-10px"
+               color="#39B44A"
+               to="/contacts">
+          {{PartnersContent.press[lang.prefix].toUpperCase()}}
+        </q-btn>
       </div>
     </div>
   </div>

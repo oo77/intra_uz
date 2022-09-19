@@ -14,37 +14,44 @@ const PartnersInfo: Partners[] = [
   {
     name: 'Ana',
     url: '#',
-    logo:anaPartner
+    logo:anaPartner,
+    link: ''
   },
   {
     name: ':CIROCALABRI',
     url: '#',
-    logo:CIROCALABRIApartner
+    logo:CIROCALABRIApartner,
+    link:'https://aziendacalabria.com/'
   },
   {
     name: 'Ana',
     url: '#',
-    logo:FRAGOLApartner
+    logo:FRAGOLApartner,
+    link: 'https://www.fragolaspa.com'
   },
   {
     name: 'Meneghin',
     url: '#',
-    logo:MeneghinPArtner
+    logo:MeneghinPArtner,
+    link:'https://www.meneghin.it/ita/'
   },
   {
     name: 'Primerano',
     url: '#',
-    logo:PrimeranoPartner
+    logo:PrimeranoPartner,
+    link: ''
   },
   {
     name: 'Sint',
     url: '#',
-    logo:SintPartner
+    logo:SintPartner,
+    link: ''
   },
   {
     name: 'P4energy',
     url: '#',
-    logo: P4energyPartner
+    logo: P4energyPartner,
+    link: 'http://www.p4energy.it/'
   },
 ]
 
@@ -70,9 +77,9 @@ const PartnersContent = {
     uz: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
   },
   press: {
-    ru: `Нажмите !`,
-    en: `Нажмите !`,
-    uz: `Нажмите !`,
+    ru: `Нажмите`,
+    en: `Нажмите`,
+    uz: `Нажмите`,
   }
 }
 
