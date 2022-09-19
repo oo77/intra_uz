@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR fFf" >
+  <q-layout >
     <q-header>
 
       <navbar/>
@@ -14,18 +14,18 @@
 
       <Footer/>
 
-      <q-page-scroller :offset="[18, 18]"
-                       :scroll-offset="150"
-                       position="bottom-right">
-        <q-btn
-          class="animate-bounce z-max fixed bg-white right-30px bottom-30px"
-          hover="c-green"
-          icon="fa-solid fa-chevron-up"
-          padding="md"
-          round
-        />
+<!--      <q-page-scroller :offset="[18, 18]"-->
+<!--                       :scroll-offset="150"-->
+<!--                       position="bottom-right">-->
+<!--        <q-btn-->
+<!--          class="animate-bounce z-max fixed bg-white right-30px bottom-30px"-->
+<!--          hover="c-green"-->
+<!--          icon="fa-solid fa-chevron-up"-->
+<!--          padding="md"-->
+<!--          round-->
+<!--        />-->
 
-      </q-page-scroller>
+<!--      </q-page-scroller>-->
     </q-page-container>
   </q-layout>
 </template>

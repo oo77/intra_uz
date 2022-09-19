@@ -32,5 +32,6 @@ export interface Routes {
 export interface Partners {
   name: string,
   url: string,
-  logo: any
+  logo: any,
+  link: string
 }
