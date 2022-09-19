@@ -8,8 +8,6 @@
         style="color:red"
         @click="goTo(stern)"/>
     </div>
-
-
   </div>
 
   <div v-if="isSternBase"

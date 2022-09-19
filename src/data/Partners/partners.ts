@@ -39,13 +39,13 @@ const PartnersInfo: Partners[] = [
     name: 'Primerano',
     url: '#',
     logo:PrimeranoPartner,
-    link: ''
+    link: 'http://www.primeranosrl.eu/'
   },
   {
     name: 'Sint',
     url: '#',
     logo:SintPartner,
-    link: ''
+    link: 'https://www.sinttecnologie.com/'
   },
   {
     name: 'P4energy',
