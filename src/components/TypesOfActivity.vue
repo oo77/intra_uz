@@ -10,7 +10,7 @@
       <div class="grid grid-cols-2 mx-10% gap-40px gt-sm"
            xl="mx-0 grid-cols-4">
 
-        <q-card v-for="act in [0,1,2,3]"
+        <q-card v-for="act in [1,2,3, 0]"
                 class="transparent q-mx-auto b-0 shadow-0 w-80% h-90 transition-duration-100 "
                 hover="border-black border-b-5px  transition-duration-100 cursor-pointer"
                 @click="router.push(TypesOfActivtyCard[act].route)"
