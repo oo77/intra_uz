@@ -7,19 +7,22 @@
          v-html="Titles.typeOfActivity[lang.prefix]"
       />
 
-      <div class="grid grid-cols-2 mx-10% gap-40px gt-sm"
-           xl="mx-0 grid-cols-4">
+      <div class="grid grid-cols-2 mx-10% gap-20px gt-sm"
+           md="mx-0 grid-cols-3"
+           xl="mx-0 grid-cols-6">
 
-        <q-card v-for="act in [1,2,3, 0]"
-                class="transparent q-mx-auto b-0 shadow-0 w-80% h-90 transition-duration-100 "
+        <q-card v-for="act in [1,2,3, 4,5, 0]"
+                class="transparent b-0 shadow-0 h-75 transition-duration-100 "
                 hover="border-black border-b-5px  transition-duration-100 cursor-pointer"
                 @click="router.push(TypesOfActivtyCard[act].route)"
         >
-          <q-img :src="TypesOfActivtyCard[act].image"
-                 class="h-60% animate-bounce pa-10%"
-                 fit="contain"/>
+         <div class="flex w-50 h-50 q-mx-auto">
+           <q-img :src="TypesOfActivtyCard[act].image"
+                  class="h-90% w-90% animate-bounce q-mx-auto"
+                  fit="contain"/>
+         </div>
 
-          <p class=" text-26px font-600 text-center pt-30px"
+          <p class=" text-26px font-600 text-center pt-15px"
              v-html="TypesOfActivtyCard[act].title[lang.prefix]"/>
 
         </q-card>

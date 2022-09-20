@@ -1,23 +1,25 @@
 <template>
 
-  <div class="grid grid-cols-4 mx-5 gap-2 q-mx-auto lt-sm mt-5">
-    <div v-for="stern of typeOfsternBase" class="flex justify-center gap-3">
-      <q-icon
-        :name=" 'img:'+stern.icon"
-        class="w-50px h-50px cursor-pointer rounded-50% border-2 border-#39B44A pa-1"
-        style="color:red"
-        @click="goTo(stern)"/>
+  <div v-if="isSternBase">
+    <div class="grid grid-cols-4 mx-5 gap-2 q-mx-auto lt-sm mt-5">
+      <div v-for="stern of typeOfsternBase" class="flex justify-center gap-3">
+        <q-icon
+          :name=" 'img:'+stern.icon"
+          class="w-50px h-50px cursor-pointer rounded-50% border-2 border-#39B44A pa-1"
+          @click="goTo(stern)"/>
+      </div>
     </div>
+
+    <div class="grid grid-cols-2 gap-0 gt-xs">
+
+      <BreedCardMain v-for="stern of typeOfsternBase"
+                     :typeOfBreed="stern"
+                     @goToPage="goTo"
+      />
+    </div>
+
   </div>
 
-  <div v-if="isSternBase"
-       class="grid grid-cols-2 gap-0 gt-xs">
-
-    <BreedCardMain v-for="stern of typeOfsternBase"
-                   :typeOfBreed="stern"
-                   @goToPage="goTo"
-    />
-  </div>
 
   <q-img v-else :src="activity.mainImg"
          class="w-full min-h-fit"
@@ -35,14 +37,7 @@
       />
 
       <q-img :src="activity.laboratory.image"
-             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
-             fit="cover"/>
-
-      <TextContentStyle :content="activity.slaughter.content[lang.prefix]"
-                        :title="activity.slaughter.title[lang.prefix]"/>
-
-      <q-img :src="activity.slaughter.image"
-             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
+             class="rounded-5 w-100% min-h-fit mb-30px"
              fit="cover"/>
 
       <ProductList :products="Products.freezeProducts" :title="ProductsTitle.freezeProducts"/>
@@ -54,15 +49,17 @@
     <div v-else>
       <TextContentStyle :content="activity.content1[lang.prefix]"
                         :title="activity.title[lang.prefix]"/>
-      <q-img :src="activity.image[0]"
-             class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
+      <q-img v-if="activity.image[0]"
+        :src="activity.image[0]"
+             class="rounded-30px w-100% min-h-fit mb-30px"
              fit="contain"/>
       <p class="text-justify text-16px ma-0 mx-5%"
          lg="text-20px  mx-0"
          v-html="activity.content2[lang.prefix]"/>
 
-      <q-img :src="activity.image[1]"
-             class=" rounded-30px mx-3% w-94% min-h-fit my-30px"
+      <q-img  v-if="activity.image[1]"
+              :src="activity.image[1]"
+             class=" rounded-5 w-100% min-h-fit my-30px"
              fit="contain"/>
     </div>
 

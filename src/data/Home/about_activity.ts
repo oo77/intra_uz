@@ -6,6 +6,7 @@ import SternBase from 'assets/aboutImg/img3.png'
 import MineralFertilizers from 'assets/aboutImg/img4.png'
 import Greenhouse from 'assets/aboutImg/img5.png'
 import Slaughter from 'assets/aboutImg/img6.png'
+import Cooperation from 'assets/aboutImg/img7.png'
 
 import RabbitCard from 'assets/typeOfActivty/rabbitS.png'
 import SternBaseCard from 'assets/typeOfActivty/RabbitFeed.png'
@@ -16,9 +17,9 @@ import MineralFertilizersCard from 'assets/typeOfActivty/MineralFeed.png'
 const rabbit: ICard = {
   image: Rabbit,
   title: {
-    uz: 'Кролиководство',
-    ru: 'Кролиководство',
-    en: 'Кролиководство'
+    uz: `<p>Кролиководство</p>`,
+    ru: `<p>Кролиководство</p>`,
+    en: `<p>Кролиководство</p>`
   },
   description: {
     uz: `Агрокомплекс «Моя мечта» – крупнейший кролиководческий холдинг, расположенный в незапятнанной и экологически чистой зоне Ташкентской Области, спроектированный по итальянским технологиям. Компания занимается производством и переработкой мяса кролика и считается на сегодняшний день одним из самых крупных в мире производителей предоставленного продукта.`,
@@ -126,7 +127,27 @@ const slaughter: ICard = {
     en: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя.`,
   },
   to: {
-    route: '/activity?name=rabbit',
+    route: '/activity?name=slaughter',
+    uz: 'Подробнее',
+    ru: 'Подробнее',
+    en: 'Подробнее',
+  }
+}
+
+const cooperation: ICard = {
+  image: Cooperation,
+  title: {
+    uz: 'Кооперация',
+    ru: 'Кооперация',
+    en: 'Кооперация'
+  },
+  description: {
+    uz: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя.`,
+    ru: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя.`,
+    en: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя.`,
+  },
+  to: {
+    route: '/activity?name=cooperation',
     uz: 'Подробнее',
     ru: 'Подробнее',
     en: 'Подробнее',
@@ -140,7 +161,8 @@ const AboutActivity = [
   laboratory,
   sternBase,
   mineralFertilizers,
-  greenhouse
+  greenhouse,
+  cooperation
 ] as ICard[]
 
 const TypesOfActivtyCard = [
@@ -180,6 +202,25 @@ const TypesOfActivtyCard = [
       en: 'Теплица'
     },
   },
+  {
+    image: Cooperation,
+    route: '/activity?name=cooperation',
+    title: {
+      uz: 'Кооперация',
+      ru: 'Кооперация',
+      en: 'Кооперация'
+    },
+  },
+  {
+    image: Slaughter,
+    route: '/activity?name=slaughter',
+    title: {
+      uz: 'Бойня',
+      ru: 'Бойня',
+      en: 'Бойня'
+    },
+  },
+
 
 ]
 
