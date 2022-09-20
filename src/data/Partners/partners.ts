@@ -7,6 +7,7 @@ import MeneghinPArtner from 'assets/partners/MeneghinPArtner.png'
 import PrimeranoPartner from 'assets/partners/PrimeranoPartner.png'
 import SintPartner from 'assets/partners/SintPartner.png'
 import P4energyPartner from 'assets/partners/P4energyPartner.png'
+import AiaPartner from 'assets/partners/AiaPartner.png'
 
 
 
@@ -52,6 +53,12 @@ const PartnersInfo: Partners[] = [
     url: '#',
     logo: P4energyPartner,
     link: 'http://www.p4energy.it/'
+  },
+  {
+    name: 'AIA',
+    url: '#',
+    logo: AiaPartner,
+    link: 'http://www.aia.it'
   },
 ]
 

@@ -11,7 +11,7 @@
       transition-next="slide-left"
       transition-prev="slide-right"
     >
-      <q-carousel-slide v-for="item in [0,1,2,3,4,5]" :name="item"
+      <q-carousel-slide v-for="item in [0,1,2,3,4,5,6]" :name="item"
                         class="grid lg:grid-cols-2 md:grid-cols-1 items-center gap-y-3 overflow-hidden justify-between leading-tight">
         <q-img :src="AboutActivity[item].image"
                class="min-w-150px min-h-150px w-100% h-100% q-mx-auto"

@@ -12,7 +12,7 @@
 
       <q-icon :class="{'opacity-100 duration-1000 cursor-pointer':active}"
               :name=" 'img:'+typeOfBreed.icon"
-              class="h-100% w-50% duration-1000"
+              class="h-100% w-100% duration-1000"
               style="color:red"
               @click="$emit('goToPage', typeOfBreed)"/>
 

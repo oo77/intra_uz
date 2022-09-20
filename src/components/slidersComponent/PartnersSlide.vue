@@ -1,18 +1,13 @@
 <template>
 
   <div class="carousel gt-sm">
-    <q-intersection
-      once
-      transition="scale"
-    >
-      <div class="slider transparent">
-        <div class="slide-track transparent">
+      <div class="slider transparent w-100%">
+        <div class="slide-track transparent ">
           <a v-for="partner in partners" :href="partner.link" class="w-180px flex items-center mx-50px" target="_blank">
             <q-img :src="partner.logo" class="transparent" fit="contain"/>
           </a>
         </div>
       </div>
-    </q-intersection>
   </div>
   <q-intersection
     once
@@ -69,7 +64,6 @@ $animationSpeed: 120s;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1000px;
 
 
   .slide-track {

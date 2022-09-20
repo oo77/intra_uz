@@ -1,6 +1,7 @@
 <template>
   <div class="h-hit bg-primary w-full max flex justify-center items-start">
-    <div class="container pt-30px flex items-start justify-center gap-30px border-b-1 border-white gt-sm z-0">
+
+    <div class="container pt-30px flex items-start justify-center gap-20px border-b-1 border-white gt-sm z-0">
       <div class="col ml-5vw">
         <div class="h-30% w-150px my-10px">
           <q-img :src="logoBlack" fit="contain"/>
