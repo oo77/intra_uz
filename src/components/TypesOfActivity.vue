@@ -43,7 +43,7 @@
       >
 
         <q-carousel-slide
-          v-for="act in [0,1,2,3]"
+          v-for="act in [0,1,2,3,4,5]"
           :name="act"
           class="flex justify-center h-fit">
 
