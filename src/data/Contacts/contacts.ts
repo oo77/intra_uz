@@ -1,4 +1,6 @@
 import ContactUsMain from "assets/ContactUsMain.png"
+import instagram  from "assets/icons/instagaramIconBlack.svg"
+
 const Contacts = {
   title: {
     ru: 'Свяжитесь с нами',
@@ -36,7 +38,7 @@ const Contacts = {
     },
     {
       socialName: "instagram",
-      icon: "fa-brands fa-instagram",
+      icon: "img:"+instagram,
     },
     {
       socialName: "telegram",

@@ -166,15 +166,7 @@ const AboutActivity = [
 ] as ICard[]
 
 const TypesOfActivtyCard = [
-  {
-    image: MineralFertilizersCard,
-    route: '/activity?name=mineralFertilizers',
-    title: {
-      uz: `Удобрения`,
-      ru: `Удобрения`,
-      en: `Удобрения`
-    },
-  },
+
   {
     image: RabbitCard,
     route: '/activity?name=rabbit',
@@ -203,12 +195,12 @@ const TypesOfActivtyCard = [
     },
   },
   {
-    image: Cooperation,
-    route: '/activity?name=cooperation',
+    image: MineralFertilizersCard,
+    route: '/activity?name=mineralFertilizers',
     title: {
-      uz: 'Кооперация',
-      ru: 'Кооперация',
-      en: 'Кооперация'
+      uz: `Удобрения`,
+      ru: `Удобрения`,
+      en: `Удобрения`
     },
   },
   {
@@ -220,8 +212,15 @@ const TypesOfActivtyCard = [
       en: 'Бойня'
     },
   },
-
-
+  {
+    image: Cooperation,
+    route: '/activity?name=cooperation',
+    title: {
+      uz: 'Кооперация',
+      ru: 'Кооперация',
+      en: 'Кооперация'
+    },
+  },
 ]
 
 

@@ -25,20 +25,24 @@
          class="w-full min-h-fit"
          fit="cover"/>
 
-  <div class="container q-mx-auto mt-30px"
+  <div class="container q-mx-auto mt-30px px-2%"
        md="mt-50px">
 
     <div v-if="isRabbit">
       <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
                         :title="activity.rabbitBreed.title[lang.prefix]"/>
 
-      <TextContentStyle :content="activity.laboratory.content[lang.prefix]"
+      <TextContentStyle :content="activity.laboratory.content1[lang.prefix]"
                         :title="activity.laboratory.title[lang.prefix]"
       />
 
       <q-img :src="activity.laboratory.image"
              class="rounded-5 w-100% min-h-fit mb-30px"
              fit="cover"/>
+      <p class="text-justify text-16px ma-0 mx-5%"
+         lg="text-20px  mx-0"
+         v-html="activity.laboratory.content2[lang.prefix]"/>
+
 
       <ProductList :products="Products.freezeProducts" :title="ProductsTitle.freezeProducts"/>
       <ProductList :products="Products.subProducts" :title="ProductsTitle.subProducts"/>
@@ -47,23 +51,29 @@
     </div>
 
     <div v-else>
+
       <TextContentStyle :content="activity.content1[lang.prefix]"
                         :title="activity.title[lang.prefix]"/>
+
       <q-img v-if="activity.image[0]"
         :src="activity.image[0]"
-             class="rounded-30px w-100% min-h-fit mb-30px"
+             class="rounded-3 w-100% min-h-fit mb-30px"
              fit="contain"/>
+
       <p class="text-justify text-16px ma-0 mx-5%"
          lg="text-20px  mx-0"
          v-html="activity.content2[lang.prefix]"/>
 
       <q-img  v-if="activity.image[1]"
               :src="activity.image[1]"
-             class=" rounded-5 w-100% min-h-fit my-30px"
+             class=" rounded-3 w-100% min-h-fit my-30px"
              fit="contain"/>
+
+      <Subscribe v-if="isCooperation"/>
     </div>
 
   </div>
+
 
 </template>
 
@@ -75,6 +85,7 @@ import {Activity} from 'src/data/Activity/Activity'
 import {Products, ProductsTitle} from "src/data/Products/Products";
 import {useLanguageStore} from "stores/lang";
 import {useRoute, useRouter} from 'vue-router'
+import Subscribe from "components/slidersComponent/subscribe.vue";
 
 
 const lang = useLanguageStore()
@@ -83,7 +94,8 @@ const router = useRouter()
 const activity = Activity.find((act) => act.name == route.query.name)
 const isSternBase = route.query.name == 'sternBase'
 const isRabbit = route.query.name == 'rabbit'
-const typeOfsternBase = Activity.find((act) => act.name == 'sternBase').typeOfsternBase
+const isCooperation =route.query.name == 'cooperation'
+const typeOfsternBase = Activity.find((act) => act.name == 'sternBase')?.typeOfsternBase
 
 function goTo(stern: any) {
   router.push(stern.route)

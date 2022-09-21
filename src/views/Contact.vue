@@ -19,13 +19,15 @@
           <div class="text-26px md:text-32px font-600  c-#39B44A"
                v-html="Contacts.subtitle[lang.prefix]"/>
 
-          <div v-for="c in Contacts.contact"
-               class="text-16px md:text-20px font-200">
-            <q-icon
-              :name="c.icon"
-              class="mr-10px opacity-75"
-              size="sm"/>
-            {{ c.text }}
+          <div class="grid grid-rows-2 gap-y-3 q-mx-auto ">
+            <div v-for="c in Contacts.contact"
+                 class="text-16px md:text-20px font-200 text-left row">
+              <q-icon
+                :name="c.icon"
+                class="mr-10px opacity-75"
+                size="sm"/>
+              {{ c.text }}
+            </div>
           </div>
 
           <div class="text-16px md:text-20px font-200"

@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="px-30px col border-b-1 border-slate-600 py-10px lt-md">
+    <div class="px-30px col border-b-1 border-white py-10px lt-md">
       <q-img :src="logoBlack"
              class="h-30% w-120px mb-20px q-mx-auto block"
              fit="contain"
@@ -65,7 +65,7 @@
 
       <ul class="q-mx-auto list-none ma-0 pa-0 flex justify-center gap-15px">
         <li v-for="link in column.socialLink">
-          <q-icon :name="link.icon" class="c-white" size="sm"/>
+          <q-icon :name="link.icon" color="white" size="sm"/>
         </li>
       </ul>
     </div>
