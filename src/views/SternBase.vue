@@ -5,21 +5,24 @@
 
 
   <div class="container q-mx-auto mt-10">
+<div class="mx-3%">
+  <TextContentStyle :content="currentStern.content1[lang.prefix]"
+                    :title="currentStern.title[lang.prefix]"/>
 
-    <TextContentStyle :content="currentStern.content1[lang.prefix]"
-                      :title="currentStern.title[lang.prefix]"/>
+  <q-img :src="currentStern.images[0]"
+         class=" rounded-3 w-100% min-h-fit my-30px"
+         fit="contain"/>
 
-    <q-img :src="currentStern.images[0]"
-           class="rounded-30px mx-3% w-94% min-h-fit mb-30px"
-           fit="contain"/>
+  <p v-if="currentStern.content2[lang.prefix] != ''"
+     class="text-justify text-16px ma-0"
+     lg="text-20px"
+     v-html="currentStern.content2[lang.prefix]"/>
 
-    <p class="text-justify text-16px ma-0 mx-5%"
-       lg="text-20px  mx-0"
-       v-html="currentStern.content2[lang.prefix]"/>
+  <q-img :src="currentStern.images[1]"
+         class=" rounded-3 w-100% min-h-fit my-30px"
+         fit="contain"/>
+</div>
 
-    <q-img :src="currentStern.images[1]"
-           class=" rounded-30px mx-3% w-94% min-h-fit my-30px"
-           fit="contain"/>
   </div>
 </template>
 

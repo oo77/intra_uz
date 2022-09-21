@@ -21,17 +21,7 @@
     <p class="text-justify text-16px mx-5% mt-20px" sm="text-20px  mx-0"
        v-html="PartnersContent.description2[lang.prefix]"/>
 
-    <div class="w-100% flex justify-center items-center animate-pulse my-30px">
-      <p class="ma-0 mx-10px font-600 "
-         v-html="PartnersContent.subscribe[lang.prefix]"/>
-
-      <q-btn class=" py-1 px-3 rounded-10px"
-             color="#39B44A"
-             to="/contacts">
-        {{ PartnersContent.press[lang.prefix].toUpperCase() }}
-      </q-btn>
-    </div>
-
+    <subscribe/>
   </div>
 </template>
 
@@ -41,6 +31,7 @@ import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
 import {useOurPartnersMeta} from "src/meta/our_partners";
 import {PartnersContent, PartnersMain} from "src/data/Partners/partners";
 import {PartnersInfo} from "src/data/Home/partners";
+import Subscribe from 'components/slidersComponent/subscribe.vue'
 
 const lang = useLanguageStore()
 useOurPartnersMeta()

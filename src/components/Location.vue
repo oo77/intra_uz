@@ -9,7 +9,7 @@
          v-html="Titles.location[lang.prefix]"/>
 
       <q-img :src="location"
-             class="rounded-10px  w-100%"
+             class="rounded-0 lg:rounded-3  w-100%"
              fit="cover"
              md="rounded-40px mx-0"
              @click="dialogLocation=true"/>

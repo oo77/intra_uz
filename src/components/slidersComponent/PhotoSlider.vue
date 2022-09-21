@@ -6,10 +6,10 @@
     :swipeable="true"
     animated
     arrows
-    class="rounded-10px h-110 w-100% gt-sm mt-10"
+    class="rounded-0 lg:rounded-3  min-h-50px h-40 md:h-70 lg:h-90 w-100% mt-10 pa-0"
     control-color="primary"
     infinite
-    md="rounded-40px mx-0"
+    md="mx-0"
     no-route-fullscreen-exit
     transition-next="slide-left"
     transition-prev="slide-right"
@@ -17,15 +17,13 @@
     <q-carousel-slide v-for="img in PhotoMainList.length"
                       :img-src="PhotoMainList[img-1]"
                       :name="img"
-                      class="rounded-10px md:rounded-40px h-100">
+                      class="rounded-0 lg:rounded-3 min-h-50px h-40 md:h-70 lg:h-90 pa-0">
     </q-carousel-slide>
 
   </q-carousel>
 
 
-  <q-img :src="PhotoMainList[0]"
-         class="w-full h-130% lt-md"
-  />
+
 </template>
 
 

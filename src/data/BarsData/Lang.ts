@@ -1,6 +1,7 @@
 import {Routes} from '../types'
 import logoBlack from 'assets/logoBlack.png'
 import logo from 'assets/DreamLogo.png'
+import instagram from 'assets/icons/instagaramIcon.svg'
 
 const home: Routes = {
   routeName: {
@@ -65,7 +66,7 @@ const column = {
     },
     {
       socialName: "instagram",
-      icon: "fa-brands fa-instagram",
+      icon: "img:" +instagram,
     },
     {
       socialName: "telegram",

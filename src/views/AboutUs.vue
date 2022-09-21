@@ -8,50 +8,45 @@
       class="container q-mx-auto my-30px"
       lg="mt-50px">
 
-      <text-content-style :content="Content.aboutCompany.description[lang.prefix]"
-                          :title="Content.aboutCompany.title[lang.prefix]"/>
+      <div class="mx-3%">
+        <text-content-style :content="Content.aboutCompany.description[lang.prefix]"
+                            :title="Content.aboutCompany.title[lang.prefix]"/>
 
-      <AboutUsSlider class="mb-20px q-mx-auto"
-                     lg="mb-50px"/>
+        <AboutUsSlider class="mb-20px q-mx-auto"
+                       lg="mb-50px"/>
 
-      <p class="text-center c-#39B44A text-26px font-700 ma-0 mt-30px mb-10px"
-         lg="mt-50px text-32px"
-         v-html="Content.pride.title[lang.prefix]"/>
+        <p class="text-center c-#39B44A text-26px font-700 ma-0 mt-30px mb-10px"
+           lg="mt-50px text-32px"
+           v-html="Content.pride.title[lang.prefix]"/>
 
-      <div class="mb-50px">
+        <div class="mb-50px">
 
-        <ul v-for="p in prides"
-            class="list-none border-b-1 border-slate-200 pa-0 flex justify-center text-left mx-3"
-            lg="justify-between text-left">
+          <ul v-for="p in prides"
+              class="list-none border-b-1 border-slate-200 pa-0 flex justify-center text-left mx-3"
+              lg="justify-between text-left">
 
-          <li class="w-80% text-16px"
-               lg="text-20px"
-               v-html="p[lang.prefix]"/>
-          <q-img :src="proudPNG" class="w-70px h-70px gt-sm"/>
-        </ul>
+            <li class="w-80% text-16px"
+                lg="text-20px"
+                v-html="p[lang.prefix]"/>
+            <q-img :src="proudPNG" class="w-70px h-70px gt-sm"/>
+          </ul>
 
-      </div>
+        </div>
 
-      <text-content-style :title="Content.partners.title[lang.prefix]" :content="Content.partners.description[lang.prefix]"/>
-      <PartnersSlide/>
-      <p class="text-justify text-16px mx-5% mt-20px" sm="text-20px  mx-0"
-         v-html="PartnersContent.description2[lang.prefix]"/>
-      <div class="w-100% flex justify-center items-center animate-pulse my-30px">
-        <p class="ma-0 mx-10px font-600 "
-           v-html="PartnersContent.subscribe[lang.prefix]"/>
+        <text-content-style :content="Content.partners.description[lang.prefix]"
+                            :title="Content.partners.title[lang.prefix]"/>
+        <PartnersSlide/>
+        <p class="text-justify text-16px mx-5% mt-20px" sm="text-20px  mx-0"
+           v-html="PartnersContent.description2[lang.prefix]"/>
 
-        <q-btn class=" py-1 px-3 rounded-10px"
-               color="#39B44A"
-               to="/contacts">
-          {{PartnersContent.press[lang.prefix].toUpperCase()}}
-        </q-btn>
+        <Subscribe/>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {Content, AboutCompanyMainImg} from "src/data/AboutUS/AboutUs";
+import {AboutCompanyMainImg, Content} from "src/data/AboutUS/AboutUs";
 import AboutUsSlider from "components/slidersComponent/GallerySlider.vue";
 import PartnersSlide from 'components/slidersComponent/PartnersSlide.vue';
 import {useLanguageStore} from "stores/lang";
@@ -59,6 +54,7 @@ import proudPNG from 'assets/icons/proudTrue.png'
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
 import {useAboutCompanyMeta} from "src/meta/about_company";
 import {PartnersContent} from "src/data/Partners/partners";
+import Subscribe from "components/slidersComponent/subscribe.vue";
 
 const prides = Content.pride.prides
 useAboutCompanyMeta()
