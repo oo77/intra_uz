@@ -6,7 +6,7 @@
     :swipeable="true"
     animated
     arrows
-    class="rounded-0 lg:rounded-3  min-h-50px h-40 md:h-70 lg:h-90 w-100% mt-10 pa-0"
+    class="rounded-0 sm:rounded-3  min-h-50px h-40 md:h-80 lg:h-120 w-100% pa-0"
     control-color="primary"
     infinite
     md="mx-0"

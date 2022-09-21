@@ -6,10 +6,10 @@
     :swipeable="true"
     animated
     arrows
-    class="rounded-0 lg:rounded-3 h-50 md:h-80 lg:h-100 w-100%"
+    class="rounded-0 sm:rounded-3 min-h-50px h-40 md:h-80 lg:h-120 w-100%"
     control-color="primary"
     infinite
-    md="rounded-40px mx-0"
+    md="mx-0"
     no-route-fullscreen-exit
     transition-next="slide-left"
     transition-prev="slide-right"

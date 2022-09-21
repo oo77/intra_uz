@@ -2,7 +2,7 @@
   <nav class="w-100vw flex justify-around items-center py-2 bg-white z-1000" sm="py-4">
     <!-- Menu Dropdown -->
     <q-btn-dropdown
-      class="lt-md c-black"
+      class="lt-md c-black h-50px"
       content-class="w-40 rounded-xl h-hit"
       rounded
       dropdown-icon="menu"
@@ -49,6 +49,7 @@
       dropdown-icon="language"
       no-icon-animation
       unelevated
+      auto-close
     >
       <q-list class="pa-0 w-100%">
         <q-item class="pa-0 flex justify-center">
