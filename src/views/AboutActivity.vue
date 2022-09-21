@@ -39,7 +39,7 @@
       <q-img :src="activity.laboratory.image"
              class="rounded-5 w-100% min-h-fit mb-30px"
              fit="cover"/>
-      <p class="text-justify text-16px ma-0 mx-5%"
+      <p class="text-justify text-16px ma-0"
          lg="text-20px  mx-0"
          v-html="activity.laboratory.content2[lang.prefix]"/>
 

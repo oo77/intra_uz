@@ -23,20 +23,21 @@
 
   <!--    Dialogiviy okno -->
   <q-dialog v-model="openDialog" persistent transition-duration="500">
-    <q-card :square="false" class="text-center bg-#39B44A c-white rounded-xl">
-      <q-icon
-        class="absolute right-0 c-black opacity-70"
-        name="close"
-        size="xl"
-        @click="openDialog = false"
-      ></q-icon>
-      <img :src="currentProd.image" alt="" class="bg-white"/>
+    <q-card :square="false" class="text-center bg-#39B44A c-white rounded-10">
+      <q-card-section class="pa-0 w-full h-100">
+        <q-icon
+          class="absolute right-0 c-black opacity-70 z-20"
+          name="close"
+          size="xl"
+          @click="openDialog = false"
+        ></q-icon>
+        <q-img :src="currentProd.image" fit="contain" class="bg-white h-100% w-100% z-10"/>
+      </q-card-section>
 
       <q-card-section class="">
         <div class="text-h7 font-600"
              md="text-32px"
              v-html="currentProd.title[lang.prefix]"/>
-        <div class="q-mx-auto rounded-xl w-80px h-5px bg-white mt-5px"/>
 
       </q-card-section>
 

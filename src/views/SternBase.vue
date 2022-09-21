@@ -5,23 +5,22 @@
 
 
   <div class="container q-mx-auto mt-10">
-<div class="mx-3%">
-  <TextContentStyle :content="currentStern.content1[lang.prefix]"
-                    :title="currentStern.title[lang.prefix]"/>
+    <div class="mx-3%">
+      <TextContentStyle :content="currentStern.content1[lang.prefix]"
+                        :title="currentStern.title[lang.prefix]"/>
 
-  <q-img :src="currentStern.images[0]"
-         class=" rounded-3 w-100% min-h-fit my-30px"
-         fit="contain"/>
+      <q-img :src="currentStern.images[0]"
+             class=" rounded-3 w-100% min-h-fit "
+             fit="contain"/>
 
-  <p v-if="currentStern.content2[lang.prefix] != ''"
-     class="text-justify text-16px ma-0"
-     lg="text-20px"
-     v-html="currentStern.content2[lang.prefix]"/>
+      <p class="text-justify text-16px ma-0 mt-5"
+         lg="text-20px"
+         v-html="currentStern.content2[lang.prefix]"/>
 
-  <q-img :src="currentStern.images[1]"
-         class=" rounded-3 w-100% min-h-fit my-30px"
-         fit="contain"/>
-</div>
+      <q-img :src="currentStern.images[1]"
+             class=" rounded-3 w-100% min-h-fit my-5"
+             fit="contain"/>
+    </div>
 
   </div>
 </template>
@@ -30,7 +29,6 @@
 import {TypeOfsternBase} from 'src/data/SternBase/SternBase'
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
 import {useRoute, useRouter} from 'vue-router'
-import BreedCardMain from "components/slidersComponent/BreedCardMain.vue";
 import {useLanguageStore} from "stores/lang";
 import {ref} from 'vue'
 

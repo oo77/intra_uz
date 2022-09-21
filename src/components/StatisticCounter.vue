@@ -6,19 +6,19 @@
       <p class="text-center c-slate-600 font-600 c-slate  ma-10px xl:text-100px lg:text-100px md:text-50px text-32px"
          v-html="'+'+ count3"/>
 
-      <span class="lg:text-32px xl:text-32px text-16px col text-center font-600" v-html="countName.products[lang.prefix]"/>
+      <span class="lg:text-32px sm:text-16px text-12px col text-center font-600" v-html="countName.products[lang.prefix]"/>
     </div>
 
     <div class="col grid  items-center">
       <p class="text-center c-slate-600 font-600 c-slate  ma-10px xl:text-100px lg:text-100px md:text-50px text-32px"
          v-html="'+'+ count2"/>
-      <span class="lg:text-32px xl:text-32px text-16px col text-center font-600" v-html="countName.partners[lang.prefix]"/>
+      <span class="lg:text-32px sm:text-16px text-12px col text-center font-600" v-html="countName.partners[lang.prefix]"/>
     </div>
 
     <div class="col grid  items-center">
       <p class="text-center c-slate-600 font-600 c-slate  ma-10px xl:text-100px lg:text-100px md:text-50px text-32px"
          v-html="'+'+ count1"/>
-      <span class="lg:text-32px xl:text-32px text-16px col text-center font-600" v-html="countName.staff[lang.prefix]"/>
+      <span class="lg:text-32px sm:text-16px text-12px col text-center font-600" v-html="countName.staff[lang.prefix]"/>
     </div>
 
   </div>
