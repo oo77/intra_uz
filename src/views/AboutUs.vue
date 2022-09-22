@@ -5,8 +5,7 @@
            fit="cover"/>
 
     <div
-      class="container q-mx-auto my-30px"
-      lg="mt-50px">
+      class="container q-mx-auto my-10">
 
       <div class="mx-3%">
         <text-content-style :content="Content.aboutCompany.description[lang.prefix]"
@@ -34,7 +33,9 @@
 
         <text-content-style :content="Content.partners.description[lang.prefix]"
                             :title="Content.partners.title[lang.prefix]"/>
+
         <PartnersSlide/>
+
         <p class="text-justify text-16px mt-5" sm="text-20px  mx-0"
            v-html="PartnersContent.description2[lang.prefix]"/>
 

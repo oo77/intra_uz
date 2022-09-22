@@ -4,12 +4,12 @@
     transition="fade"
   >
     <div class="container q-mx-auto flex justify-center">
-      <p class="text-center  text-26px c-#39B44A mb-10px font-600"
-         md="mb-30px text-32px"
+      <p class="text-center  text-26px c-#39B44A mt-3 sm:mt-10 font-600"
+         md="text-32px"
          v-html="Titles.location[lang.prefix]"/>
 
       <q-img :src="location"
-             class="rounded-0 sm:rounded-3  w-100%"
+             class="rounded-0 sm:rounded-3 w-100%"
              fit="cover"
              md="mx-0"
              @click="dialogLocation=true"/>

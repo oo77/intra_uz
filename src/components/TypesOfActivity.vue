@@ -7,7 +7,7 @@
          v-html="Titles.typeOfActivity[lang.prefix]"
       />
 
-      <div class="grid grid-cols-2 mx-10% gap-20px gt-sm"
+      <div class="grid grid-cols-2 mx-10% gap-20px gt-xs"
            md="mx-0 grid-cols-3"
            xl="mx-0 grid-cols-6">
 
@@ -34,7 +34,7 @@
         animated
         arrows
         :autoplay="true"
-        class="h-fit bg-transparent q-mx-auto lt-md"
+        class="h-fit bg-transparent q-mx-auto lt-sm"
         infinite
         :swipeable="true"
         transition-duration="500"
