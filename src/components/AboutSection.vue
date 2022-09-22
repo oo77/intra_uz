@@ -5,7 +5,7 @@
       :autoplay="true"
       animated
       arrows
-      class="h-120 q-mx-auto transparent"
+      class="h-120 lg:h-90 q-mx-auto transparent"
       infinite
       swipeable
       transition-next="slide-left"

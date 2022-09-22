@@ -3,143 +3,144 @@
          class="w-full min-h-fit"
          fit="cover"/>
 
-  <div class="text-center font-600 text-26px sm:text-32px c-#39B44A my-8"
+  <div class="text-center font-600 text-26px sm:text-32px c-#39B44A mt-10"
        v-html="Contacts.title[lang.prefix]"/>
+  <div class="container  q-mx-auto">
+    <q-card class="rounded-xl mx-3% h-fit">
+      <q-card-section class="grid grid-cols-1 gap-x-5 items-center h-fit"
+                      md="grid-cols-2">
+        <q-card class="rounded-xl my-2 mx-2"
+                sm="my-15% mx-10%">
+          <q-card-section
+            class="text-center flex column justify-evenly h-100% gap-y-5"
+            sm="gap-y-10"
+          >
+            <div class="text-26px md:text-32px font-600  c-#39B44A"
+                 v-html="Contacts.subtitle[lang.prefix]"/>
 
-  <q-card class="container rounded-xl ma-4"
-          md="mx-auto">
-    <q-card-section class="grid grid-cols-1 gap-x-10 items-center h-fit"
-                    md="grid-cols-2">
-      <q-card class="rounded-xl my-4 mx-2"
-              sm="my-15% mx-10%">
-        <q-card-section
-          class="text-center flex column justify-evenly h-100% gap-y-5"
-          sm="gap-y-10"
-        >
-          <div class="text-26px md:text-32px font-600  c-#39B44A"
-               v-html="Contacts.subtitle[lang.prefix]"/>
-
-          <div class="grid grid-rows-2 gap-y-3 q-mx-auto ">
-            <div v-for="c in Contacts.contact"
-                 class="text-16px md:text-20px font-200 text-left row">
-              <q-icon
-                :name="c.icon"
-                class="mr-10px opacity-75"
-                size="sm"/>
-              {{ c.text }}
+            <div class="grid grid-rows-2 gap-y-3 q-mx-auto ">
+              <div v-for="c in Contacts.contact"
+                   class="text-16px md:text-20px font-200 text-left row">
+                <q-icon
+                  :name="c.icon"
+                  class="mr-10px opacity-75"
+                  size="sm"/>
+                {{ c.text }}
+              </div>
             </div>
-          </div>
 
-          <div class="text-16px md:text-20px font-200"
-               v-html="Contacts.subText[lang.prefix]"/>
+            <div class="text-16px md:text-20px font-200"
+                 v-html="Contacts.subText[lang.prefix]"/>
 
-          <ul class="list-none pa-0 mt-5px flex gap-15px q-mx-auto">
-            <li v-for="link in Contacts.socialLink">
+            <ul class="list-none pa-0 mt-5px flex gap-15px q-mx-auto">
+              <li v-for="link in Contacts.socialLink">
 
-              <q-icon :name="link.icon"
-                      class="c-black opacity-75"
-                      size="sm"/>
-            </li>
-          </ul>
+                <q-icon :name="link.icon"
+                        class="c-black opacity-75"
+                        size="sm"/>
+              </li>
+            </ul>
 
-        </q-card-section>
+          </q-card-section>
 
-      </q-card>
+        </q-card>
 
 
-      <q-card class="shadow-0">
-        <q-card-section>
-          <q-form ref="form">
-            <q-input
-              v-model="cred.company"
-              :label="labels.company[lang.prefix]"
-              :rules="[
+        <q-card class="shadow-0">
+          <q-card-section>
+            <q-form ref="form">
+              <q-input
+                v-model="cred.company"
+                :label="labels.company[lang.prefix]"
+                :rules="[
                 max('Название компании не может быть больше 32 символов', 32),
               ]"
-              lazy-rules
-            />
-            <q-input
-              v-model="cred.fio"
-              :label="labels.name[lang.prefix]"
-              :rules="[
+                lazy-rules
+              />
+              <q-input
+                v-model="cred.fio"
+                :label="labels.name[lang.prefix]"
+                :rules="[
                 min(labels.incorrectName[lang.prefix], 3),
                 max('Ф.И.О не может быть больше 32 символов', 32),
               ]"
-              lazy-rules
-            />
+                lazy-rules
+              />
 
-            <q-input
-              v-model="cred.position"
-              :label="labels.job[lang.prefix]"
-              :rules="[max('Должность не может быть больше 32 символов', 32)]"
-              lazy-rules
-            />
+              <q-input
+                v-model="cred.position"
+                :label="labels.job[lang.prefix]"
+                :rules="[max('Должность не может быть больше 32 символов', 32)]"
+                lazy-rules
+              />
 
-            <q-input
-              v-model="cred.contact"
-              :label="labels.mail[lang.prefix]"
-              :rules="[emailLazy(labels.incorrectMail[lang.prefix])]"
-              lazy-rules
-            />
-            <q-select
-              v-if="!currentCountry"
-              v-model="currentCountry"
-              :label="labels.stateCode[lang.prefix]"
-              :options="countryOptions"
-              clearable
-              option-label="name"
-              use-input
-              @filter="filterFn"
-            />
+              <q-input
+                v-model="cred.contact"
+                :label="labels.mail[lang.prefix]"
+                :rules="[emailLazy(labels.incorrectMail[lang.prefix])]"
+                lazy-rules
+              />
+              <q-select
+                v-if="!currentCountry"
+                v-model="currentCountry"
+                :label="labels.stateCode[lang.prefix]"
+                :options="countryOptions"
+                clearable
+                option-label="name"
+                use-input
+                @filter="filterFn"
+              />
 
-            <q-input
-              v-else
-              v-model="cred.phone"
-              :label="labels.phone[lang.prefix]"
-              :mask="currentCountry.mask"
-              :prefix="currentCountry.code"
-              autofocus
-              lazy-rules
-            >
-              <template v-slot:append class="gap-5">
-                <q-icon name="fa-solid fa-circle-xmark"
-                        size="xs"
-                        @click="currentCountry=null"/>
-                <q-avatar>
-                  <img :src="currentCountry.flag" alt=""/>
-                </q-avatar>
-              </template>
-            </q-input>
+              <q-input
+                v-else
+                v-model="cred.phone"
+                :label="labels.phone[lang.prefix]"
+                :mask="currentCountry.mask"
+                :prefix="currentCountry.code"
+                autofocus
+                lazy-rules
+              >
+                <template v-slot:append class="gap-5">
+                  <q-icon name="fa-solid fa-circle-xmark"
+                          size="xs"
+                          @click="currentCountry=null"/>
+                  <q-avatar>
+                    <img :src="currentCountry.flag" alt=""/>
+                  </q-avatar>
+                </template>
+              </q-input>
 
 
-            <q-input
-              v-model="cred.message"
-              :label="labels.message[lang.prefix]"
-              :rules="[
+              <q-input
+                v-model="cred.message"
+                :label="labels.message[lang.prefix]"
+                :rules="[
                 min('Сообщение не может быть меньше 0 символов', 0),
                 max('Сообщение не может быть больше 191 символов', 191),
               ]"
-              class="mt-10px"
-              lazy-rules
-              rows="1"
-              type="textarea"
-            />
-          </q-form>
-        </q-card-section>
+                class="mt-10px"
+                lazy-rules
+                rows="1"
+                type="textarea"
+              />
+            </q-form>
+          </q-card-section>
 
-        <q-card-actions class="flex justify-center" md="justify-end">
-          <q-btn
-            class="py-5 px-20 rounded-10px"
-            color="#39B44A"
-            @click="sendMail(cred)"
-          >{{ labels.send[lang.prefix].toUpperCase() }}
-          </q-btn>
-        </q-card-actions>
+          <q-card-actions class="flex justify-center" md="justify-end">
+            <q-btn
+              class="py-5 px-20 rounded-10px"
+              color="#39B44A"
+              @click="sendMail(cred)"
+            >{{ labels.send[lang.prefix].toUpperCase() }}
+            </q-btn>
+          </q-card-actions>
 
-      </q-card>
-    </q-card-section>
-  </q-card>
+        </q-card>
+      </q-card-section>
+    </q-card>
+  </div>
 
+  <location class="my-5"/>
   <q-dialog v-model="openDialog"
             persistent
             transition-duration="500">
@@ -167,7 +168,7 @@
       </q-card-section>
     </q-card>
   </q-dialog>
-  <location class="my-5"/>
+
 </template>
 
 <script lang="ts" setup>

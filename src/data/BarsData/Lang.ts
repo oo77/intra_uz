@@ -53,7 +53,7 @@ const Links = [
 
 
 const column = {
-  company1: "ООО QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS",
+  company1: `ООО "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
   company2: "СП ООО “INTERTRADE HOLDING”",
   socialLink: [
     {

@@ -4,8 +4,7 @@
          fit="cover"/>
   <div class="container q-mx-auto z-1">
 
-    <TypesOfActivity class="my-20px"
-                     md="my-30px"/>
+    <TypesOfActivity class="mt-10"/>
     <TextContentStyle :content="Content.description[lang.prefix]"
                       :title="Content.title[lang.prefix]"/>
     <ProductList :products="products"

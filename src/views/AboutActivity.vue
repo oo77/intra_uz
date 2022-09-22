@@ -24,8 +24,7 @@
          class="w-full min-h-fit"
          fit="cover"/>
 
-  <div class="container q-mx-auto mt-30px px-2%"
-       md="mt-50px">
+  <div class="container q-mx-auto mt-10 ">
 
     <div v-if="isRabbit">
       <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
@@ -59,7 +58,7 @@
              class="rounded-3 w-100% min-h-fit mb-30px"
              fit="contain"/>
 
-      <p class="text-justify text-16px ma-0 mx-5%"
+      <p class="text-justify text-16px ma-0"
          lg="text-20px  mx-0"
          v-html="activity.content2[lang.prefix]"/>
 

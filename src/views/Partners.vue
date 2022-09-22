@@ -3,12 +3,12 @@
          class="w-full min-h-fit"
          fit="cover"/>
 
-  <div class="container q-mx-auto mt-30px"
-       md="mt-50px">
+  <div class="container q-mx-auto my-10">
 
+  <div class="mx-3%">
     <TextContentStyle :content="PartnersContent.description1[lang.prefix]"
                       :title="PartnersContent.title[lang.prefix]"/>
-    <div class="grid gap-10px mx-5% grid-cols-2 md:grid-cols- lg:grid-cols-4">
+    <div class="grid gap-10px grid-cols-2 md:grid-cols- lg:grid-cols-4">
       <a v-for="partner in PartnersInfo" :href="partner.link" target="_blank">
         <q-img
           :src="partner.logo"
@@ -18,10 +18,11 @@
       </a>
     </div>
 
-    <p class="text-justify text-16px mx-5% mt-20px" sm="text-20px  mx-0"
+    <p class="text-justify text-16px mt-20px" sm="text-20px  mx-0"
        v-html="PartnersContent.description2[lang.prefix]"/>
 
     <subscribe/>
+  </div>
   </div>
 </template>
 
