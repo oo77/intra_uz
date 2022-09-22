@@ -25,49 +25,51 @@
          fit="cover"/>
 
   <div class="container q-mx-auto mt-10 ">
+    <div class="mx-3%">
 
-    <div v-if="isRabbit">
-      <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
-                        :title="activity.rabbitBreed.title[lang.prefix]"/>
+      <div v-if="isRabbit">
+        <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
+                          :title="activity.rabbitBreed.title[lang.prefix]"/>
 
-      <TextContentStyle @isLab="goToLab" :content="activity.laboratory.content1[lang.prefix]"
-                        :title="activity.laboratory.title[lang.prefix]"
-      />
+        <TextContentStyle :content="activity.laboratory.content1[lang.prefix]" :title="activity.laboratory.title[lang.prefix]"
+                          @isLab="goToLab"
+        />
 
-      <q-img :src="activity.laboratory.image"
-             class="rounded-5 w-100% min-h-fit mb-30px"
-             fit="cover"/>
-      <p class="text-justify text-16px ma-0"
-         lg="text-20px  mx-0"
-         v-html="activity.laboratory.content2[lang.prefix]"/>
+        <q-img :src="activity.laboratory.image"
+               class="rounded-0 sm:rounded-3 w-100% min-h-fit mb-30px"
+               fit="cover"/>
+        <p class="text-justify text-16px ma-0"
+           lg="text-20px  mx-0"
+           v-html="activity.laboratory.content2[lang.prefix]"/>
 
 
-      <ProductList :products="Products.freezeProducts" :title="ProductsTitle.freezeProducts"/>
-      <ProductList :products="Products.subProducts" :title="ProductsTitle.subProducts"/>
-      <ProductList :products="Products.semiProducts" :title="ProductsTitle.semiProducts"/>
+        <ProductList :products="Products.freezeProducts" :title="ProductsTitle.freezeProducts"/>
+        <ProductList :products="Products.subProducts" :title="ProductsTitle.subProducts"/>
+        <ProductList :products="Products.semiProducts" :title="ProductsTitle.semiProducts"/>
 
-    </div>
+      </div>
 
-    <div v-else>
+      <div v-else>
 
-      <TextContentStyle :content="activity.content1[lang.prefix]"
-                        :title="activity.title[lang.prefix]"/>
+        <TextContentStyle :content="activity.content1[lang.prefix]"
+                          :title="activity.title[lang.prefix]"/>
 
-      <q-img v-if="activity.image[0]"
-             :src="activity.image[0]"
-             class="rounded-3 w-100% min-h-fit mb-30px"
-             fit="contain"/>
+        <q-img v-if="activity.image[0]"
+               :src="activity.image[0]"
+               class="rounded-0 sm:rounded-3 w-100% min-h-fit"
+               fit="contain"/>
 
-      <p class="text-justify text-16px ma-0"
-         lg="text-20px  mx-0"
-         v-html="activity.content2[lang.prefix]"/>
+        <p class="text-justify text-16px my-5"
+           lg="text-20px"
+           v-html="activity.content2[lang.prefix]"/>
 
-      <q-img v-if="activity.image[1]"
-             :src="activity.image[1]"
-             class=" rounded-3 w-100% min-h-fit my-30px"
-             fit="contain"/>
+        <q-img v-if="activity.image[1]"
+               :src="activity.image[1]"
+               class="rounded-0 sm:rounded-3 w-100% min-h-fit mb-30px"
+               fit="contain"/>
 
-      <Subscribe v-if="isCooperation"/>
+        <Subscribe v-if="isCooperation"/>
+      </div>
     </div>
 
   </div>
