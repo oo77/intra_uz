@@ -20,7 +20,6 @@
 
   </div>
 
-
   <q-img v-else :src="activity.mainImg"
          class="w-full min-h-fit"
          fit="cover"/>
@@ -32,7 +31,7 @@
       <TextContentStyle :content="activity.rabbitBreed.content[lang.prefix]"
                         :title="activity.rabbitBreed.title[lang.prefix]"/>
 
-      <TextContentStyle :content="activity.laboratory.content1[lang.prefix]"
+      <TextContentStyle @isLab="goToLab" :content="activity.laboratory.content1[lang.prefix]"
                         :title="activity.laboratory.title[lang.prefix]"
       />
 
@@ -56,7 +55,7 @@
                         :title="activity.title[lang.prefix]"/>
 
       <q-img v-if="activity.image[0]"
-        :src="activity.image[0]"
+             :src="activity.image[0]"
              class="rounded-3 w-100% min-h-fit mb-30px"
              fit="contain"/>
 
@@ -64,8 +63,8 @@
          lg="text-20px  mx-0"
          v-html="activity.content2[lang.prefix]"/>
 
-      <q-img  v-if="activity.image[1]"
-              :src="activity.image[1]"
+      <q-img v-if="activity.image[1]"
+             :src="activity.image[1]"
              class=" rounded-3 w-100% min-h-fit my-30px"
              fit="contain"/>
 
@@ -73,7 +72,6 @@
     </div>
 
   </div>
-
 
 </template>
 
@@ -86,19 +84,38 @@ import {Products, ProductsTitle} from "src/data/Products/Products";
 import {useLanguageStore} from "stores/lang";
 import {useRoute, useRouter} from 'vue-router'
 import Subscribe from "components/slidersComponent/subscribe.vue";
+import {scroll} from 'quasar'
 
-
+const {getScrollTarget, setVerticalScrollPosition} = scroll
 const lang = useLanguageStore()
 const route = useRoute()
 const router = useRouter()
-const activity = Activity.find((act) => act.name == route.query.name)
-const isSternBase = route.query.name == 'sternBase'
-const isRabbit = route.query.name == 'rabbit'
-const isCooperation =route.query.name == 'cooperation'
+
+let name = route.query.name
+
+if (route.query.name == 'rabbit' || route.query.name == 'laboratory') {
+  name = 'rabbit'
+}
+
+const activity = Activity.find((act) => act.name == name)
+const isSternBase = name == 'sternBase'
+const isRabbit = name == 'rabbit'
+const isCooperation = name == 'cooperation'
 const typeOfsternBase = Activity.find((act) => act.name == 'sternBase')?.typeOfsternBase
 
 function goTo(stern: any) {
   router.push(stern.route)
+}
+
+function goToLab(lab: any) {
+  if (route.query.name == 'laboratory') {
+    setTimeout(() => {
+      const target = getScrollTarget(lab)
+      const offset = lab.offsetTop
+      const duration = 1000
+      setVerticalScrollPosition(target, offset, duration)
+    }, 100)
+  }
 }
 
 </script>
