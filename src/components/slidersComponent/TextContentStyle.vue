@@ -5,7 +5,7 @@
 
 <script setup>
 import {defineProps, ref, defineEmits, onMounted} from "vue";
-import {useRouter} from "vue-router/dist/vue-router";
+import {useRouter} from "vue-router";
 
 const {title, content} = defineProps({title: String, content: String})
 const router = useRouter()
