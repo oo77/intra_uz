@@ -50,6 +50,7 @@
           <q-card class="transparent w-330px h-300px flex justify-center overflow-hidden shadow-0"
                   @click="router.push(TypesOfActivtyCard[act-1].route)">
             <q-img :src="TypesOfActivtyCard[act-1].image"
+
                    class="h-60% w-90% mt-30px animate-bounce"
                    fit="contain"
             />

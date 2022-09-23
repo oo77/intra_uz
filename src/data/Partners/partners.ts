@@ -1,13 +1,13 @@
-import PartnersMain from 'assets/icons/BackPartner.png'
+import PartnersMain from 'assets/icons/BackPartner.webp'
 import {Partners} from "src/data/types";
-import anaPartner from 'assets/partners/anaPartner.png'
-import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.png'
-import FRAGOLApartner from 'assets/partners/FRAGOLApartner.png'
-import MeneghinPArtner from 'assets/partners/MeneghinPArtner.png'
-import PrimeranoPartner from 'assets/partners/PrimeranoPartner.png'
-import SintPartner from 'assets/partners/SintPartner.png'
-import P4energyPartner from 'assets/partners/P4energyPartner.png'
-import AiaPartner from 'assets/partners/AiaPartner.png'
+import anaPartner from 'assets/partners/anaPartner.webp'
+import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.webp'
+import FRAGOLApartner from 'assets/partners/FRAGOLApartner.webp'
+import MeneghinPArtner from 'assets/partners/MeneghinPArtner.webp'
+import PrimeranoPartner from 'assets/partners/PrimeranoPartner.webp'
+import SintPartner from 'assets/partners/SintPartner.webp'
+import P4energyPartner from 'assets/partners/P4energyPartner.webp'
+import AiaPartner from 'assets/partners/AiaPartner.webp'
 
 
 
