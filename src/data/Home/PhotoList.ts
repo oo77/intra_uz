@@ -1,27 +1,25 @@
-import mainImgSlyad1 from 'assets/mainCarousel/mainImgSlayd1.jpg'
-import mainImgSlyad2 from 'assets/mainCarousel/mainImgSlayd2.jpg'
-import mainImgSlyad3 from 'assets/mainCarousel/mainImgSlayd3.jpg'
-import mainImgSlyad4 from 'assets/mainCarousel/mainImgSlayd4.jpg'
-import mainImgSlyad5 from 'assets/mainCarousel/mainImgSlayd5.jpg'
-import mainImgSlyad6 from 'assets/mainCarousel/mainImgSlayd6.jpg'
-import mainImgSlyad7 from 'assets/mainCarousel/mainImgSlayd7.jpg'
-import mainImgSlyad8 from 'assets/mainCarousel/mainImgSlayd8.jpg'
-import mainImgSlyad9 from 'assets/mainCarousel/mainImgSlayd9.jpg'
-import mainImgSlyad10 from 'assets/mainCarousel/mainImgSlayd10.jpg'
-import mainImgSlyad11 from 'assets/mainCarousel/mainImgSlayd11.jpg'
-import mainImgSlyad12 from 'assets/mainCarousel/mainImgSlayd12.jpg'
-import mainImgSlyad13 from 'assets/mainCarousel/mainImgSlayd13.jpg'
-import mainImgSlyad14 from 'assets/mainCarousel/mainImgSlayd14.jpg'
-import mainImgSlyad15 from 'assets/mainCarousel/mainImgSlayd15.jpg'
-import mainImgSlyad16 from 'assets/mainCarousel/mainImgSlayd16.jpg'
-import mainImgSlyad17 from 'assets/mainCarousel/mainImgSlayd17.jpg'
-import mainImgSlyad18 from 'assets/mainCarousel/mainImgSlayd18.jpg'
-import mainImgSlyad19 from 'assets/mainCarousel/mainImgSlayd19.jpg'
-import mainImgSlyad20 from 'assets/mainCarousel/mainImgSlayd20.jpg'
-import mainImgSlyad21 from 'assets/mainCarousel/mainImgSlayd21.jpg'
-import mainImgSlyad22 from 'assets/mainCarousel/mainImgSlayd22.jpg'
-import mainImgSlyad23 from 'assets/mainCarousel/mainImgSlayd23.jpg'
-import location from 'assets/icons/location.jpg'
+import mainImgSlyad1 from 'assets/mainCarousel/mainImgSlayd1.webp'
+import mainImgSlyad2 from 'assets/mainCarousel/mainImgSlayd2.webp'
+import mainImgSlyad3 from 'assets/mainCarousel/mainImgSlayd3.webp'
+import mainImgSlyad4 from 'assets/mainCarousel/mainImgSlayd4.webp'
+import mainImgSlyad5 from 'assets/mainCarousel/mainImgSlayd5.webp'
+import mainImgSlyad6 from 'assets/mainCarousel/mainImgSlayd6.webp'
+import mainImgSlyad7 from 'assets/mainCarousel/mainImgSlayd7.webp'
+import mainImgSlyad8 from 'assets/mainCarousel/mainImgSlayd8.webp'
+import mainImgSlyad9 from 'assets/mainCarousel/mainImgSlayd9.webp'
+import mainImgSlyad10 from 'assets/mainCarousel/mainImgSlayd10.webp'
+import mainImgSlyad11 from 'assets/mainCarousel/mainImgSlayd11.webp'
+import mainImgSlyad12 from 'assets/mainCarousel/mainImgSlayd12.webp'
+import mainImgSlyad13 from 'assets/mainCarousel/mainImgSlayd13.webp'
+import mainImgSlyad14 from 'assets/mainCarousel/mainImgSlayd14.webp'
+import mainImgSlyad15 from 'assets/mainCarousel/mainImgSlayd15.webp'
+import mainImgSlyad16 from 'assets/mainCarousel/mainImgSlayd16.webp'
+import mainImgSlyad17 from 'assets/mainCarousel/mainImgSlayd17.webp'
+import mainImgSlyad18 from 'assets/mainCarousel/mainImgSlayd18.webp'
+import mainImgSlyad19 from 'assets/mainCarousel/mainImgSlayd19.webp'
+import mainImgSlyad20 from 'assets/mainCarousel/mainImgSlayd20.webp'
+
+import location from 'assets/icons/location.webp'
 
 const PhotoMainList = [
   mainImgSlyad1,
@@ -46,9 +44,6 @@ const PhotoGalleryList = [
   mainImgSlyad18,
   mainImgSlyad19,
   mainImgSlyad20,
-  mainImgSlyad21,
-  mainImgSlyad22,
-  mainImgSlyad23,
 ]
 
 export {

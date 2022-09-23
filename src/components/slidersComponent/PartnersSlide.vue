@@ -42,7 +42,7 @@ const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...Partners
 }
 
 
-$animationSpeed: 120s;
+$animationSpeed: 200s;
 
 // Animation
 @keyframes scroll {

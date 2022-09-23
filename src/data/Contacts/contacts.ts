@@ -1,4 +1,4 @@
-import ContactUsMain from "assets/ContactUsMain.png"
+import ContactUsMain from "assets/ContactUsMain.webp"
 import instagram  from "assets/icons/instagaramIconBlack.svg"
 
 const Contacts = {

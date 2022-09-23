@@ -8,11 +8,6 @@ import Greenhouse from 'assets/aboutImg/img5.png'
 import Slaughter from 'assets/aboutImg/img6.png'
 import Cooperation from 'assets/aboutImg/img7.png'
 
-import RabbitCard from 'assets/typeOfActivty/rabbitS.png'
-import SternBaseCard from 'assets/typeOfActivty/RabbitFeed.png'
-import GreenhouseCard from 'assets/typeOfActivty/green1.png'
-import MineralFertilizersCard from 'assets/typeOfActivty/MineralFeed.png'
-
 
 const rabbit: ICard = {
   image: Rabbit,
@@ -168,7 +163,7 @@ const AboutActivity = [
 const TypesOfActivtyCard = [
 
   {
-    image: RabbitCard,
+    image: Rabbit,
     route: '/activity?name=rabbit',
     title: {
       uz: 'Кролиководство',
@@ -177,7 +172,7 @@ const TypesOfActivtyCard = [
     },
   },
   {
-    image: SternBaseCard,
+    image: SternBase,
     route: '/activity?name=sternBase',
     title: {
       uz: 'Корма',
@@ -186,7 +181,7 @@ const TypesOfActivtyCard = [
     },
   },
   {
-    image: GreenhouseCard,
+    image: Greenhouse,
     route: '/activity?name=greenhouse',
     title: {
       uz: 'Теплица',
@@ -195,7 +190,7 @@ const TypesOfActivtyCard = [
     },
   },
   {
-    image: MineralFertilizersCard,
+    image: MineralFertilizers,
     route: '/activity?name=mineralFertilizers',
     title: {
       uz: `Удобрения`,

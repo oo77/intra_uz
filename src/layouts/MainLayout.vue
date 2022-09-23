@@ -8,8 +8,8 @@
 
     <q-page-container>
       <q-img :src="images.typeProdBack"
-             class="absolute w-full top-900px"
-             fit="contain"/>
+             class="absolute w-100vw top-200 md:top-250 max-h-90"
+             fit="fill"/>
       <router-view/>
 
       <Footer/>

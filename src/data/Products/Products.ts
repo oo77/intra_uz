@@ -1,4 +1,4 @@
-import AboutUsMain from 'assets/icons/BackProd.png'
+import AboutUsMain from 'assets/icons/BackProd.webp'
 import freez1 from "assets/products/freez1.png"
 import freez2 from "assets/products/freez2.png"
 import freez3 from "assets/products/freez3.png"
