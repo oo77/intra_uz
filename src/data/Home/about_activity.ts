@@ -17,9 +17,9 @@ const rabbit: ICard = {
     en: `Rabbit breeding`
   },
   description: {
-    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteri bo'lib....`,
+    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteri bo'lib...`,
     ru: `Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области...`,
-    en: `Agricultural complex «МY Dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region and...`,
+    en: `Agricultural complex «Мy Dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region and...`,
   },
   to: {
     route: '/activity?name=rabbit',
@@ -58,7 +58,7 @@ const mineralFertilizers: ICard = {
   },
   description: {
     uz: `O&#39;zbekistonda quyon chiqindilarini qayta ishlash bo&#39;yicha organik o&#39;g&#39;itlar ishlab chiqaradigan yagona zavod. U bilan bog‘bonlar, fermerlar va ...`,
-    en: `The only factory throughout Uzbekistan for the processing of rabbit waste with the aim of manufacturing organic fertilizers. By the help ...`,
+    en: `The only factory throughout Uzbekistan for the processing of rabbit waste with the aim of manufacturing organic fertilizers. By the help...`,
     ru: `Единственный в Узбекистане завод по переработке кроличьих отходов для изготовления органических удобрений. С его помощью, мы помогаем садоводам и ...`,
   },
   to: {
@@ -132,14 +132,14 @@ const slaughter: ICard = {
 const cooperation: ICard = {
   image: Cooperation,
   title: {
-    uz: 'Kooperasiya',
+    uz: 'Kooperatsiya',
     ru: 'Кооперация',
     en: 'Cooperation '
   },
   description: {
     uz: `«Моя мечта» kompaniyasi har kimga qo&#39;shimcha daromadga ega boʻlish imkoniyatini qo&#39;lga kiritishda yordam beradi. Biz sizga quyonlarni yetishtirish texnologiyasi...`,
     ru: `Компания «Моя мечта» помогает каждому получить возможность дополнительного дохода. Мы проконсультируем вас по технологии выращивания кроликов...`,
-    en: `«Моя мечта» company enables everyone with the chance to earn extra income. We are eager to consult you in terms of rabbit breeding ...`,
+    en: `«Мy Dream» company enables everyone with the chance to earn extra income. We are eager to consult you in terms of rabbit breeding...`,
   },
   to: {
     route: '/activity?name=cooperation',
@@ -211,7 +211,7 @@ const TypesOfActivtyCard = [
     image: Cooperation,
     route: '/activity?name=cooperation',
     title: {
-      uz: 'Kooperasiya',
+      uz: 'Kooperatsiya',
       ru: 'Кооперация',
       en: 'Cooperation '
     },

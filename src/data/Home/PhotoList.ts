@@ -11,17 +11,22 @@ import mainImgSlyad10 from 'assets/mainCarousel/mainImgSlayd10.jpg'
 import mainImgSlyad11 from 'assets/mainCarousel/mainImgSlayd11.jpg'
 import mainImgSlyad12 from 'assets/mainCarousel/mainImgSlayd12.jpg'
 import mainImgSlyad13 from 'assets/mainCarousel/mainImgSlayd13.jpg'
+import mainImgSlyad14 from 'assets/mainCarousel/mainImgSlayd14.jpg'
+import mainImgSlyad15 from 'assets/mainCarousel/mainImgSlayd15.jpg'
 
-import location from 'assets/icons/location.jpg'
+import locationEn from 'assets/icons/locationEn.jpg'
+import locationUz from 'assets/icons/locationUz.jpg'
+import locationRu from 'assets/icons/locationRu.jpg'
 
 const PhotoMainList = [
   mainImgSlyad1,
   mainImgSlyad2,
   mainImgSlyad3,
-  mainImgSlyad4,
+
 
 ]
 const PhotoGalleryList = [
+  mainImgSlyad4,
   mainImgSlyad5,
   mainImgSlyad6,
   mainImgSlyad7,
@@ -31,7 +36,15 @@ const PhotoGalleryList = [
   mainImgSlyad11,
   mainImgSlyad12,
   mainImgSlyad13,
+  mainImgSlyad14,
+  mainImgSlyad15,
 ]
+
+const location = {
+  ru: locationRu,
+  en: locationEn,
+  uz: locationUz
+}
 
 export {
   PhotoMainList,

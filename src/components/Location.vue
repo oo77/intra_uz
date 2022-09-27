@@ -8,7 +8,7 @@
          md="text-32px"
          v-html="Titles.location[lang.prefix]"/>
 
-      <q-img :src="location"
+      <q-img :src="location[lang.prefix]"
              class="rounded-0 sm:rounded-3 w-100%"
              fit="cover"
              md="mx-0"

@@ -52,8 +52,16 @@ const Links = [
 
 
 const column = {
-  company1: `ООО "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
-  company2: "СП ООО “INTERTRADE HOLDING”",
+  company1: {
+    uz: `MChJ "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
+    ru: `ООО "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
+    en: `LLC "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
+  },
+  company2: {
+    uz: `QK MChJ "INTERTRADE HOLDING"`,
+    ru: `СП ООО "INTERTRADE HOLDING"`,
+    en: `JV LLC "INTERTRADE HOLDING"`
+  },
   socialLink: [
     {
       socialName: "facebook",
@@ -96,8 +104,8 @@ const contactUs = {
       icon: "fa-solid fa-location-dot",
       text: {
         ru: `110907, Республика Узбекистан,<br> Ташкентская область, <br>Куйичирчикский район, Беруний`,
-        uz: `10907, O‘zbekiston Respublikasi, <br> Toshkent viloyati, <br> Quyichirchiq tumani, Beruniy`,
-        en: `10907, Republic of Uzbekistan,<br> Tashkent region, <br>Kuyichirchik district, Beruniy`
+        uz: `110907, O‘zbekiston Respublikasi, <br> Toshkent viloyati, <br> Quyichirchiq tumani, Beruniy`,
+        en: `110907, Republic of Uzbekistan,<br> Tashkent region, <br>Kuyichirchik district, Beruniy`
       }
     },
     {

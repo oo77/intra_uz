@@ -3,7 +3,7 @@
     <!-- Menu Dropdown -->
     <q-btn-dropdown
       class="lt-md c-black h-50px"
-      content-class="w-40 rounded-xl h-hit"
+      content-class="w-fit rounded-xl h-hit"
       rounded
       dropdown-icon="menu"
       size="md"
@@ -25,7 +25,7 @@
 
     <!-- nav icon-->
     <router-link to="/">
-      <q-icon :name="'img:'+(lang.isPrefix('en')? logoen : logo)" size="10rem"/>
+      <q-icon :name="'img:'+(lang.isPrefix('en')? logoen : logo)" class=" py-3 w-10rem h-5rem"/>
     </router-link>
 
     <!--    nav menu XS and SM  hidden-->
