@@ -73,8 +73,8 @@
 
 <script lang="ts" setup>
 import {Links} from "src/data/BarsData/Lang";
-import logoen from 'src/assets/logoEn.svg'
-import logo from 'src/assets/logo.svg'
+import logoen from 'assets/logoEn.svg'
+import logo from 'assets/logo.svg'
 import {useRoute} from 'vue-router'
 import {useLanguageStore} from "stores/lang";
 
