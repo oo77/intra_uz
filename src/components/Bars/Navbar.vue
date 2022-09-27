@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-100vw flex justify-around items-center py-2 bg-white z-1000" sm="py-4">
+  <nav class="w-100vw flex justify-around items-center bg-white z-1000" sm="py-4">
     <!-- Menu Dropdown -->
     <q-btn-dropdown
       class="lt-md c-black h-50px"
@@ -25,7 +25,7 @@
 
     <!-- nav icon-->
     <router-link to="/">
-      <q-img :src="logo" class="w-25vw max-w-174px" fit="contain"/>
+      <q-icon :name="'img:'+(lang.isPrefix('en')? logoen : logo)" size="10rem"/>
     </router-link>
 
     <!--    nav menu XS and SM  hidden-->
@@ -72,7 +72,9 @@
 </template>
 
 <script lang="ts" setup>
-import {Links, logo, logoBlack} from "src/data/BarsData/Lang";
+import {Links} from "src/data/BarsData/Lang";
+import logoen from 'src/assets/logoEn.svg'
+import logo from 'src/assets/logo.svg'
 import {useRoute} from 'vue-router'
 import {useLanguageStore} from "stores/lang";
 

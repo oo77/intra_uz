@@ -18,6 +18,7 @@
                       :name="img"
                       class="rounded-0 lg:rounded-3"
                       :img-src="PhotoGalleryList[img-1]"
+
     >
     </q-carousel-slide>
   </q-carousel>

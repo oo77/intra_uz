@@ -1,45 +1,44 @@
 import {Routes} from '../types'
-import logoBlack from 'assets/logoBlack.png'
-import logo from 'assets/DreamLogo.png'
+import typeProdBack from 'assets/BackGround.webp'
 import instagram from 'assets/icons/instagaramIcon.svg'
 
 const home: Routes = {
   routeName: {
-    uz: "Главная",
+    uz: "Bosh sahifa",
     ru: "Главная",
-    en: "Главная"
+    en: "Home page"
   },
   route: '/'
 }
 const aboutUs: Routes = {
   routeName: {
-    uz: "О компании",
+    uz: "Kompaniya haqida",
     ru: "О компании",
-    en: "О компании"
+    en: "About company"
   },
   route: '/aboutUs'
 }
 const products: Routes = {
   routeName: {
-    uz: "Продукция",
+    uz: "Mahsulotlar",
     ru: "Продукция",
-    en: "Продукция"
+    en: "Products"
   },
   route: '/products'
 }
 const partners: Routes = {
   routeName: {
-    uz: "Партнеры",
+    uz: "Hamkorlarimiz",
     ru: "Партнеры",
-    en: "Партнеры"
+    en: "Partners"
   },
   route: '/partners'
 }
 const contacts: Routes = {
   routeName: {
-    uz: "Контакты",
+    uz: "Bog'lanish",
     ru: "Контакты",
-    en: "Контакты"
+    en: "Contacts"
   },
   route: '/contacts'
 }
@@ -66,7 +65,7 @@ const column = {
     },
     {
       socialName: "instagram",
-      icon: "img:" +instagram,
+      icon: "img:" + instagram,
     },
     {
       socialName: "telegram",
@@ -76,45 +75,70 @@ const column = {
 };
 const about = {
   title: {
-    uz: "О нас",
+    uz: "Biz haqimizda",
     ru: "О нас",
-    en: "О нас",
+    en: "About us",
   },
   description: {
-    uz: "Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.",
+    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteridir. Ushbu loyiha barcha Yevropa standartlariga javob beradigan ilg&#39;or texnologiyalar bo&#39;yicha italiyalik mutaxassislar tomonidan ishlab chiqilgan.`,
     ru: "Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.",
-    en: "Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.",
+    en: `Agricultural complex «My dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region. The complex was designed by Italian specialists using advanced technology that meets all European standards and requirements. `,
   }
 };
 const contactUs = {
   title: {
-    uz: "Контакты",
+    uz: "Bog'lanish",
     ru: "Контакты",
-    en: "Контакты",
+    en: "Contacts",
   },
   contact: [
     {
       icon: "fa-solid fa-location-dot",
-      text: `110907, Республика Узбекистан,<br/> Ташкентская область,
-              <br/>Куйичирчикский район, Беруний`
+      text: {
+        ru: `110907, Республика Узбекистан,<br> Ташкентская область, <br>Куйичирчикский район, Беруний`,
+        uz: `10907, O‘zbekiston Respublikasi, <br> Toshkent viloyati, <br> Quyichirchiq tumani, Beruniy`,
+        en: `10907, Republic of Uzbekistan,<br> Tashkent region, <br>Kuyichirchik district, Beruniy`
+      }
     },
     {
-      icon:"fa-solid fa-phone",
-      text: "+998-99-849-60-33",
+      icon: "fa-solid fa-phone",
+      text: {
+        ru: "+998-99-849-60-33",
+        uz: "+998-99-849-60-33",
+        en: "+998-99-849-60-33",
+      },
     },
     {
       icon: "fa-solid fa-envelope",
-      text: "info@my-dream.uz"
+      text: {
+        ru: "info@my-dream.uz",
+        uz: "info@my-dream.uz",
+        en: "info@my-dream.uz",
+      }
     }
   ]
 }
 
+const chapter = {
+  en: 'Sections',
+  uz: `Bo'limlar`,
+  ru: `Разделы`
+}
+
+const copyRight = {
+  en: '2022 @UzTech, Inc. All rights reserved.',
+  ru: '2022 @UzTech все права защищены',
+  uz: '2022 @UzTech Barcha huquqlar himoyalangan'
+
+}
+
 export {
   Links,
-  logo,
-  logoBlack,
+  typeProdBack,
   column,
   about,
-  contactUs
+  contactUs,
+  chapter,
+  copyRight
 }
 

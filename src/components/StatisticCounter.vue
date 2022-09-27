@@ -37,18 +37,18 @@ let count3 = ref(0);
 const countName = {
   products: {
     ru: 'Продукции',
-    uz: 'Продукции',
-    en: 'Продукции',
+    uz: 'Maxsulotlar',
+    en: 'Products',
   },
   partners: {
     ru: 'Партнеры',
-    uz: 'Партнеры',
-    en: 'Партнеры',
+    uz: 'Hamkorlarimiz',
+    en: 'Partners',
   },
   staff: {
     ru: 'Сотрудники',
-    uz: 'Сотрудники',
-    en: 'Сотрудники',
+    uz: 'Hamkasblar',
+    en: 'Staff',
   },
 }
 
