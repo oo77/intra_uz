@@ -21,15 +21,15 @@
         <div class="grid h-fit">
           <p class=" text-center my-0 text-26px c-#39B44A mb-1 font-600 leading-tight"
              lg="text-left mb-30px text-32px"
-             v-html="AboutActivity[item-1].title[prefix]"/>
+             v-html="AboutActivity[item-1].title[lang.prefix]"/>
           <p class="content xl:text-20px sm:text-16px text-12px lg:text-left xl:text-left text-justify lg:text-left "
-             v-html="AboutActivity[item-1].description[prefix]"/>
+             v-html="AboutActivity[item-1].description[lang.prefix]"/>
           <q-btn class="normal-case text-20px rounded-lg c-#39B44A flex items-center justify-self-center transition-duration-400"
                  hover="bg-white shadow-sm shadow-#39B44A font-600 transition-duration-400"
                  md="justify-self-end"
                  unelevated
                  @click="goTo(AboutActivity[item-1])"
-                 v-html="AboutActivity[item-1].to[prefix]"
+                 v-html="AboutActivity[item-1].to[lang.prefix]"
           />
         </div>
       </q-carousel-slide>
@@ -43,7 +43,7 @@ import {useLanguageStore} from 'src/stores/lang'
 import {useRouter} from 'vue-router'
 import {AboutActivity} from "src/data/Home/about_activity";
 
-const prefix = useLanguageStore().prefix
+const lang = useLanguageStore()
 const router = useRouter();
 let slide = ref(1)
 

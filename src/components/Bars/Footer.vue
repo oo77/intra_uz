@@ -7,8 +7,8 @@
           <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="w-100% h-15"/>
         </div>
 
-        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company1"/>
-        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company2"/>
+        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company1[lang.prefix]"/>
+        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company2[lang.prefix]"/>
         <ul class="list-none pa-0 mt-5px flex gap-15px">
           <li v-for="link in column.socialLink">
             <q-icon :name="link.icon" class="c-white" size="sm"/>
@@ -53,11 +53,11 @@
 
     <div class="px-30px col border-b-1 border-white py-10px lt-md">
       <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="h-30% w-120px mb-20px q-mx-auto block"/>
-      <p class="text-16px c-white text-center" v-html="column.company1"/>
-      <p class="text-16px c-white text-center" v-html="column.company2"/>
+      <p class="text-16px c-white text-center" v-html="column.company1[lang.prefix]"/>
+      <p class="text-16px c-white text-center" v-html="column.company2[lang.prefix]"/>
 
       <ul class="list-none pa-0 ma-0 block opacity-70">
-        <li v-for="con in contactUs.contact" class="text-12px c-white text-center my-10px" v-html="con.text"/>
+        <li v-for="con in contactUs.contact" class="text-12px c-white text-center my-10px" v-html="con.text[lang.prefix]"/>
       </ul>
 
       <ul class="q-mx-auto list-none ma-0 pa-0 flex justify-center gap-15px">
