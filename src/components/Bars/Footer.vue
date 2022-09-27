@@ -4,7 +4,7 @@
     <div class="container pt-30px flex items-start justify-center gap-20px border-b-1 border-white gt-sm z-0">
       <div class="col ml-5vw">
         <div class="h-30% w-150px my-10px">
-          <q-img :src="logoBlack" fit="contain"/>
+          <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="w-100% h-15"/>
         </div>
 
         <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company1"/>
@@ -30,14 +30,14 @@
               class="mr-10px c-white"
               size="sm"
             ></q-icon>
-            <p class="text-14px opacity-70" v-html="con.text"/>
+            <p class="text-14px opacity-70" v-html="con.text[lang.prefix]"/>
           </li>
         </ul>
       </div>
 
       <div class="col gt-md">
         <div class="absolute">
-          <p class="text-14px c-white font-600">Разделы</p>
+          <p class="text-14px c-white font-600">{{ chapter[lang.prefix] }}</p>
           <ul class="list-none pa-0 items-start c-white">
             <li v-for="link in Links" class="flex">
               <p class="text-14px  mb-5px  cursor-pointer opacity-70 transition-duration-200"
@@ -52,10 +52,7 @@
     </div>
 
     <div class="px-30px col border-b-1 border-white py-10px lt-md">
-      <q-img :src="logoBlack"
-             class="h-30% w-120px mb-20px q-mx-auto block"
-             fit="contain"
-      />
+      <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="h-30% w-120px mb-20px q-mx-auto block"/>
       <p class="text-16px c-white text-center" v-html="column.company1"/>
       <p class="text-16px c-white text-center" v-html="column.company2"/>
 
@@ -77,14 +74,16 @@
          tag="div"
          target="_blank"
       >
-        2022 @UzTech все права защищены
+        {{copyRight[lang.prefix]}}
       </a>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {about, column, contactUs, Links, logoBlack} from "src/data/BarsData/Lang"
+import {about, column, contactUs, Links, chapter, copyRight} from "src/data/BarsData/Lang"
+import logoWhiteRu from 'src/assets/logoWhiteru.svg'
+import logoWhiteEn from 'src/assets/logoWhiteen.svg'
 import {useLanguageStore} from "stores/lang";
 import {useRouter} from "vue-router";
 

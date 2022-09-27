@@ -1,13 +1,13 @@
-import PartnersMain from 'assets/icons/BackPartner.webp'
+import PartnersMain from 'assets/icons/BackPartner.png'
 import {Partners} from "src/data/types";
-import anaPartner from 'assets/partners/anaPartner.webp'
-import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.webp'
-import FRAGOLApartner from 'assets/partners/FRAGOLApartner.webp'
-import MeneghinPArtner from 'assets/partners/MeneghinPArtner.webp'
-import PrimeranoPartner from 'assets/partners/PrimeranoPartner.webp'
-import SintPartner from 'assets/partners/SintPartner.webp'
-import P4energyPartner from 'assets/partners/P4energyPartner.webp'
-import AiaPartner from 'assets/partners/AiaPartner.webp'
+import anaPartner from 'assets/partners/anaPartner.png'
+import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.png'
+import FRAGOLApartner from 'assets/partners/FRAGOLApartner.png'
+import MeneghinPArtner from 'assets/partners/MeneghinPArtner.png'
+import PrimeranoPartner from 'assets/partners/PrimeranoPartner.png'
+import SintPartner from 'assets/partners/SintPartner.png'
+import P4energyPartner from 'assets/partners/P4energyPartner.png'
+import AiaPartner from 'assets/partners/AiaPartner.png'
 
 
 
@@ -65,8 +65,8 @@ const PartnersInfo: Partners[] = [
 const PartnersContent = {
   title: {
     ru: 'Наши партнеры',
-    en: 'Наши партнеры',
-    uz: 'Наши партнеры',
+    en: 'Our partners',
+    uz: 'Bizning hamkorlarimiz',
   },
   description1: {
     ru: '',
@@ -75,18 +75,18 @@ const PartnersContent = {
   },
   description2: {
     ru: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
-    en: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
-    uz: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
+    en: `Agrocomplex "My Dream" offers long-term and mutually beneficial cooperation. Do not miss the opportunity to get a reliable supplier with a guarantee of uninterrupted supplies.`,
+    uz: `«Моя Мечта» agrokompleksi uzoq muddatli va o'zaro manfaatli hamkorlikni taklif etadi. Uzluksiz hamda ishonchli etkazib beruvchi hamkor bilan aloqa qilish imkoniyatini boy bermang.`,
   },
   subscribe: {
     ru: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
-    en: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
-    uz: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
+    en: `DO YOU WANT TO COOPERATE WITH US?`,
+    uz: `BIZ BILAN HAMKORLIK QILISHNI XOHLAYSIZMI?`,
   },
   press: {
     ru: `Нажмите`,
-    en: `Нажмите`,
-    uz: `Нажмите`,
+    en: `Click`,
+    uz: `Bosing`,
   }
 }
 

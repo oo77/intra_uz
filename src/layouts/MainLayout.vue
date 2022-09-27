@@ -7,7 +7,7 @@
     </q-header>
 
     <q-page-container>
-      <q-img :src="images.typeProdBack"
+      <q-img :src="typeProdBack"
              class="absolute w-100vw top-200 md:top-250 max-h-90"
              fit="fill"/>
       <router-view/>
@@ -32,7 +32,7 @@
 
 
 <script lang="ts" setup>
-import {images} from "src/utils/ImgLocation";
+import {typeProdBack} from 'src/data/BarsData/Lang.ts'
 import Navbar from "components/Bars/Navbar.vue";
 import Footer from "components/Bars/Footer.vue";
 </script>

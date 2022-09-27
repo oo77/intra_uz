@@ -1,23 +1,23 @@
  export const Titles = {
   partnersTitle: {
     ru: 'Наши партнеры',
-    en: 'Наши партнеры',
-    uz: 'Наши партнеры',
+    en: 'Our Partners',
+    uz: 'Bizning hamkorlarimiz',
   },
    typeOfActivity: {
      ru: 'Направления деятельности',
-     en: 'Направления деятельности',
-     uz: 'Направления деятельности',
+     en: 'Areas of activity',
+     uz: `Faoliyat yo'nalishlari`,
    },
    gallery: {
      ru: 'Фотогалерея',
-     en: 'Фотогалерея',
-     uz: 'Фотогалерея',
+     en: 'Gallery',
+     uz: 'Fotogalereya',
    },
    location: {
      ru: 'Наш адрес',
-     en: 'Наш адрес',
-     uz: 'Наш адрес',
+     en: 'Our address',
+     uz: 'Bizning manzilimiz',
    }
 
 

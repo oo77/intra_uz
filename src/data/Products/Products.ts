@@ -1,4 +1,4 @@
-import AboutUsMain from 'assets/icons/BackProd.webp'
+import AboutUsMain from 'assets/icons/BackProd.jpg'
 import freez1 from "assets/products/freez1.png"
 import freez2 from "assets/products/freez2.png"
 import freez3 from "assets/products/freez3.png"
@@ -20,13 +20,13 @@ const Products = {
         image: freez1,
         title: {
           ru: 'Ножки кролика',
-          en: 'Ножки кролика',
-          uz: 'Ножки кролика',
+          en: 'Rabbit legs',
+          uz: 'Quyon oyoqlari',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г.,  Энергетическая ценность: 199 ккал.',
+          en: 'Expiration date: by t from +2°C to +4°C - 18 days Nutritional Value: Protein - 21 г., fat - 13 g.,  Energy value: 199 kcal.',
+           uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 18 kun Oziqlanish qiymati: oqsil - 21 g, yog ' - 13 g, energiya qiymati: 199 kkal.`,
         }
       },
       {
@@ -34,13 +34,13 @@ const Products = {
         image: freez2,
         title: {
           ru: 'Полутушка кролика',
-          en: 'Полутушка кролика',
-          uz: 'Полутушка кролика',
+          en: `Rabbit 's half - shell`,
+          uz: `Quyonning yarim qobig'i`,
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г.,  Энергетическая ценность: 199 ккал.',
+          en: 'Expiration date: by t from +2°C to +4°C - 18 days Nutritional Value: Protein - 21 г., fat - 13 g.,  Energy value: 199 kcal.',
+           uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 18 kun Oziqlanish qiymati: oqsil - 21 g, yog ' - 13 g, energiya qiymati: 199 kkal.`,
         }
       },
       {
@@ -48,27 +48,27 @@ const Products = {
         image: freez3,
         title: {
           ru: 'Спинка кролика',
-          en: 'Спинка кролика',
-          uz: 'Спинка кролика',
+          en: `Rabbit's back`,
+          uz: 'Quyonning orqa tomoni',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 19 г., жир - 11 г., Углеводы - 0 г. Энергетическая ценность: 175 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 19 г., жир - 11 г., Углеводы - 0 г. Энергетическая ценность: 175 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 19 г., жир - 11 г., Углеводы - 0 г. Энергетическая ценность: 175 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 19 г., жир - 13 г.,  Энергетическая ценность: 173 ккал.',
+          en: 'Expiration date: by t from +2°C to +4°C - 18 days Nutritional Value: Protein - 19 г., fat - 13 g.,  Energy value: 173 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 18 kun Oziqlanish qiymati: oqsil - 19 g, yog ' - 13 g, energiya qiymati: 173 kkal.`,
         }
       },
       {
-        name: 'Филе кролика\n',
+        name: 'Филе кролика',
         image: freez4,
         title: {
           ru: 'Филе кролика',
-          en: 'Филе кролика',
-          uz: 'Филе кролика',
+          en: 'Rabbit fillet',
+          uz: 'Quyon filesi',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г., Углеводы - 0 г. Энергетическая ценность: 199 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 18 суток Пищевая ценность: Белок - 21 г., жир - 13 г.,  Энергетическая ценность: 199 ккал.',
+          en: 'Expiration date: by t from +2°C to +4°C - 18 days Nutritional Value: Protein - 21 г., fat - 13 g.,  Energy value: 199 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 18 kun Oziqlanish qiymati: oqsil - 21 g, yog ' - 13 g, energiya qiymati: 199 kkal.`,
         }
       }
     ],
@@ -81,13 +81,13 @@ const Products = {
         image: semi1,
         title: {
           ru: 'Шницель',
-          en: 'Шницель',
-          uz: 'Шницель',
+          en: 'Schnitzel',
+          uz: 'Shnitsel',
         },
         description: {
           ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 15 г., жир - 12 г., Углеводы - 10 г. Энергетическая ценность: 206 ккал',
-          en: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 15 г., жир - 12 г., Углеводы - 10 г. Энергетическая ценность: 206 ккал',
-          uz: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 15 г., жир - 12 г., Углеводы - 10 г. Энергетическая ценность: 206 ккал',
+          en: 'Expiration date: at t from +2 °C to +4 °C - 5 days Nutritional value: Protein - 15 g., fat - 12 g., Carbohydrates - 10 g. Energy value: 206 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 5 kun oziqlanish qiymati: oqsil - 15 g, yog' - 12 g, uglevodlar- 10 g.energiya qiymati: 206 kkal.`,
         }
       },
       {
@@ -95,13 +95,13 @@ const Products = {
         image: semi2,
         title: {
           ru: 'Котлета',
-          en: 'Котлета',
-          uz: 'Котлета',
+          en: 'Cutlet',
+          uz: 'Kotlet',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 15 г., жир - 12 г., Углеводы - 10 г. Энергетическая ценность: 206 ккал',
+          en: 'Expiration date: at t from +2 °C to +4 °C - 5 days Nutritional value: Protein - 15 g., fat - 12 g., Carbohydrates - 10 g. Energy value: 206 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 5 kun oziqlanish qiymati: oqsil - 15 g, yog' - 12 g, uglevodlar- 10 g.energiya qiymati: 206 kkal.`,
         }
       },
       {
@@ -109,13 +109,13 @@ const Products = {
         image: semi3,
         title: {
           ru: 'Фрикадельки',
-          en: 'Фрикадельки',
-          uz: 'Фрикадельки',
+          en: 'Meatballs',
+          uz: 'Frikadelka',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17,7 г., жир - 19,7 г., Углеводы - 1,5 г. Энергетическая ценность: 253 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17,7 г., жир - 19,7 г., Углеводы - 1,5 г. Энергетическая ценность: 253 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17,7 г., жир - 19,7 г., Углеводы - 1,5 г. Энергетическая ценность: 253 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 15 г., жир - 12 г., Углеводы - 10 г. Энергетическая ценность: 253 ккал',
+          en: 'Expiration date: at t from +2 °C to +4 °C - 5 days Nutritional value: Protein - 15 g., fat - 12 g., Carbohydrates - 10 g. Energy value: 253 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 5 kun oziqlanish qiymati: oqsil - 15 g, yog' - 12 g, uglevodlar- 10 g.energiya qiymati: 253 kkal.`,
         }
       },
       {
@@ -123,13 +123,13 @@ const Products = {
         image: semi4,
         title: {
           ru: 'Котлета',
-          en: 'Котлета',
-          uz: 'Котлета',
+          en: 'Cutlet',
+          uz: 'Kotlet',
         },
         description: {
           ru: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 5 суток Пищевая ценность: Белок - 17 г., жир - 13 г., Углеводы - 2 г. Энергетическая ценность: 197 ккал.',
+          en: `Expiration date: at t from +2 °C to +4 °C - 5 days Nutritional value: Protein - 17 g., fat - 13 g., Carbohydrates - 2 g. Energy value: 197 kcal.`,
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 5 kun oziqlanish qiymati: oqsil - 17 g, yog ' - 13 g, uglevodlar-2 g.energiya qiymati: 197 kkal.`,
         }
       },
     ],
@@ -142,13 +142,13 @@ const Products = {
         image: sub1,
         title: {
           ru: 'Печень кролика',
-          en: 'Печень кролика',
-          uz: 'Печень кролика',
+          en: 'Rabbit liver',
+          uz: 'Quyon jigari',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 19 г., жир - 10 г., Углеводы - 0 г. Энергетическая ценность: 166 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 19 г., жир - 10 г., Углеводы - 0 г. Энергетическая ценность: 166 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 19 г., жир - 10 г., Углеводы - 0 г. Энергетическая ценность: 166 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 19 г., жир - 10 г.,  Энергетическая ценность: 166 ккал.',
+          en: 'Expiration date: at t from +2 °C to +4 °C - 10 days Nutritional value: Protein - 19 g, fat - 10 g, Energy value: 166 kcal.',
+          uz: `Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 10 kun oziqlanish qiymati: oqsil - 19 g, yog ' - 10 g, energiya qiymati: 166 kkal.`,
         }
       },
       {
@@ -156,13 +156,13 @@ const Products = {
         image: sub2,
         title: {
           ru: 'Языки кролика',
-          en: 'Языки кролика',
-          uz: 'Языки кролика',
+          en: 'Rabbit tongues',
+          uz: 'Quyon tillari',
         },
         description: {
-          ru: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
-          en: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
-          uz: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
+          ru: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 21 г., жир - 7 г.,  Энергетическая ценность: 147 ккал.',
+          en: 'Expiration date: at t -18 °C - 90 days Nutritional value: Protein - 21 g, fat - 7 g, Energy value: 147 kcal.',
+          uz: `Yaroqlilik muddati: t -18°C da - 90 kun oziqlanish qiymati: oqsil - 21 g, yog ' - 7 g, energiya qiymati: 147 kkal.`,
         }
       },
       {
@@ -170,13 +170,13 @@ const Products = {
         image: sub3,
         title: {
           ru: 'Сердце кролика',
-          en: 'Сердце кролика',
-          uz: 'Сердце кролика',
+          en: 'Rabbit heart',
+          uz: 'Quyonning yuragi',
         },
         description: {
-          ru: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
-          en: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
-          uz: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 21 г., жир - 7 г., Углеводы - 0 г. Энергетическая ценность: 147 ккал.',
+          ru: 'Срок годности: при t от +2°C до +4°C - 10 суток Пищевая ценность: Белок- 21 г., жир - 7 г.,  Энергетическая ценность: 147 ккал.',
+          en: 'Expiration date: at t from +2 °C to +4 °C - 10 days Nutritional value: Protein - 21 g, fat - 7 g, Energy value: 147 kcal.',
+          uz: 'Yaroqlilik muddati: t + 2°C dan + 4°C gacha - 10 kun oziqlanish qiymati: oqsil - 21 g, yog \' - 7 g, energiya qiymati: 147 kkal.',
         }
       },
       {
@@ -184,13 +184,13 @@ const Products = {
         image: sub4,
         title: {
           ru: 'Почки кролика',
-          en: 'Почки кролика',
-          uz: 'Почки кролика',
+          en: 'Rabbit kidneys',
+          uz: 'Quyon kurtaklari',
         },
         description: {
-          ru: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 19 г., жир - 8 г., Углеводы - 0 г. Энергетическая ценность: 148 ккал.',
-          en: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 19 г., жир - 8 г., Углеводы - 0 г. Энергетическая ценность: 148 ккал.',
-          uz: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 19 г., жир - 8 г., Углеводы - 0 г. Энергетическая ценность: 148 ккал.',
+          ru: 'Срок годности: при t -18°C - 90 суток Пищевая ценность: Белок- 19 г., жир - 8 г.,  Энергетическая ценность: 148 ккал.',
+          en: 'Expiration date: at t -18 °C - 90 days Nutritional value: Protein - 19 g, fat - 8 g, Energy value: 148 kcal.',
+          uz:  `Yaroqlilik muddati: t -18°C da - 90 kun oziqlanish qiymati: oqsil - 19 g, yog ' - 8 g, energiya qiymati: 148 kkal.`,
         }
       },
 
@@ -200,31 +200,31 @@ const Products = {
 const ProductsTitle = {
   freezeProducts: {
     ru: 'Охлажденная, замороженная продукция:',
-    en: 'Охлажденная, замороженная продукция:',
-    uz: 'Охлажденная, замороженная продукция:',
+    en: 'Chilled, frozen products:',
+    uz: 'Sovutilgan, muzlatilgan mahsulotlar:',
   },
   semiProducts: {
     ru: 'Полуфабрикаты охлажденные рубленные:',
-    en: 'Полуфабрикаты охлажденные рубленные:',
-    uz: 'Полуфабрикаты охлажденные рубленные:',
+    en: 'Semi-finished products, chilled, chopped:',
+    uz:  `Sovutilgan tug'ralgan yarim tayyor mahsulotlar:`,
   },
   subProducts: {
     ru: 'Субпродукты:',
-    en: 'Субпродукты:',
-    uz: 'Субпродукты:',
+    uz: 'Yarim tayyor mahsulotlar:',
+    en: 'By-products:',
   },
   differentProducts: {
     ru: 'Разные продукты:',
-    en: 'Разные продукты:',
-    uz: 'Разные продукты:',
+    en: 'Different products:',
+    uz: 'Turli mahsulot:',
   }
 }
 
 const Content = {
   title: {
     ru: 'Продукция',
-    en: 'Продукция',
-    uz: 'Продукция',
+    uz: 'Mahsulotlar',
+    en: 'Products',
   },
   description: {
     ru: ``,
