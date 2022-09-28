@@ -43,7 +43,8 @@ const PhotoGalleryList = [
 const location = {
   ru: locationRu,
   en: locationEn,
-  uz: locationUz
+  uz: locationUz,
+  uzK: locationUz,
 }
 
 export {

@@ -38,16 +38,19 @@ const countName = {
   products: {
     ru: 'Продукции',
     uz: 'Maxsulotlar',
+    uzK: 'Махсулотлар',
     en: 'Products',
   },
   partners: {
     ru: 'Партнеры',
     uz: 'Hamkorlarimiz',
+    uzK: 'Ҳамкорларимиз',
     en: 'Partners',
   },
   staff: {
     ru: 'Сотрудники',
-    uz: 'Hamkasblar',
+    uz: 'Xodimlar',
+    uzK: 'Ходимлар',
     en: 'Staff',
   },
 }

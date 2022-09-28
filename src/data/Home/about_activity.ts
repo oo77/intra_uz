@@ -47,7 +47,7 @@ const laboratory: ICard = {
     ru: `Генетический центр работает в режиме онлайн с генетическим центром ANCI в Италии.Также, компания занимается разведением мясных пород кроликов...`,
     uz: `Bizning genetik markaz Italiyadagi ANCI genetik markazi bilan onlayn ish faoliyatini olib boradi. Shuningdek, kompaniya...`,
     en: `The genetical center functions online along with the ANCI genetical center in Italy. Besides, the company is engaged in...`,
-    uzK: `Бизнинг генетик марказ Италиядаги АНCИ генетик маркази билан онлайн иш фаолиятини олиб боради. Шунингдек, компания`
+    uzK: `Бизнинг генетик марказ Италиядаги АНCИ генетик маркази билан онлайн иш фаолиятини олиб боради. Шунингдек, компания...`
   },
   to: {
     route: '/activity?name=laboratory',
@@ -110,7 +110,7 @@ const greenhouse: ICard = {
     uz: 'Issiqxona',
     ru: 'Теплица',
     en: 'Greenhouse',
-    uzK: ``
+    uzK: `Иссиқхона`
   },
   description: {
     uz: `10 gektar maydonga ega yuqori mahsuldor boʻlgan toʻliq avtomatlashtirilgan shishali issiqxonada eng yangi va barcha Yevropa standartlariga javob beradigan texnologik uskunalardan foydalanilgan...`,
@@ -119,7 +119,7 @@ const greenhouse: ICard = {
 
     en: `Totally automatic high-yield glass greenhouse with an area of   10 hectares utilizes the latest technological machinery and is in accord with all European standards...`,
 
-    uzK: `10 гектар майдонга ега юқори маҳсулдор бўлган тўлиқ автоматлаштирилган шишали иссиқхонада енг янги ва барча Европа стандартларига жавоб берадиган технологик ускуналардан фойдаланилган...`
+    uzK: `10 гектар майдонга ега юқори маҳсулдор бўлган тўлиқ автоматлаштирилган шишали иссиқхонада енг янги ва барча Европа стандартларига жавоб берадиган...`
   },
   to: {
     route: '/activity?name=greenhouse',

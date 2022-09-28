@@ -10,9 +10,9 @@ const Contacts = {
   },
   subtitle: {
     ru: 'Агрокомплекс <br> «Моя Мечта»',
-    uz: '«Моя Мечта» <br> Agrokomleksi' ,
+    uz: '«Моя Мечта» <br> Agrokompleksi' ,
     en: 'Agrocomplex <br> «My Dream»',
-    uzK: '«Моя Мечта» <br> Агрокомлексияси' ,
+    uzK: '«Моя Мечта» <br> Агрокомплекси' ,
   },
   subText: {
     ru: 'Ваша заявка будет рассмотрена нашими специалистами.',
@@ -107,13 +107,13 @@ const Contacts = {
       ru: 'Отправить',
       en: 'Send',
       uz: 'Yuborish',
-      uzK: '',
+      uzK: 'Юбориш',
     },
     thanks: {
       ru: 'Спасибо',
       en: 'Thank you',
       uz: 'Raxmat',
-      uzK: 'Юбориш',
+      uzK: 'Рахмат',
     },
     attantion:{
       ru: 'Ваша заявка будет рассмотрена нашими специалистами.',

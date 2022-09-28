@@ -34,7 +34,7 @@ const Activity = [
         ru: 'Кролиководство',
         en: 'Rabbit breeding',
         uz: 'Quyonchilik',
-        uzK: ''
+        uzK: 'Қуёнчилик'
       },
       content:
         {
@@ -73,7 +73,7 @@ const Activity = [
 
         uz: `Quyonlarni koʻpaytirish va boqish uchun toʻliq avtomatlashtirilgan, innovatsion va yuqori texnologiyali uskunalar Italiyaning <a href="https://www.meneghin.it/ita/" target="_blank">«Meneghin Srl»</a> kompaniyasi tomonidan ishlab chiqarilgan va yetkazib berilgan.<br><br>Italyan uskunalari bilan toʻliq jihozlangan sunʼiy urugʻlantirishga asoslangan laboratoriya quyonchilikni sanoat miqyosida amalga oshirishga yordam beradi. Bizning kompleksimiz quyonlarning boshqa turlari orasidagi eng foydali, qimmatli va goʻshtli vakillari boʻlgan Yangi Zelandiya va Kaliforniya zotlarining turlarini chatishtiradi.<br><br>Biz quyonlarning asl va foydali zotlarini, xususan “ Italiya Bianka oq quyonlari» zotlarini yetishtiramiz. Chunki bu quyonlar aynan oʻzining yuqori unumdorligi, foydaliligi va mahsuldorligi tufayli qimmatbaho goʻsht navlaridan biri hisoblanadi. Hozirgi vaqtda yetishtirilgan zot Yangi Zelandiyaning oq zotidan kelib chiqqan. Bu zot yuqori tugʻilish darajasi va maxsus onalik instinkti bilan ajralib turadi. U shuningdek kaliforniyalik “olachipor” quyonlariga ega tijorat reproduktorlarini ishlab chiqarishda keng qoʻllaniladi, bu esa ularning unumdorligi yuqori foizga chiqishiga va uzoq yashashiga taʼsir qiladi.`,
 
-        uzK: `Қуёнларни кўпайтириш ва боқиш учун тўлиқ автоматлаштирилган, инновацион ва юқори технологияли ускуналар Италиянинг <a href="https://www.meneghin.it/ita/" target="_blank">«Meneghin Srl»</a> компанияси томонидан ишлаб чиқарилган ва етказиб берилган.<br><br>Итальян ускуналари билан тўлиқ жиҳозланган сунъий уруғлантиришга асосланган лаборатория қуёнчиликни саноат миқёсида амалга оширишга ёрдам беради. Бизнинг комплексимиз қуёнларнинг бошқа турлари орасидаги энг фойдали, қимматли ва гўштли вакиллари бўлган Янги Зеландия ва Калифорния зотларининг турларини чатиштиради.<br><br>Биз қуёнларнинг асл ва фойдали зотларини, хусусан " Италия Бианка оқ қуёнлари" зотларини етиштирамиз. Чунки бу қуёнлар айнан ўзининг юқори унумдорлиги, фойдалилиги ва маҳсулдорлиги туфайли қимматбаҳо гўшт навларидан бири ҳисобланади. Ҳозирги вақтда етиштирилган зот Янги Зеландиянинг оқ зотидан келиб чиққан. Бу зот юқори туғилиш даражаси ва махсус оналик инстинкти билан ажралиб туради. У шунингдек калифорниялик «олачипор» қуёнларига эга тижорат репродукторларини ишлаб чиқаришда кенг қўлланилади, бу эса уларнинг унумдорлиги юқори фоизга чиқишига ва узоқ яшашига таъсир қилади.`,
+        uzK: `Қуёнларни кўпайтириш ва боқиш учун тўлиқ автоматлаштирилган, инновацион ва юқори технологияли ускуналар Италиянинг <a href="https://www.meneghin.it/ita/" target="_blank">«Meneghin Srl»</a> компанияси томонидан ишлаб чиқарилган ва етказиб берилган.<br><br>Итальян ускуналари билан тўлиқ жиҳозланган сунъий уруғлантиришга асосланган лаборатория қуёнчиликни саноат миқёсида амалга оширишга ёрдам беради. Бизнинг комплексимиз қуёнларнинг бошқа турлари орасидаги энг фойдали, қимматли ва гўштли вакиллари бўлган Янги Зеландия ва Калифорния зотларининг турларини чатиштиради.<br><br>Биз қуёнларнинг асл ва фойдали зотларини, хусусан "Италия Бианка оқ қуёнлари" зотларини етиштирамиз. Чунки бу қуёнлар айнан ўзининг юқори унумдорлиги, фойдалилиги ва маҳсулдорлиги туфайли қимматбаҳо гўшт навларидан бири ҳисобланади. Ҳозирги вақтда етиштирилган зот Янги Зеландиянинг оқ зотидан келиб чиққан. Бу зот юқори туғилиш даражаси ва махсус оналик инстинкти билан ажралиб туради. У шунингдек калифорниялик «олачипор» қуёнларига эга тижорат репродукторларини ишлаб чиқаришда кенг қўлланилади, бу эса уларнинг унумдорлиги юқори фоизга чиқишига ва узоқ яшашига таъсир қилади.`,
       },
 
       image: laboratoryImg
@@ -85,7 +85,7 @@ const Activity = [
       ru: 'Производство мультизлаковых кормов',
       en: 'Production of multi-grain feed',
       uz: 'Koʻp boshoqli yem mahsulotlari ishlab chiqarish',
-      uzK: 'кўп бошоқли ем маҳсулотлари ишлаб чиқариш',
+      uzK: 'Кўп бошоқли ем маҳсулотлари ишлаб чиқариш',
     },
     content1: {
       ru: `Наши кролики питаются комбинированными сухими кормами, приготовленными по специальной рецептуре, разработанной ведущими европейскими специалистами. Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
@@ -94,7 +94,7 @@ const Activity = [
 
       uz: `Bizning quyonlarimiz Yevropaning yetakchi mutaxassislari tomonidan ishlab chiqilgan maxsus retseptura boʻyicha tayyorlangan aralash quruq yem bilan oziqlanadi. Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
 
-      uzK: `Бизнинг қуёнларимиз Европанинг етакчи мутахассислари томонидан ишлаб чиқилган махсус рецептура бўйича тайёрланган аралаш қуруқ ем билан озиқланади.Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.`,
+      uzK: `Бизнинг қуёнларимиз Европанинг етакчи мутахассислари томонидан ишлаб чиқилган махсус рецептура бўйича тайёрланган аралаш қуруқ ем билан озиқланади. Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.`,
     },
     content2: {
       ru: '',
@@ -194,7 +194,8 @@ const Activity = [
     title: {
       uz: 'Qassobxona',
       ru: 'Бойня',
-      en: 'Slaughter'
+      en: 'Slaughter',
+      uzK: 'Қассобхона',
     },
     content1: {
       uz: `Shaxsiy, toʻliq avtomatlashtirilgan qassoblik sexi ishlab chiqarish hududida joylashgan. Shuning uchun quyonlar soʻyish joyiga yetkazish mobaynida hayajonlanish hissini boshdan kechirmaydi.<br><br>Zamonaviy qassoblik sexi <a href="https://www.sinttecnologie.com/" target="_blank">«SINT TECHNOLOGY»</a> (Italiya) kompaniyasi tomonidan ishlab chiqilgan va jihozlangan.<br><br>Quyonlarni toʻgʻri soʻyish va goʻsht mahsulotlarini qayta ishlashga taalluqli talablar, oʻz navbatida toʻliq karantin, ham vakuumli, ham Skin-qadoqlarni lozim darajada tozalash va qadoqlash ishlari amalga oshiriladi. Bunda goʻshtning qiymatini, shuningdek, minerallar va vitaminlarni saqlab qolishga erishiladi.<br><br>Sotishda bizning Kompaniyamiz ushbu mahsulotlarning aloqasizligini kafolatlaydi, Yaʼni oxirgi isteʼmolchining goʻsht bilan birinchi aloqasi oʻram ochilganda yuz beradi, bu esa, oʻz navbatida mahsulotimizning sifatini buzilmasligini taʼminlaydi.`,

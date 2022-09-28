@@ -128,7 +128,7 @@
 
           <q-card-actions class="flex justify-center" md="justify-end">
             <q-btn
-              class="py-5 px-20 rounded-10px"
+              class="py-5 px-20 rounded-10px w-120px"
               color="#39B44A"
               @click="sendMail(cred)"
             >{{ labels.send[lang.prefix].toUpperCase() }}
