@@ -29,16 +29,30 @@ const TypeOfsternBase = [
       ru: 'Корм для крупного рогатого скота',
       en: 'Cattle feed',
       uz: 'Yirik qoramol yemishi',
+      uzK: `Йирик қорамол емиши`
     },
     content1: {
       ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
+
       en: `All equipment is installed and assembled by well-known Italian company <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, which is considered to be one of the leading companies in the production of feed lines in the world for all types of animals.`,
-      uz: `Barcha jihozlar Italiyaning mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> kompaniyasi tomonidan oʻrnatilgan. Ushbu kompaniya barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish boʻyicha dunyodagi yetakchi kompaniyalardan biri hisoblanadi.`,
+
+      uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
+
+      uzK: ``
+
     },
     content2: {
       ru: `Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.`,
-      en: 'The food, produced by our company in accordance with the Italian recipe and all requirements of the European Union (EEC), entirely meets quality standards. Additionally, our company introduces the opportunity to produce the food according to any desired and required by a costumer recipe. ',
-      uz: `Biz italiya retsepti bo‘yicha ishlab chiqarayotgan yemish mahsulotlari Yevropa Ittifoqi (EEC) talablariga va barcha sifat standartlariga javob beradi. Bundan tashqari, kompaniyamiz mijozning xohish va talabiga ko&#39;ra, istalgan retsept bo&#39;yicha yemish ishlab chiqarish imkoniyatiga ega.`,
+
+      en: `The feed produced by us, according to the Italian recipe in accordance with the requirements of the European Economic Community (EEC), meets all quality standards. Additionally, our company has the ability to produce feed according to any necessary recipe, according to the wishes and requirements of the client.
+`,
+
+      uz: `Biz ishlab chiqarayotgan yem mahsulotlari, italyancha retsept boʻyicha, Yevropa Ittifoqi (EES) talablariga muvofiq, barcha sifat standartlariga javob beradi. Qoʻshimcha ravishda, bizning kompaniyamiz mijozning xohish va talabiga koʻra, istalgan retsept boʻyicha yem mahsuloti ishlab chiqarish imkoniyatiga ega .
+`,
+
+      uzK: `Биз ишлаб чиқараётган ем маҳсулотлари, итальянча рецепт бўйича, Европа Иттифоқи (EЭС) талабларига мувофиқ, барча сифат стандартларига жавоб беради. Қўшимча равишда, бизнинг компаниямиз мижознинг хоҳиш ва талабига кўра, исталган рецепт бўйича ем маҳсулоти  ишлаб чиқариш имкониятига эга.
+`,
+
     },
     images: [cow1, cow2]
   },
@@ -55,14 +69,28 @@ const TypeOfsternBase = [
       uz: 'Quyon yemishi',
     },
     content1: {
-      ru: 'Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.',
+      ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
+
       en: `All equipment is installed and assembled by well-known Italian company <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, which is considered to be one of the leading companies in the production of feed lines in the world for all types of animals.`,
-      uz: `Barcha jihozlar Italiyaning mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> kompaniyasi tomonidan oʻrnatilgan. Ushbu kompaniya barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish boʻyicha dunyodagi yetakchi kompaniyalardan biri hisoblanadi.`,
+
+      uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
+
+      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.
+`
+
     },
     content2: {
-      ru: 'Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.',
-      en: 'The food, produced by our company in accordance with the Italian recipe and all requirements of the European Union (EEC), entirely meets quality standards. Additionally, our company introduces the opportunity to produce the food according to any desired and required by a costumer recipe. ',
-      uz: `Biz italiya retsepti bo‘yicha ishlab chiqarayotgan yemish mahsulotlari Yevropa Ittifoqi (EEC) talablariga va barcha sifat standartlariga javob beradi. Bundan tashqari, kompaniyamiz mijozning xohish va talabiga ko&#39;ra, istalgan retsept bo&#39;yicha yemish ishlab chiqarish imkoniyatiga ega.`,
+      ru: `Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.`,
+
+      en: `The feed produced by us, according to the Italian recipe in accordance with the requirements of the European Economic Community (EEC), meets all quality standards. Additionally, our company has the ability to produce feed according to any necessary recipe, according to the wishes and requirements of the client.
+`,
+
+      uz: `Biz ishlab chiqarayotgan yem mahsulotlari, italyancha retsept boʻyicha, Yevropa Ittifoqi (EES) talablariga muvofiq, barcha sifat standartlariga javob beradi. Qoʻshimcha ravishda, bizning kompaniyamiz mijozning xohish va talabiga koʻra, istalgan retsept boʻyicha yem mahsuloti ishlab chiqarish imkoniyatiga ega .
+`,
+
+      uzK: `Биз ишлаб чиқараётган ем маҳсулотлари, итальянча рецепт бўйича, Европа Иттифоқи (EЭС) талабларига мувофиқ, барча сифат стандартларига жавоб беради. Қўшимча равишда, бизнинг компаниямиз мижознинг хоҳиш ва талабига кўра, исталган рецепт бўйича ем маҳсулоти  ишлаб чиқариш имкониятига эга.
+`,
+
     },
     images: [rabbit1, rabbit2]
   },
@@ -77,16 +105,29 @@ const TypeOfsternBase = [
       ru: 'Корм для мелкого рогатого скота',
       en: 'Small cattle feed',
       uz: 'Yirik qoramol yemishi',
-    },
-    content1: {
-      ru: 'Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.',
+    }, content1: {
+      ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
+
       en: `All equipment is installed and assembled by well-known Italian company <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, which is considered to be one of the leading companies in the production of feed lines in the world for all types of animals.`,
-      uz: `Barcha jihozlar Italiyaning mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> kompaniyasi tomonidan oʻrnatilgan. Ushbu kompaniya barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish boʻyicha dunyodagi yetakchi kompaniyalardan biri hisoblanadi.`,
+
+      uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
+
+      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.
+`
+
     },
     content2: {
-      ru: 'Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.',
-      en: 'The food, produced by our company in accordance with the Italian recipe and all requirements of the European Union (EEC), entirely meets quality standards. Additionally, our company introduces the opportunity to produce the food according to any desired and required by a costumer recipe. ',
-      uz: `Biz italiya retsepti bo‘yicha ishlab chiqarayotgan yemish mahsulotlari Yevropa Ittifoqi (EEC) talablariga va barcha sifat standartlariga javob beradi. Bundan tashqari, kompaniyamiz mijozning xohish va talabiga ko&#39;ra, istalgan retsept bo&#39;yicha yemish ishlab chiqarish imkoniyatiga ega.`,
+      ru: `Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.`,
+
+      en: `The feed produced by us, according to the Italian recipe in accordance with the requirements of the European Economic Community (EEC), meets all quality standards. Additionally, our company has the ability to produce feed according to any necessary recipe, according to the wishes and requirements of the client.
+`,
+
+      uz: `Biz ishlab chiqarayotgan yem mahsulotlari, italyancha retsept boʻyicha, Yevropa Ittifoqi (EES) talablariga muvofiq, barcha sifat standartlariga javob beradi. Qoʻshimcha ravishda, bizning kompaniyamiz mijozning xohish va talabiga koʻra, istalgan retsept boʻyicha yem mahsuloti ishlab chiqarish imkoniyatiga ega .
+`,
+
+      uzK: `Биз ишлаб чиқараётган ем маҳсулотлари, итальянча рецепт бўйича, Европа Иттифоқи (EЭС) талабларига мувофиқ, барча сифат стандартларига жавоб беради. Қўшимча равишда, бизнинг компаниямиз мижознинг хоҳиш ва талабига кўра, исталган рецепт бўйича ем маҳсулоти  ишлаб чиқариш имкониятига эга.
+`,
+
     },
     images: [sheep1, sheep2]
   },
@@ -101,16 +142,30 @@ const TypeOfsternBase = [
       ru: 'Корм для кур',
       en: 'Chicken feed',
       uz: 'Tovuq yemishi',
-    },
-    content1: {
-      ru: 'Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.',
+    }, content1: {
+      ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
+
       en: `All equipment is installed and assembled by well-known Italian company <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, which is considered to be one of the leading companies in the production of feed lines in the world for all types of animals.`,
-      uz: `Barcha jihozlar Italiyaning mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> kompaniyasi tomonidan oʻrnatilgan. Ushbu kompaniya barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish boʻyicha dunyodagi yetakchi kompaniyalardan biri hisoblanadi.`,
+
+      uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
+
+      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.
+`
+
     },
+
     content2: {
-      ru: 'Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.',
-      en: 'The food, produced by our company in accordance with the Italian recipe and all requirements of the European Union (EEC), entirely meets quality standards. Additionally, our company introduces the opportunity to produce the food according to any desired and required by a costumer recipe. ',
-      uz: `Biz italiya retsepti bo‘yicha ishlab chiqarayotgan yemish mahsulotlari Yevropa Ittifoqi (EEC) talablariga va barcha sifat standartlariga javob beradi. Bundan tashqari, kompaniyamiz mijozning xohish va talabiga ko&#39;ra, istalgan retsept bo&#39;yicha yemish ishlab chiqarish imkoniyatiga ega.`,
+      ru: `Производимые нами корма, по итальянскому рецепту в соответствии с требованиями Европейского союза (ЕЭС) отвечающие всем стандартам качества. Дополнительно, наша компания имеет возможность производство кормов по любому необходимому рецепту, согласно пожеланию и требованию клиента.`,
+
+      en: `The feed produced by us, according to the Italian recipe in accordance with the requirements of the European Economic Community (EEC), meets all quality standards. Additionally, our company has the ability to produce feed according to any necessary recipe, according to the wishes and requirements of the client.
+`,
+
+      uz: `Biz ishlab chiqarayotgan yem mahsulotlari, italyancha retsept boʻyicha, Yevropa Ittifoqi (EES) talablariga muvofiq, barcha sifat standartlariga javob beradi. Qoʻshimcha ravishda, bizning kompaniyamiz mijozning xohish va talabiga koʻra, istalgan retsept boʻyicha yem mahsuloti ishlab chiqarish imkoniyatiga ega .
+`,
+
+      uzK: `Биз ишлаб чиқараётган ем маҳсулотлари, итальянча рецепт бўйича, Европа Иттифоқи (EЭС) талабларига мувофиқ, барча сифат стандартларига жавоб беради. Қўшимча равишда, бизнинг компаниямиз мижознинг хоҳиш ва талабига кўра, исталган рецепт бўйича ем маҳсулоти  ишлаб чиқариш имкониятига эга.
+`,
+
     },
     images: [coock1, coock2]
   },

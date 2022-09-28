@@ -4,9 +4,10 @@ import instagram from 'assets/icons/instagaramIcon.svg'
 
 const home: Routes = {
   routeName: {
-    uz: "Bosh sahifa",
+    uz: "Asosiy sahifa",
     ru: "Главная",
-    en: "Home page"
+    en: "Home page",
+    uzK: "Асосий сахифа"
   },
   route: '/'
 }
@@ -14,7 +15,8 @@ const aboutUs: Routes = {
   routeName: {
     uz: "Kompaniya haqida",
     ru: "О компании",
-    en: "About company"
+    en: "About company",
+    uzK: "Компания ҳақида"
   },
   route: '/aboutUs'
 }
@@ -22,15 +24,17 @@ const products: Routes = {
   routeName: {
     uz: "Mahsulotlar",
     ru: "Продукция",
-    en: "Products"
+    en: "Products",
+    uzK: "Маҳсулотлар"
   },
   route: '/products'
 }
 const partners: Routes = {
   routeName: {
-    uz: "Hamkorlarimiz",
+    uz: "Hamkorlar",
     ru: "Партнеры",
-    en: "Partners"
+    en: "Partners",
+    uzK: "Ҳамкорлар"
   },
   route: '/partners'
 }
@@ -38,7 +42,8 @@ const contacts: Routes = {
   routeName: {
     uz: "Bog'lanish",
     ru: "Контакты",
-    en: "Contacts"
+    en: "Contacts",
+    uzK: "Боғланиш"
   },
   route: '/contacts'
 }
@@ -56,11 +61,13 @@ const column = {
     uz: `MChJ "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
     ru: `ООО "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
     en: `LLC "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`,
+    uzK: `МЧЖ "QUYONCHILIK VA NASILCHILIK AGRO KOMPLEKS"`
   },
   company2: {
     uz: `QK MChJ "INTERTRADE HOLDING"`,
     ru: `СП ООО "INTERTRADE HOLDING"`,
-    en: `JV LLC "INTERTRADE HOLDING"`
+    en: `JV LLC "INTERTRADE HOLDING"`,
+    uzK: `КК МЧЖ "INTERTRADE HOLDING"`
   },
   socialLink: [
     {
@@ -83,14 +90,20 @@ const column = {
 };
 const about = {
   title: {
-    uz: "Biz haqimizda",
+    uz: "Kompaniya haqida\n",
+    uzK: "Компания ҳақида",
     ru: "О нас",
     en: "About us",
+
   },
   description: {
-    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteridir. Ushbu loyiha barcha Yevropa standartlariga javob beradigan ilg&#39;or texnologiyalar bo&#39;yicha italiyalik mutaxassislar tomonidan ishlab chiqilgan.`,
+    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan, italiyalik mutaxassislar tomonidan butun Yevropa standartlariga javob beradigan ilgʻor texnologiyalar boʻyicha ishlab chiqilgan, dunyodagi eng yirik quyonchilik klasteridir.`,
+
+    uzK: `«Моя Мечта» агрокомплекси Тошкент вилоятининг экологик тоза зонасида жойлашган, италиялик мутахассислар томонидан бутун Европа стандартларига жавоб берадиган илғор технологиялар бўйича ишлаб чиқилган, дунёдаги энг йирик қуёнчилик кластеридир.`,
+
     ru: "Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.",
-    en: `Agricultural complex «My dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region. The complex was designed by Italian specialists using advanced technology that meets all European standards and requirements. `,
+
+    en: `Agrocomplex "My Dream" is the world's largest rabbit breeding cluster, located in an ecologically clean zone of the Tashkent region, designed by Italian specialists using advanced technologies that meet all European standards.`,
   }
 };
 const contactUs = {
@@ -98,6 +111,7 @@ const contactUs = {
     uz: "Bog'lanish",
     ru: "Контакты",
     en: "Contacts",
+    uzK: "Боғланиш"
   },
   contact: [
     {
@@ -105,7 +119,8 @@ const contactUs = {
       text: {
         ru: `110907, Республика Узбекистан,<br> Ташкентская область, <br>Куйичирчикский район, Беруний`,
         uz: `110907, O‘zbekiston Respublikasi, <br> Toshkent viloyati, <br> Quyichirchiq tumani, Beruniy`,
-        en: `110907, Republic of Uzbekistan,<br> Tashkent region, <br>Kuyichirchik district, Beruniy`
+        en: `110907, Republic of Uzbekistan,<br> Tashkent region, <br>Kuyichirchik district, Beruniy`,
+        uzK: `110907, Ўзбекистон Республикаси,<br> Тошкент вилояти,<br> Қуйичирчиқ тумани, Беруний`
       }
     },
     {
@@ -114,6 +129,7 @@ const contactUs = {
         ru: "+998-99-849-60-33",
         uz: "+998-99-849-60-33",
         en: "+998-99-849-60-33",
+        uzK: "+998-99-849-60-33",
       },
     },
     {
@@ -122,6 +138,7 @@ const contactUs = {
         ru: "info@my-dream.uz",
         uz: "info@my-dream.uz",
         en: "info@my-dream.uz",
+        uzK: "info@my-dream.uz",
       }
     }
   ]
@@ -130,13 +147,15 @@ const contactUs = {
 const chapter = {
   en: 'Sections',
   uz: `Bo'limlar`,
-  ru: `Разделы`
+  ru: `Разделы`,
+  uzK: 'Булимлар',
 }
 
 const copyRight = {
   en: '2022 @UzTech, Inc. All rights reserved.',
   ru: '2022 @UzTech все права защищены',
-  uz: '2022 @UzTech Barcha huquqlar himoyalangan'
+  uz: '2022 @UzTech Barcha huquqlar himoyalangan',
+  uzK: '2022 @UzTech Барча хукуклар химояланган',
 
 }
 

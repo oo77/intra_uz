@@ -5,11 +5,13 @@ export interface ICard {
     uz: string
     ru: string
     en: string
+    uzK: string
   }
   description: {
     uz: string
     ru: string
     en: string
+    uzK: string
   }
   image: string
   to: {
@@ -17,6 +19,7 @@ export interface ICard {
     uz: string
     ru: string
     en: string
+    uzK: string
   }
 }
 
@@ -25,6 +28,7 @@ export interface Routes {
     uz: string
     ru: string
     en: string
+    uzK: string
   },
   route: string
 }

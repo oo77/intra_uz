@@ -77,16 +77,19 @@ const PartnersContent = {
     ru: `Агрокомплекс «Моя Мечта» предлагает долгосрочное и взаимовыгодное сотрудничество. Не упускайте возможность получить надежного поставщика с гарантией бесперебойных поставок.`,
     en: `Agrocomplex "My Dream" offers long-term and mutually beneficial cooperation. Do not miss the opportunity to get a reliable supplier with a guarantee of uninterrupted supplies.`,
     uz: `«Моя Мечта» agrokompleksi uzoq muddatli va o'zaro manfaatli hamkorlikni taklif etadi. Uzluksiz hamda ishonchli etkazib beruvchi hamkor bilan aloqa qilish imkoniyatini boy bermang.`,
+    uzK: `"Моя Мечта" агрокомплекси узоқ муддатли ва ўзаро манфаатли ҳамкорликни таклиф етади. Узлуксиз ҳамда ишончли етказиб берувчи ҳамкор билан алоқа қилиш имкониятини бой берманг.`
   },
   subscribe: {
     ru: `ХОТИТЕ СОТРУДНИЧАТЬ С НАМИ?`,
     en: `DO YOU WANT TO COOPERATE WITH US?`,
     uz: `BIZ BILAN HAMKORLIK QILISHNI XOHLAYSIZMI?`,
+    uzK: `БИЗ БИЛАН ҲАМКОРЛИК ҚИЛИШНИ ХОҲЛАЙСИЗМИ?`,
   },
   press: {
     ru: `Нажмите`,
     en: `Click`,
     uz: `Bosing`,
+    uzK: `Босинг`,
   }
 }
 

@@ -14,18 +14,24 @@ const rabbit: ICard = {
   title: {
     uz: `Quyonchilik`,
     ru: `Кролиководство`,
-    en: `Rabbit breeding`
+    en: `Rabbit breeding`,
+    uzK: `Қуёнчилик`
   },
   description: {
     uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteri bo'lib...`,
+
     ru: `Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области...`,
+
     en: `Agricultural complex «Мy Dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region and...`,
+
+    uzK: `"Моя Мечта" агрокомплекси Тошкент вилоятининг екологик тоза зонасида жойлашган дунёдаги енг йирик қуёнчилик кластери бўлиб`
   },
   to: {
     route: '/activity?name=rabbit',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -34,18 +40,21 @@ const laboratory: ICard = {
   title: {
     uz: `Laboratoriya`,
     ru: `Лаборатория`,
-    en: `Laboratory`
+    en: `Laboratory`,
+    uzK: `Лаборатория`
   },
   description: {
     ru: `Генетический центр работает в режиме онлайн с генетическим центром ANCI в Италии.Также, компания занимается разведением мясных пород кроликов...`,
     uz: `Bizning genetik markaz Italiyadagi ANCI genetik markazi bilan onlayn ish faoliyatini olib boradi. Shuningdek, kompaniya...`,
     en: `The genetical center functions online along with the ANCI genetical center in Italy. Besides, the company is engaged in...`,
+    uzK: `Бизнинг генетик марказ Италиядаги АНCИ генетик маркази билан онлайн иш фаолиятини олиб боради. Шунингдек, компания`
   },
   to: {
     route: '/activity?name=laboratory',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -54,18 +63,21 @@ const mineralFertilizers: ICard = {
   title: {
     uz: "O'g'itlar",
     ru: `Удобрения`,
-    en: `Fertilizers`
+    en: `Fertilizers`,
+    uzK: `Ўғитлар`
   },
   description: {
-    uz: `O&#39;zbekistonda quyon chiqindilarini qayta ishlash bo&#39;yicha organik o&#39;g&#39;itlar ishlab chiqaradigan yagona zavod. U bilan bog‘bonlar, fermerlar va ...`,
+    uz: `Organik oʻgʻitlar ishlab chiqarish uchun quyon chiqindilarini qayta ishlash boʻyicha Oʻzbekistonda yagona zavod. Uning yordami bilan biz bogʻbonlarga, fermerlarga va...`,
     en: `The only factory throughout Uzbekistan for the processing of rabbit waste with the aim of manufacturing organic fertilizers. By the help...`,
     ru: `Единственный в Узбекистане завод по переработке кроличьих отходов для изготовления органических удобрений. С его помощью, мы помогаем садоводам и ...`,
+    uzK: `Органик ўғитлар ишлаб чиқариш учун қуён чиқиндиларини қайта ишлаш бўйича Ўзбекистонда ягона завод. Унинг ёрдами билан биз боғбонларга, фермерларга ва...`
   },
   to: {
     route: '/activity?name=mineralFertilizers',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -74,18 +86,21 @@ const sternBase: ICard = {
   title: {
     uz: 'Yem ishlab chiqarish',
     ru: 'Корма',
-    en: 'Feed'
+    en: 'Feed',
+    uzK: `Ем ишлаб чиқариш`
   },
   description: {
-    uz: `Bizning quyonlarimiz Evropaning etakchi mutaxassislari tomonidan ishlab chiqilgan maxsus retsept bo'yicha tayyorlangan kombinatsiyalangan quruq ozuqa bilan oziqlanadi...`,
+    uz: `Bizning quyonlarimiz Yevropaning yetakchi mutaxassislari tomonidan ishlab chiqilgan maxsus retseptura boʻyicha tayyorlangan aralash quruq yem bilan oziqlanadi...`,
     ru: `Наши кролики питаются комбинированными сухими кормами, приготовленными по специальной рецептуре, разработанной ведущими европейскими специалистами...`,
     en: `Our rabbits eat combined dry food prepared according to a special recipe developed by leading European specialists...`,
+    uzK: `Бизнинг қуёнларимиз Европанинг етакчи мутахассислари томонидан ишлаб чиқилган махсус рецептура бўйича тайёрланган аралаш қуруқ ем билан озиқланади...`
   },
   to: {
     route: '/activity?name=sternBase',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -94,38 +109,50 @@ const greenhouse: ICard = {
   title: {
     uz: 'Issiqxona',
     ru: 'Теплица',
-    en: 'Greenhouse'
+    en: 'Greenhouse',
+    uzK: ``
   },
   description: {
-    uz: `Eng yangi texnologik uskunalardan foydalangan holda va barcha Yevropa standartlariga javob beradigan 10 gektar maydonga ega to&#39;liq avtomatlashtirilgan...`,
+    uz: `10 gektar maydonga ega yuqori mahsuldor boʻlgan toʻliq avtomatlashtirilgan shishali issiqxonada eng yangi va barcha Yevropa standartlariga javob beradigan texnologik uskunalardan foydalanilgan...`,
+
     ru: `Полностью автоматизированная стеклянная теплица высокой урожайности площадью 10га с использованием новейших технологичных оборудования...`,
+
     en: `Totally automatic high-yield glass greenhouse with an area of   10 hectares utilizes the latest technological machinery and is in accord with all European standards...`,
+
+    uzK: `10 гектар майдонга ега юқори маҳсулдор бўлган тўлиқ автоматлаштирилган шишали иссиқхонада енг янги ва барча Европа стандартларига жавоб берадиган технологик ускуналардан фойдаланилган...`
   },
   to: {
     route: '/activity?name=greenhouse',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
 const slaughter: ICard = {
   image: Slaughter,
   title: {
-    uz: 'Qushxona',
+    uz: 'Qassobxona',
     ru: 'Бойня',
-    en: 'Slaughter'
+    en: 'Slaughter',
+    uzK: `Қассобхона`
   },
   description: {
-    uz: `Kompaniya o&#39;zining hududida maxsus, yuqori samaradorlikka ega va yangi zamonaviy texnologiyalar bilan jihozlangan qushxonasiga ega bo’lib...`,
+    uz: `Shaxsiy, toʻliq avtomatlashtirilgan qassoblik sexi ishlab chiqarish hududida joylashgan. Shuning uchun quyonlar soʻyish joyiga yetkazish mobaynida hayajonlanish hissini boshdan kechirmaydi...`,
+
     ru: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя...`,
-    en: `Our own, entirely automatic slaughterhouse is located throughout the production site, so that the rabbits do not experience the stress...`,
+
+    en: `Our own fully automated slaughterhouse is located on the production area, so rabbits do not experience stress from transportation to the slaughter site...`,
+
+    uzK: `Шахсий, тўлиқ автоматлаштирилган қассоблик сехи ишлаб чиқариш ҳудудида жойлашган. Шунинг учун қуёнлар сўйиш жойига етказиш мобайнида ҳаяжонланиш ҳиссини бошдан кечирмайди...`
   },
   to: {
     route: '/activity?name=slaughter',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -134,18 +161,24 @@ const cooperation: ICard = {
   title: {
     uz: 'Kooperatsiya',
     ru: 'Кооперация',
-    en: 'Cooperation '
+    en: 'Cooperation ',
+    uzK: `Кооперация`
   },
   description: {
-    uz: `«Моя мечта» kompaniyasi har kimga qo&#39;shimcha daromadga ega boʻlish imkoniyatini qo&#39;lga kiritishda yordam beradi. Biz sizga quyonlarni yetishtirish texnologiyasi...`,
+    uz: `«Моя Мечта» kompaniyasi har kimga qoʻshimcha daromad olish imkoniyatini qoʻlga kiritishda yordam beradi. Biz sizga quyonlarni yetishtirish texnologiyasi...`,
+
     ru: `Компания «Моя мечта» помогает каждому получить возможность дополнительного дохода. Мы проконсультируем вас по технологии выращивания кроликов...`,
+
     en: `«Мy Dream» company enables everyone with the chance to earn extra income. We are eager to consult you in terms of rabbit breeding...`,
+
+    uzK: `"Моя Мечта" компанияси ҳар кимга қўшимча даромад олиш имкониятини қўлга киритишда ёрдам беради. Биз сизга қуёнларни етиштириш технологияси...`
   },
   to: {
     route: '/activity?name=cooperation',
     uz: 'Batafsil',
     ru: 'Подробнее',
     en: 'More',
+    uzK: `Батафсил`
   }
 }
 
@@ -168,7 +201,8 @@ const TypesOfActivtyCard = [
     title: {
       uz: `Quyonchilik`,
       ru: `Кролиководство`,
-      en: `Rabbit breeding`
+      en: `Rabbit breeding`,
+      uzK: `Қуёнчилик`
     },
   },
   {
@@ -177,7 +211,8 @@ const TypesOfActivtyCard = [
     title: {
       uz: 'Yem ishlab chiqarish',
       ru: 'Корма',
-      en: 'Feed'
+      en: 'Feed',
+      uzK: `Ем ишлаб чиқариш`
     },
   },
   {
@@ -186,7 +221,8 @@ const TypesOfActivtyCard = [
     title: {
       uz: 'Issiqxona',
       ru: 'Теплица',
-      en: 'Greenhouse'
+      en: 'Greenhouse',
+      uzK: `Иссиқхона`
     },
   },
   {
@@ -195,16 +231,18 @@ const TypesOfActivtyCard = [
     title: {
       uz: "O'g'itlar",
       ru: `Удобрения`,
-      en: `Fertilizers`
+      en: `Fertilizers`,
+      uzK: `Ўғитлар`
     },
   },
   {
     image: Slaughter,
     route: '/activity?name=slaughter',
     title: {
-      uz: 'Qushxona',
+      uz: 'Qassobxona',
       ru: 'Бойня',
-      en: 'Slaughter'
+      en: 'Slaughter',
+      uzK: `Қассобхона`
     },
   },
   {
@@ -213,7 +251,8 @@ const TypesOfActivtyCard = [
     title: {
       uz: 'Kooperatsiya',
       ru: 'Кооперация',
-      en: 'Cooperation '
+      en: 'Cooperation ',
+      uzK: `Кооперация`
     },
   },
 ]

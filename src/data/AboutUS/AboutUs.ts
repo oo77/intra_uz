@@ -4,93 +4,104 @@ const Content = {
   aboutCompany: {
     title: {
       ru: "О Компании ",
-      en: "About company",
-      uz: "Kompaniya haqida"
+      en: "About the company",
+      uz: "Kompaniya haqida",
+      uzK: 'Компания Ҳақида'
     },
     description: {
-      ru: `Добро пожаловать, мы рады приветствовать Вас на нашем сайте! Мы являемся крупнейшим мясным агрокластером, занимающийся разведением, выращиванием и переработкой мясных пород. <br><br>Наша компания является официальным партнёром «Национальной Ассоциации Кролиководов Италия (ANCI)» в Центральной Азии и в странах СНГ, занимающееся разведением итальянских пород кроликов.<br><br> Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.<br><br>На основании прав, предоставленных «Национальной Ассоциации Кролиководов Италии (ANCI)», мы занимаемся производством и реализацией генетики кроликов, кроликоматок, кроличьего мяса из представленного генетического кода чистокровных пород — кроличьих прародителей. <br><br>Наш агрокомплекс содержит в себе полный цикл необходимых процессов для полноценного ведения кролиководческой деятельности: <ul style=" padding-left: 3rem; margin-bottom: 0px; text-align: left"> <li>   генетический центр/лаборатория, позволяющая создавать и выращивать мясные породы кроликов путём искусственного осеменения;</li> <li>   кормовой завод, обеспечивающий полноценное,   сбалансированное и витаминосодержащее питание кроликов;</li> <li>   бойня, предоставляющая возможность быстрой, качественной переработки мясных изделий, получаемых при разведении кроликов;</li> <li>   компостный завод, производящий органические удобрения высокой продуктивности.</li></ul> <br><br>Почему именно Италия? <br><br>Кролиководы из Италии на протяжении более 40 лет изучают кроличьи породы высокого качества и выводят их генетику, улучшая показатели устойчивости к    различным заболеваниям и погодным условиям, сохраняя качество и полезные свойства кроличьего мяса.`,
+      ru: `Добро пожаловать, мы рады приветствовать Вас на нашем сайте! Мы являемся крупнейшим мясным агрокластером, занимающийся разведением, выращиванием и переработкой мясных пород. <br><br>Наша компания является официальным партнёром «Национальной Ассоциации Кролиководов Италия (ANCI)» в Центральной Азии и в странах СНГ, занимающееся разведением итальянских пород кроликов.<br><br> Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области, спроектированный итальянскими специалистами по передовым технологиям, отвечающим всем европейским стандартам.<br><br>На основании прав, предоставленных «Национальной Ассоциации Кролиководов Италии (ANCI)», мы занимаемся производством и реализацией генетики кроликов, кроликоматок, кроличьего мяса из представленного генетического кода чистокровных пород — кроличьих прародителей. <br><br>Наш агрокомплекс содержит в себе полный цикл необходимых процессов для полноценного ведения кролиководческой деятельности:
+<ul style=" padding-left: 3rem; margin-bottom: 0px; text-align: left"> <li>   генетический центр/лаборатория, позволяющая создавать и выращивать мясные породы кроликов путём искусственного осеменения;</li> <li>   кормовой завод, обеспечивающий полноценное,   сбалансированное и витаминосодержащее питание кроликов;</li> <li>   бойня, предоставляющая возможность быстрой, качественной переработки мясных изделий, получаемых при разведении кроликов;</li> <li>   компостный завод, производящий органические удобрения высокой продуктивности.</li></ul> <br><br>Почему именно Италия? <br><br>Кролиководы из Италии на протяжении более 40 лет изучают кроличьи породы высокого качества и выводят их генетику, улучшая показатели устойчивости к    различным заболеваниям и погодным условиям, сохраняя качество и полезные свойства кроличьего мяса.`,
 
-      uz: `Assalomu alaykum, bizning web-saytimizga xush kelibsiz! Biz zotdor quyonlarni go&#39;shtini yetishtirish va ularni qayta ishlash bilan shug&#39;ullanadigan eng yirik quyonchilik agroklasterimiz. <br><br>Kompaniyamiz «Italiya quyon yetishtiruvchilar milliy assotsiatsiyasi (ANCI)»ning Markaziy Osiyo va MDH davlatlarida Italiya quyon zotlarini yetishtiruvchi rasmiy hamkori hisoblanadi.<br><br>«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteridir. Ushbu loyiha barcha Yevropa standartlariga javob beradigan ilg&#39;or texnologiyalar bo&#39;yicha italiyalik mutaxassislar tomonidan ishlab chiqilgan.<br><br>«Italiya quyon yetishtiruvchilar milliy assotsiatsiyasi (ANCI)» tomonidan berilgan huquqlardan kelib chiqib, biz quyon va, quyon go‘shti genetikasi taqdim etilgan sof zotlarining genetik kodidan ishlab chiqarish va sotish bilan shug‘ullanamiz. <br><br>Bizning agrokompleksimiz quyonchilik faoliyatini to&#39;laqonli boshqarish uchun zarur jarayonlarning to&#39;liq tsiklini o&#39;z ichiga oladi. Bular:
+      uz: `Assalomu alaykum, biz sizni saytimizda kutib olishdan xursandmiz! Biz goʻsht navlarini koʻpaytirish, yetishtirish va qayta ishlash bilan shugʻullanadigan eng yirik goʻsht agroklasteri hisoblanamiz.<br><br>Kompaniyamiz «Italiya quyon yetishtiruvchilar Milliy Assotsiatsiyasi (ANCI)«ning Markaziy Osiyo va MDH mamlakatlarida Italiya quyon zotlarini yetishtiruvchi rasmiy hamkori hisoblanadi. <br><br>«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan, italiyalik mutaxassislar tomonidan butun Yevropa standartlariga javob beradigan ilgʻor texnologiyalar boʻyicha ishlab chiqilgan, dunyodagi eng yirik quyonchilik klasteridir.<br><br>«Italiya quyon yetishtiruvchilar Milliy Assotsiatsiyasi (ANCI)” ga berilgan huquqlardan kelib chiqib, biz taqdim etilgan asl zotli quyon avlodlarining genetik kodidan quyonlar, urgʻochi quyonlar genetikasini va albatta quyon goʻshtini ishlab chiqarish va sotish bilan shugʻullanamiz.<br><br>Bizning agrokompleksimiz quyonchilik faoliyatini toʻlaqonli olib borish uchun zarur jarayonlarning toʻliq siklini oʻz ichiga oladi:
 <ul style=" padding-left: 3rem; margin-bottom: 0px; text-align: left">
-<li>   sun&#39;iy urug&#39;lantirish yo&#39;li bilan quyonlarning go&#39;shtli zotlarini yaratish va yetishtirish imkonini beruvchi genetik markaz/laboratoriya;</li>
-<li>   quyonlar uchun mo&#39;ljallangan tarkibida vitamin va minerallarga boy bo&#39;lgan ozuqa yetishtirib chiqaruvchi yem zavodi;</li>
-<li>  quyon go&#39;shtlarini tezkor va sifatli qayta ishlovchi, yangi zamonaviy texnalogiyalar bilan jihozlangan qushxona;</li>
-<li>  yuqori mahsuldorlikka ega organik o&#39;g&#39;itlar ishlab chiqaradigan zamonaviy o&#39;git zavodi.</li>
+<li>   sunʼiy urugʻlantirish orqali quyonlarning goʻshtli zotlarini yaratish va yetishtirish imkonini beruvchi genetik markaz/laboratoriya;</li>
+<li>   quyonlarni toʻliq, muvozanatli va vitaminli oziqlantirishni taʼminlovchi ozuqa zavodi;</li>
+<li>   quyonlarini koʻpaytirish orqali olingan goʻsht mahsulotlarini tez, sifatli qayta ishlash imkoniyatini beruvchi qassobxona; </li>
+<li>   yuqori mahsuldorlikka ega organik oʻgʻitlar ishlab chiqaradigan kompost zavodi.</li>
 </ul>
 
-<br><br>Nima uchun aynan Italiya?<br><br>Italiyalik quyon yetishtiruvchilar 40 yildan ortiq vaqt davomida yuqori sifatli quyon zotlarini va ularning genetikasini o&#39;rganib kelishmoqda. Bu turli kasalliklarga va ob-havo sharoitlariga chidamliligini oshiradi va quyon go&#39;shtining sifati va foydali xususiyatlarini saqlashga yordam beradi.`,
+<br><br>Nima uchun aynan Italiya?<br><br>Italiyalik quyon yetishtiruvchilar 40 yildan ortiq vaqt davomida yuqori sifatli quyon zotlarini oʻrganib, ularning turli kasalliklar va ob-havo sharoitlariga chidamlilik koʻrsatkichlarini yaxshilashga erishishgan, quyon goʻshtining sifati va foydali xususiyatlarini saqlab qolgan holda, ularning genetikasini chiqarib keladilar.`,
 
-      en: `We are pleased to welcome you at our website! Our company is the largest agricultural cluster, which is engaged in breeding, growing and processing meat breeds.
-<br><br>We are the official partner of «National Association of Italian Rabbit Breeders (ANCI)» in Central Asia and the CIS countries breeding Italian species of rabbit. <br><br>Agricultural complex «My dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region. The complex was designed by Italian specialists using advanced technology that meets all European standards and requirements. <br><br>Based on the rights granted to the «National Association of Italian Rabbit Breeders (ANCI)», we are engaged in the production and implementation of rabbit genetics, female rabbits, rabbit meat from the presented purebred genetic code breeds - rabbit progenitors. <br><br>Our agricultural complex includes the entire cycle of essential processes for full-fledged management of rabbit breeding activities:
+      en: `Welcome, we are glad to welcome you on our website! We are the largest meat agrocluster engaged in breeding, growing and processing meat breeds.<br><br>Our company is an official partner of the "National Association of Rabbit Breeders of Italy (ANCI)" in Central Asia and in the CIS countries, engaged in breeding Italian rabbit breeds.<br><br>Agrocomplex "My Dream" is the world's largest rabbit breeding cluster, located in an ecologically clean zone of the Tashkent region, designed by Italian specialists using advanced technologies that meet all European standards. <br><br>Based on the rights granted to the "National Association of Rabbit Breeders of Italy (ANCI)", we are engaged in the production and sale of genetics of rabbits, female rabbits, rabbit meat from the presented genetic code of purebred breeds — rabbit progenitors. <br><br>Our agrocomplex contains a full cycle of necessary processes for the full-fledged management of rabbit breeding activities:
  <ul style=" padding-left: 3rem; margin-bottom: 0px; text-align: left">
-  <li>   genetical center/laboratory that enables us to create and grow meat breeds of rabbits by the help of artificial insemination;</li>
-  <li>   feed factory that provides complete, balanced and vitamin-containing nutrition for rabbits;</li>
-  <li>   slaughterhouse, that offers the opportunity for rapid, high-quality processing of meat products obtained by breeding rabbits;</li>
-  <li>   compost factory that produces organic fertilizers of high productivity. </li></ul>
+  <li>   a genetic center/laboratory that allows you to create and grow meat breeds of rabbits by artificial insemination;</li>
+  <li>   a feed plant that provides a complete, balanced and vitamin-containing nutrition of rabbits;</li>
+  <li>   slaughterhouse, which provides an opportunity for fast, high-quality processing of meat products obtained during rabbit breeding;</li>
+  <li>   composting plant producing organic fertilizers of high productivity.</li></ul>
   <br><br>Why Italy?
- <br><br>In the duration of 40 years, Italian rabbit breeders have been investigating high-quality rabbit breeds and breeding their genetics with the aim to improve resistance to various diseases and weather conditions, while maintaining the quality and beneficial properties of rabbit meat.`,
+ <br><br>Rabbit breeders from Italy have been studying high-quality rabbit breeds for more than 40 years and deduce their genetics, improving resistance to various diseases and weather conditions, preserving the quality and beneficial properties of rabbit meat.`,
 
-    }
-  },
-  values: {
-    title: {
-      ru: "Ценности",
-      en: "Ценности",
-      uz: "Ценности"
+      uzK: `Ассалому алайкум, биз сизни сайтимизда кутиб олишдан хурсандмиз! Биз гўшт навларини кўпайтириш, етиштириш ва қайта ишлаш билан шуғулланадиган энг йирик гўшт агрокластери ҳисобланамиз <br><br>Компаниямиз “Италия қуён етиштирувчилар Миллий Ассоциацияси (ANCI)”нинг Марказий Осиё ва МДҲ мамлакатларида Италия қуён зотларини етиштирувчи расмий ҳамкори ҳисобланади.<br><br>“Моя мечта” агрокомплекси Тошкент вилоятининг экологик тоза зонасида жойлашган, италиялик мутахассислар томонидан бутун Европа стандартларига жавоб берадиган илғор технологиялар бўйича ишлаб чиқилган, дунёдаги энг йирик қуёнчилик кластеридир.<br><br>“Италия қуён етиштирувчилар Миллий Ассоциацияси (ANCI)” га берилган ҳуқуқлардан келиб чиқиб, биз тақдим этилган асл зотли қуён авлодларининг генетик кодидан қуёнлар, урғочи қуёнлар генетикасини ва албатта қуён гўштини ишлаб чиқариш ва сотиш билан шуғулланамиз. <br><br>Бизнинг агрокомплексимиз қуёнчилик фаолиятини тўлақонли олиб бориш учун зарур жараёнларнинг тўлиқ циклини ўз ичига олади:
+<ul style=" padding-left: 3rem; margin-bottom: 0px; text-align: left">
+<li>   сунъий уруғлантириш орқали қуёнларнинг гўштли зотларини яратиш ва етиштириш имконини берувчи генетик марказ/лаборатория;</li>
+<li>    қуёнларни тўлиқ, мувозанатли ва витаминли озиқлантиришни таъминловчи озуқа заводи;</li>
+<li>   қуёнларини кўпайтириш орқали олинган гўшт маҳсулотларини тез, сифатли қайта ишлаш имкониятини берувчи қассобхона; </li>
+<li>   юқори маҳсулдорликка эга органик ўғитлар ишлаб чиқарадиган компост заводи. </li>
+</ul>
+
+<br><br>Нима учун айнан Италия?<br><br>Италиялик қуён етиштирувчилар 40 йилдан ортиқ вақт давомида юқори сифатли қуён зотларини ўрганиб, уларнинг турли касалликлар ва об-ҳаво шароитларига чидамлилик кўрсаткичларини яхшилашга эришишган, қуён гўштининг сифати ва фойдали хусусиятларини сақлаб қолган ҳолда, уларнинг генетикасини чиқариб келадилар.`,
     },
-    description: {
-      ru: `Агрохолдинг построен в экологически чистой зоне Ташкентской Области. Мы никогда не используем гормоны для усиления роста, антибиотики, ГМО и любые химические компоненты. У нас все продукты производят с любовью к природе, заботой об экосистеме и уважением к покупателям.`,
-      en: `Агрохолдинг построен в экологически чистой зоне Ташкентской Области. Мы никогда не используем гормоны для усиления роста, антибиотики, ГМО и любые химические компоненты. У нас все продукты производят с любовью к природе, заботой об экосистеме и уважением к покупателям.`,
-      uz: `Агрохолдинг построен в экологически чистой зоне Ташкентской Области. Мы никогда не используем гормоны для усиления роста, антибиотики, ГМО и любые химические компоненты. У нас все продукты производят с любовью к природе, заботой об экосистеме и уважением к покупателям.`
-    }
+
   },
+
   pride: {
     title: {
       ru: "Гордость компании",
       en: "We take pride in",
-      uz: "Kompaniya gu'ruri"
+      uz: "Kompaniya gu'ruri",
+      uzK: `Kомпания ғурури`
+
     },
     prides: [
       {
         ru: ` Высококвалифицированные кадры.`,
-        en: `  Highly qualified specialists.`,
-        uz: ` Yuqori malakali kadrlar.`
+        en: ` Highly qualified personnel.`,
+        uz: ` Yuqori malakali xodimlar.`,
+        uzK: `Юқори малакали ходимлар.`
       },
       {
         ru: `Соблюдение стандартов „Halal” на всех этапах производства. `,
         en: `Compliance with "Halal" standards at all stages of production. `,
-        uz: `Ishlab chiqarishning barcha bosqichlarida “Halol” standartlariga rioya qilish.`
+        uz: `Ishlab chiqarishning barcha bosqichlarida “Halal” standartlariga amal qilish.`,
+        uzK: `Ишлаб чиқаришнинг барча босқичларида “Halal” стандартларига амал қилиш.`,
       },
       {
         ru: `Строгий контроль качества по европейским стандартам. `,
-        en: ` Strict quality control according to European standards. `,
-        uz: `Yevropa standartlariga muvofiq qat&#39;iy sifat nazorati.`
+        en: `Strict quality control according to European standards. `,
+        uz: `Yevropa standartlariga muvofiq qat&#39;iy sifat nazorati.`,
+        uzK: `Европа стандартлари бўйича юқори сифат назорати.`
       },
       {
         ru: `Производство органических продуктов на всех циклах производства. `,
-        en: ` Production of organic goods in all production cycles.`,
-        uz: `Ishlab chiqarishning barcha bosqichlarida organik mahsulotlar ishlab chiqarish.. `
+        en: `Production of organic goods in all production cycles.`,
+        uz: `Barcha ishlab chiqarish sikllarida organik mahsulotlar ishlab chiqarish.`,
+        uzK: `Барча ишлаб чиқариш циклларида органик маҳсулотлар ишлаб чиқариш.`,
       },
       {
-        ru: ` Полностью автоматизированный цикл производства по самым современным технологиям.`,
-        en: ` Entirely automated production cycle conducted by usage of cutting-edge technologies.`,
-        uz: ` Eng zamonaviy texnologiyalardan foydalangan holda to&#39;liq avtomatlashtirilgan ishlab chiqarish tsikli.`
+        ru: `Полностью автоматизированный цикл производства по самым современным технологиям.`,
+        en: `Entirely automated production cycle conducted by usage of cutting-edge technologies.`,
+        uz: `Eng yangi texnologiyalar boʻyicha toʻliq avtomatlashtirilgan ishlab chiqarish tsikli.`,
+        uzK: `Энг янги технологиялар бўйича тўлиқ автоматлаштирилган ишлаб чиқариш цикли.`,
       },
 
     ]
   },
+
   partners: {
     title: {
       ru: "Наши партнеры",
       en: "Our partners",
-      uz: "Bizning hamkorlarimiz"
+      uz: "Bizning hamkorlarimiz",
+      uzK: "Бизнинг ҳамкорларимиз"
     },
     description: {
       ru: "",
       en: "",
-      uz: ""
+      uz: "",
+      uzK: ""
     }
   }
+
 }
 
 

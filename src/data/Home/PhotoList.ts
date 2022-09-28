@@ -13,6 +13,7 @@ import mainImgSlyad12 from 'assets/mainCarousel/mainImgSlayd12.jpg'
 import mainImgSlyad13 from 'assets/mainCarousel/mainImgSlayd13.jpg'
 import mainImgSlyad14 from 'assets/mainCarousel/mainImgSlayd14.jpg'
 import mainImgSlyad15 from 'assets/mainCarousel/mainImgSlayd15.jpg'
+import mainImgSlyad16 from 'assets/mainCarousel/mainImgSlayd16.jpg'
 
 import locationEn from 'assets/icons/locationEn.jpg'
 import locationUz from 'assets/icons/locationUz.jpg'
@@ -22,8 +23,7 @@ const PhotoMainList = [
   mainImgSlyad1,
   mainImgSlyad2,
   mainImgSlyad3,
-
-
+  mainImgSlyad16
 ]
 const PhotoGalleryList = [
   mainImgSlyad4,
