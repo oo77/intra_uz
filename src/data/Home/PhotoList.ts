@@ -17,6 +17,7 @@ import mainImgSlyad16 from 'assets/mainCarousel/mainImgSlayd16.jpg'
 
 import locationEn from 'assets/icons/locationEn.jpg'
 import locationUz from 'assets/icons/locationUz.jpg'
+import locationUzK from 'assets/icons/locationUzK.jpg'
 import locationRu from 'assets/icons/locationRu.jpg'
 
 const PhotoMainList = [
@@ -44,7 +45,7 @@ const location = {
   ru: locationRu,
   en: locationEn,
   uz: locationUz,
-  uzK: locationUz,
+  uzK: locationUzK,
 }
 
 export {

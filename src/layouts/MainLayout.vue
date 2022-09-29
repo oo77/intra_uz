@@ -8,7 +8,7 @@
 
     <q-page-container>
       <q-img :src="typeProdBack"
-             class="absolute w-100vw top-200 md:top-250 max-h-90"
+             class="absolute w-100vw top-30vh md:top-80vh lg:top-90vh max-h-90"
              fit="fill"/>
       <router-view/>
 

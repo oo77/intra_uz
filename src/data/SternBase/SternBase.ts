@@ -28,8 +28,8 @@ const TypeOfsternBase = [
     title: {
       ru: 'Корм для крупного рогатого скота',
       en: 'Cattle feed',
-      uz: 'Yirik qoramol yemishi',
-      uzK: `Йирик қорамол емиши`
+      uz: 'Yirik shoxli qoramol uchun yem',
+      uzK: ` Йирик шохли қорамол учун ем`
     },
     content1: {
       ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
@@ -38,7 +38,7 @@ const TypeOfsternBase = [
 
       uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
 
-      uzK: ``
+      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.`
 
     },
     content2: {
@@ -67,6 +67,7 @@ const TypeOfsternBase = [
       ru: 'Корм для кроликов',
       en: 'Rabbit feed',
       uz: 'Quyon yemishi',
+      uzK: 'Қуён емиши',
     },
     content1: {
       ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
@@ -75,8 +76,7 @@ const TypeOfsternBase = [
 
       uz: `Hamma uskunalar barcha turdagi hayvonlar uchun ozuqa liniyalari ishlab chiqarish sohasida dunyodagi yetakchi kompaniyalardan biri hisoblanadigan mashhur <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> italyan kompaniyasi tomonidan ishlab chiqarilgan va oʻrnatilgan.`,
 
-      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.
-`
+      uzK: `Ҳамма ускуналар барча турдаги ҳайвонлар учун озуқа линиялари ишлаб чиқариш соҳасида дунёдаги етакчи компаниялардан бири ҳисобланадиган машҳур <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a> итальян компанияси томонидан ишлаб чиқарилган ва  ўрнатилган.`
 
     },
     content2: {
@@ -104,8 +104,10 @@ const TypeOfsternBase = [
     title: {
       ru: 'Корм для мелкого рогатого скота',
       en: 'Small cattle feed',
-      uz: 'Yirik qoramol yemishi',
-    }, content1: {
+      uz: 'Mayda shoxli qoramol uchun yem',
+      uzK: 'Майда шохли қорамол учун ем',
+    },
+    content1: {
       ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
 
       en: `All equipment is installed and assembled by well-known Italian company <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, which is considered to be one of the leading companies in the production of feed lines in the world for all types of animals.`,
@@ -141,7 +143,8 @@ const TypeOfsternBase = [
     title: {
       ru: 'Корм для кур',
       en: 'Chicken feed',
-      uz: 'Tovuq yemishi',
+      uz: 'Parrandalar uchun ozuqa',
+      uzK: 'Паррандалар учун озуқа',
     }, content1: {
       ru: `Всё оборудование установлено и смонтировано известной итальянской компанией <a href="https://www.fragolaspa.com"  target="_blank">«F.LLI FRAGOLA S.P.A.»</a>, которая является одной из ведущих компаний в области производства комбикормовых линий в мире для всех типов животных.`,
 

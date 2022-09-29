@@ -30,7 +30,7 @@
 <script lang="ts" setup>
 import {PartnersInfo} from "src/data/Home/partners";
 
-const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...PartnersInfo]
+const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...PartnersInfo]
 
 </script>
 
@@ -42,7 +42,7 @@ const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...Partners
 }
 
 
-$animationSpeed: 200s;
+$animationSpeed: 1000s;
 
 // Animation
 @keyframes scroll {
@@ -50,7 +50,7 @@ $animationSpeed: 200s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 30))
+    transform: translateX(calc(-450px * 30))
   }
 }
 
@@ -69,7 +69,7 @@ $animationSpeed: 200s;
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    width: calc(250px * 30);
+    width: calc(450px * 30);
   }
 }
 </style>

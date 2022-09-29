@@ -67,6 +67,7 @@ const PartnersContent = {
     ru: 'Наши партнеры',
     en: 'Our partners',
     uz: 'Bizning hamkorlarimiz',
+    uzK: 'Бизнинг ҳамкорларимиз',
   },
   description1: {
     ru: '',
