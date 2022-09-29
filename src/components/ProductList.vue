@@ -3,11 +3,11 @@
   <q-intersection class="mb-20px" once transition="slide-up">
     <p
       class="c-#39B44A text-center text-26px mt-50px font-600 text-center px-5%"
-      md="text-left pa-0 mb-10px text-32px"
+      md="text-left pa-0 text-32px"
       v-html="title[lang.prefix]"
     />
 
-    <div v-if="slide && $q.screen.gt.sm" class="slider transparent">
+    <div v-if="slide && $q.screen.gt.sm" class="slider transparent ma-0">
       <div class="slide-track transparent">
         <product-card v-for="prod in products" :product="prod" @target="dialog"/>
         <product-card v-for="prod in products" :product="prod" @target="dialog"/>

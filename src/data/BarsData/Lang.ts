@@ -4,18 +4,18 @@ import instagram from 'assets/icons/instagaramIcon.svg'
 
 const home: Routes = {
   routeName: {
-    uz: "Bosh sahifa",
+    uz: "Asosiy",
     ru: "Главная",
-    en: "Home page",
-    uzK: "Бош сахифа"
+    en: "Home",
+    uzK: "Асосий"
   },
   route: '/'
 }
 const aboutUs: Routes = {
   routeName: {
-    uz: "Kompaniya haqida",
-    ru: "О компании",
-    en: "About company",
+    uz: "Kompaniya",
+    ru: "Компания",
+    en: "Сompany",
     uzK: "Компания ҳақида"
   },
   route: '/aboutUs'

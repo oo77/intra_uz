@@ -4,7 +4,7 @@
          fit="cover"/>
 
 
-  <div class="container q-mx-auto mt-10">
+  <div class="container q-mx-auto mt-10 z-500">
     <div class="mx-3%">
       <TextContentStyle :content="currentStern.content1[lang.prefix]"
                         :title="currentStern.title[lang.prefix]"/>

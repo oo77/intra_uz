@@ -3,7 +3,7 @@
     <div class="container q-mx-auto">
 
       <p class="c-#39B44A text-26px ma-0 font-600 text-center mx-3%"
-         md="mb-30px text-32px"
+         md="mb-50px text-32px"
          v-html="Titles.typeOfActivity[lang.prefix]"
       />
 
