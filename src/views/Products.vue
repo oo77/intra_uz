@@ -22,9 +22,13 @@ import {useLanguageStore} from "stores/lang";
 import {AboutUsMain, Products, ProductsTitle, Content} from "src/data/Products/Products";
 import {useOurProductsMeta} from "src/meta/our_products";
 import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
+import {onActivated, watch} from "vue";
 
-const lang = useLanguageStore();
-useOurProductsMeta()
+const lang = useLanguageStore()
+useOurProductsMeta(lang.prefix)
+onActivated(()=>{
+  watch(lang, () => useOurProductsMeta(lang.prefix))
+})
 
 const router = useRouter();
 const products = [...Products.freezeProducts, ...Products.subProducts, ...Products.semiProducts]

@@ -12,6 +12,7 @@
   </div>
 
 
+
 </template>
 
 
@@ -24,8 +25,17 @@ import Partners from "components/PartnersComponent.vue";
 import Gallery from "components/Gallery.vue";
 import Locations from "components/Location.vue";
 import {useHomeMeta} from 'src/meta/home_meta'
+import {onActivated, watch} from "vue";
+import {useLanguageStore} from "stores/lang";
 
-useHomeMeta()
+const lang = useLanguageStore()
+useHomeMeta(lang.prefix)
+onActivated(()=>{
+  watch(lang, () => useHomeMeta(lang.prefix))
+})
+
+
+
 
 </script>
 

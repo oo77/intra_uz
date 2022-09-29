@@ -1,6 +1,5 @@
 <template>
-  <q-card class="shadow-0 h-fit flex justify-center mx-10% content-between border-slate-200 b-1px rounded-xl pa-20px"
-          focus="bg-red"
+  <q-card class="shadow-0 h-fit flex justify-center mx-10% content-between border-slate-200 b-1px rounded-xl pa-20px hover:cursor-pointer"
           md="mx-0"
           sm=" pa-20px b-0"
           @click="$emit('target', product)"

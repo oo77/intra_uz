@@ -55,10 +55,15 @@ import TextContentStyle from 'components/slidersComponent/TextContentStyle.vue'
 import {useAboutCompanyMeta} from "src/meta/about_company";
 import {PartnersContent} from "src/data/Partners/partners";
 import Subscribe from "components/slidersComponent/subscribe.vue";
+import {onActivated, watch} from "vue";
 
 const prides = Content.pride.prides
-useAboutCompanyMeta()
 const lang = useLanguageStore()
+
+useAboutCompanyMeta(lang.prefix)
+onActivated(()=>{
+  watch(lang, () => useAboutCompanyMeta(lang.prefix))
+})
 
 </script>
 

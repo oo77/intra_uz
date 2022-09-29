@@ -172,7 +172,7 @@
 </template>
 
 <script lang="ts" setup>
-import {ref} from "vue";
+import {onActivated, ref, watch} from "vue";
 import {useContactsMeta} from "src/meta/contacts";
 import {Contacts, ContactUsMain} from 'src/data/Contacts/contacts'
 import {useLanguageStore} from "stores/lang";
@@ -183,8 +183,15 @@ import countries from "countries-phone-masks";
 const labels = Contacts.labels
 
 const currentCountry = ref();
+
 const lang = useLanguageStore()
-useContactsMeta();
+useContactsMeta(lang.prefix)
+onActivated(()=>{
+  watch(lang, () => useContactsMeta(lang.prefix))
+})
+
+
+
 let openDialog = ref(false);
 const cred = ref({
   company: "",
@@ -291,4 +298,5 @@ async function sendMail(cred: any) {
     });
 
 }
+
 </script>

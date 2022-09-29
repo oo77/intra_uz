@@ -58,7 +58,7 @@ const Contacts = {
     name:{
       ru: 'Ф.И.О:',
       en: 'Name:',
-      uz: 'F.I.Sh:',
+      uz: 'F.I.SH:',
       uzK: 'Ф.И.Ш',
     },
     incorrectName:{
@@ -69,7 +69,7 @@ const Contacts = {
     },
     job:{
       ru: 'Должность:',
-      en: 'Post:',
+      en: 'Job:',
       uz: 'Lavozim:',
       uzK: 'Лавозим',
     },

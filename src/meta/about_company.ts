@@ -1,42 +1,31 @@
 import {useMeta} from 'quasar'
 import {MetaOptions} from 'quasar/dist/types/meta'
 
-const AboutCompany: MetaOptions = {
-  title: 'О компании',
-  meta: {
-    title: {
-      name: "title",
-      content: "О компании"
-    },
-    description: {name: 'description', content: 'Page 2'},
-    keywords: {name: 'Кролиководствоб', content: 'Кролиководство'},
-    equiv: {'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8'},
-    // note: for Open Graph type metadata you will need to use SSR, to ensure page is rendered by the server
-    ogTitle: {
-      property: 'og:title'
-    },
-  }
-}
 
-export function useAboutCompanyMeta() {
+export function useAboutCompanyMeta(lang:any = 'uz') {
+  const title: any = {
+    uz: "Kompaniya",
+    ru: "Компания",
+    en: "Сompany",
+    uzK: "Компания ҳақида"
+  }
+
+  const AboutCompany: MetaOptions = {
+    title: title[lang],
+    meta: {
+      title: {
+        name: title[lang],
+        content: "О компании"
+      },
+      description: {name: 'description', content: 'Page 2'},
+      keywords: {name: 'Кролиководствоб', content: 'Кролиководство'},
+      equiv: {'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8'},
+      // note: for Open Graph type metadata you will need to use SSR, to ensure page is rendered by the server
+      ogTitle: {
+        property: 'og:title'
+      },
+    }
+  }
+
   useMeta(AboutCompany)
 }
-
-//   <!-- Primary Meta Tags -->
-// <title>Агрокомплекс МОЯ МЕЧТА</title>
-// <meta name="title" content="Агрокомплекс МОЯ МЕЧТА">
-// <meta name="description" content="Агрокомплекс «МОЯ МЕЧТА» – крупнейший кролиководческий холдинг, расположенный в незапятнанной и экологически чистой зоне Ташкентской Области">
-//
-//   <!-- Open Graph / Facebook -->
-// <meta property="og:type" content="website">
-// <meta property="og:url" content="https://staging-mydream.uztech.uz/">
-// <meta property="og:title" content="Агрокомплекс МОЯ МЕЧТА">
-// <meta property="og:description" content="Агрокомплекс «МОЯ МЕЧТА» – крупнейший кролиководческий холдинг, расположенный в незапятнанной и экологически чистой зоне Ташкентской Области">
-// <meta property="og:image" content="">
-//
-// <!-- Twitter -->
-// <meta property="twitter:card" content="summary_large_image">
-// <meta property="twitter:url" content="https://staging-mydream.uztech.uz/">
-// <meta property="twitter:title" content="Агрокомплекс МОЯ МЕЧТА">
-// <meta property="twitter:description" content="Агрокомплекс «МОЯ МЕЧТА» – крупнейший кролиководческий холдинг, расположенный в незапятнанной и экологически чистой зоне Ташкентской Области">
-// <meta property="twitter:image" content="">

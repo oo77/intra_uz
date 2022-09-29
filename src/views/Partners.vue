@@ -33,9 +33,13 @@ import {useOurPartnersMeta} from "src/meta/our_partners";
 import {PartnersContent, PartnersMain} from "src/data/Partners/partners";
 import {PartnersInfo} from "src/data/Home/partners";
 import Subscribe from 'components/slidersComponent/subscribe.vue'
+import {onActivated, watch} from "vue";
 
 const lang = useLanguageStore()
-useOurPartnersMeta()
+useOurPartnersMeta(lang.prefix)
+onActivated(()=>{
+  watch(lang, () => useOurPartnersMeta(lang.prefix))
+})
 </script>
 
 <style scoped>

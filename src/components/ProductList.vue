@@ -26,7 +26,7 @@
     <q-card :square="false" class="text-center bg-#39B44A c-white rounded-10">
       <q-card-section class="pa-0 w-full h-100">
         <q-icon
-          class="absolute right-0 c-black opacity-70 z-20"
+          class="absolute right-0 c-black opacity-70 z-20 hover:cursor-pointer"
           name="close"
           size="xl"
           @click="openDialog = false"

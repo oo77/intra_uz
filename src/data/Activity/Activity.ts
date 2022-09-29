@@ -79,6 +79,7 @@ const Activity = [
       image: laboratoryImg
     },
   },
+
   {
     name: "sternBase",
     title: {
