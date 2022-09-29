@@ -18,13 +18,13 @@ const rabbit: ICard = {
     uzK: `Қуёнчилик`
   },
   description: {
-    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan dunyodagi eng yirik quyonchilik klasteri bo'lib...`,
+    uz: `«Моя Мечта» agrokompleksi Toshkent viloyatining ekologik toza zonasida joylashgan, italiyalik mutaxassislar tomonidan butun Yevropa standartlariga javob beradigan...`,
 
     ru: `Агрокомплекс «Моя Мечта» является крупнейшим в мире кролиководческим кластером, расположенный в экологически чистой зоне Ташкентской области...`,
 
     en: `Agricultural complex «Мy Dream» is the worldwide largest rabbit-breeding cluster located in ecologically friendly and clean zone of Tashkent region and...`,
 
-    uzK: `"Моя Мечта" агрокомплекси Тошкент вилоятининг екологик тоза зонасида жойлашган дунёдаги енг йирик қуёнчилик кластери бўлиб`
+    uzK: `"Моя Мечта" агрокомплекси Тошкент вилоятининг екологик тоза зонасида жойлашган дунёдаги енг йирик қуёнчилик кластери бўлиб...`
   },
   to: {
     route: '/activity?name=rabbit',
@@ -45,8 +45,8 @@ const laboratory: ICard = {
   },
   description: {
     ru: `Генетический центр работает в режиме онлайн с генетическим центром ANCI в Италии.Также, компания занимается разведением мясных пород кроликов...`,
-    uz: `Bizning genetik markaz Italiyadagi ANCI genetik markazi bilan onlayn ish faoliyatini olib boradi. Shuningdek, kompaniya...`,
-    en: `The genetical center functions online along with the ANCI genetical center in Italy. Besides, the company is engaged in...`,
+    uz: `Genetika markazi Italiyaning ANCI genetik markazi bilan onlayn rejimida ishlaydi. Shuningdek, kompaniya quyonlarning goʻshtli zotlarini koʻpaytirish bilan...`,
+    en: `The Genetic Center works online with the ANCI Genetic Center in Italy. Also, the company is engaged in breeding meat species of rabbits, each rabbit born is given...`,
     uzK: `Бизнинг генетик марказ Италиядаги АНCИ генетик маркази билан онлайн иш фаолиятини олиб боради. Шунингдек, компания...`
   },
   to: {
@@ -68,8 +68,8 @@ const mineralFertilizers: ICard = {
   },
   description: {
     uz: `Organik oʻgʻitlar ishlab chiqarish uchun quyon chiqindilarini qayta ishlash boʻyicha Oʻzbekistonda yagona zavod. Uning yordami bilan biz bogʻbonlarga, fermerlarga va...`,
-    en: `The only factory throughout Uzbekistan for the processing of rabbit waste with the aim of manufacturing organic fertilizers. By the help...`,
-    ru: `Единственный в Узбекистане завод по переработке кроличьих отходов для изготовления органических удобрений. С его помощью, мы помогаем садоводам и ...`,
+    en: `The only plant in Uzbekistan for the processing of rabbit waste for the manufacture of organic fertilizers. With its help, we help gardeners, farmers and other interested parties to analyze the land...`,
+    ru: `Единственный в Узбекистане завод по переработке кроличьих отходов для изготовления органических удобрений. С его помощью, мы помогаем садоводам и...`,
     uzK: `Органик ўғитлар ишлаб чиқариш учун қуён чиқиндиларини қайта ишлаш бўйича Ўзбекистонда ягона завод. Унинг ёрдами билан биз боғбонларга, фермерларга ва...`
   },
   to: {
@@ -92,7 +92,7 @@ const sternBase: ICard = {
   description: {
     uz: `Bizning quyonlarimiz Yevropaning yetakchi mutaxassislari tomonidan ishlab chiqilgan maxsus retseptura boʻyicha tayyorlangan aralash quruq yem bilan oziqlanadi...`,
     ru: `Наши кролики питаются комбинированными сухими кормами, приготовленными по специальной рецептуре, разработанной ведущими европейскими специалистами...`,
-    en: `Our rabbits eat combined dry food prepared according to a special recipe developed by leading European specialists...`,
+    en: `Our rabbits eat combined dry food prepared according to a special recipe developed by leading European specialists.All equipment is installed and...`,
     uzK: `Бизнинг қуёнларимиз Европанинг етакчи мутахассислари томонидан ишлаб чиқилган махсус рецептура бўйича тайёрланган аралаш қуруқ ем билан озиқланади...`
   },
   to: {
@@ -169,7 +169,7 @@ const cooperation: ICard = {
 
     ru: `Компания «Моя мечта» помогает каждому получить возможность дополнительного дохода. Мы проконсультируем вас по технологии выращивания кроликов...`,
 
-    en: `«Мy Dream» company enables everyone with the chance to earn extra income. We are eager to consult you in terms of rabbit breeding...`,
+    en: `The company "My Dream" helps everyone to get the opportunity of additional income. We will advise you on the technology of raising rabbits, the possibility of acquiring...`,
 
     uzK: `"Моя Мечта" компанияси ҳар кимга қўшимча даромад олиш имкониятини қўлга киритишда ёрдам беради. Биз сизга қуёнларни етиштириш технологияси...`
   },

@@ -56,13 +56,13 @@
           <q-icon name="language" size="md"/>
         </q-item>
 
-        <q-item v-for="i in ['uz', 'ru', 'en', 'uzK']" :active="lang.isPrefix(i)"
+        <q-item v-for="i in ['uz', 'ru', 'en']" :active="lang.isPrefix(i)"
                 clickable
                 class="flex justify-center"
                 hover="cursor-pointer bg-#39B44A c-white"
                 @click="lang.setLang(i)"
         >
-          <p class="text-center ma-0 q-mx-auto"> {{ i == 'uzK'? 'УЗ' : i.toUpperCase() }}</p>
+          <p class="text-center ma-0 q-mx-auto"> {{ i.toUpperCase() }}</p>
         </q-item>
       </q-list>
 
