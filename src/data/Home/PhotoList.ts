@@ -5,7 +5,6 @@ import mainImgSlyad4 from 'assets/mainCarousel/mainImgSlayd4.jpg'
 import mainImgSlyad5 from 'assets/mainCarousel/mainImgSlayd5.jpg'
 import mainImgSlyad6 from 'assets/mainCarousel/mainImgSlayd6.jpg'
 import mainImgSlyad7 from 'assets/mainCarousel/mainImgSlayd7.jpg'
-import mainImgSlyad8 from 'assets/mainCarousel/mainImgSlayd8.jpg'
 import mainImgSlyad9 from 'assets/mainCarousel/mainImgSlayd9.jpg'
 import mainImgSlyad10 from 'assets/mainCarousel/mainImgSlayd10.jpg'
 import mainImgSlyad11 from 'assets/mainCarousel/mainImgSlayd11.jpg'
@@ -31,7 +30,6 @@ const PhotoGalleryList = [
   mainImgSlyad5,
   mainImgSlyad6,
   mainImgSlyad7,
-  mainImgSlyad8,
   mainImgSlyad9,
   mainImgSlyad10,
   mainImgSlyad11,

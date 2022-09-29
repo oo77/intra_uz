@@ -139,7 +139,7 @@ const slaughter: ICard = {
     uzK: `Қассобхона`
   },
   description: {
-    uz: `Shaxsiy, toʻliq avtomatlashtirilgan qassoblik sexi ishlab chiqarish hududida joylashgan. Shuning uchun quyonlar soʻyish joyiga yetkazish mobaynida hayajonlanish hissini boshdan kechirmaydi...`,
+    uz: `Shaxsiy, toʻliq avtomatlashtirilgan qassoblik tsexi ishlab chiqarish hududida joylashgan. Shuning uchun quyonlar soʻyish joyiga yetkazish mobaynida hayajonlanish hissini boshdan kechirmaydi...`,
 
     ru: `Собственный, полностью автоматизированный убойный цех располагается на территории производства, поэтому кролики не испытывают стресса от транспортировки до места убоя...`,
 

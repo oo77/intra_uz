@@ -3,7 +3,7 @@
     <p class="ma-0 mx-10px font-600 text-center"
        v-html="PartnersContent.subscribe[lang.prefix]"/>
 
-    <q-btn class=" py-1 px-3 rounded-10px"
+    <q-btn class=" py-1 px-3 rounded-10px w-120px"
            color="#39B44A"
            to="/contacts">
       {{ PartnersContent.press[lang.prefix].toUpperCase() }}
