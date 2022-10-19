@@ -1,9 +1,9 @@
 <template>
   <q-img :src="ContactUsMain"
-         class="w-full min-h-fit"
+         class="w-full h-120"
          fit="cover"/>
 
-  <div class="text-center font-600 text-26px sm:text-32px c-#39B44A mt-10"
+  <div class="text-center font-600 text-26px sm:text-32px c-[rgb(22,46,130)] mt-10"
        v-html="Contacts.title[lang.prefix]"/>
   <div class="container  q-mx-auto">
     <q-card class="rounded-xl mx-3% h-fit">
@@ -15,7 +15,7 @@
             class="text-center flex column justify-evenly h-100% gap-y-5"
             sm="gap-y-10"
           >
-            <div class="text-26px md:text-32px font-600  c-#39B44A"
+            <div class="text-26px md:text-32px font-600  c-[rgb(22,46,130)]"
                  v-html="Contacts.subtitle[lang.prefix]"/>
 
             <div class="grid grid-rows-2 gap-y-3 q-mx-auto ">
@@ -35,9 +35,9 @@
             <ul class="list-none pa-0 mt-5px flex gap-15px q-mx-auto">
               <li v-for="link in Contacts.socialLink">
 
-                <q-icon :name="link.icon"
-                        class="c-black opacity-75"
-                        size="sm"/>
+                <a :href="link.url" target="_blank">
+                  <q-icon :name="link.icon" class="c-black" size="md" hover="color-yellow"/>
+                </a>
               </li>
             </ul>
 
@@ -128,8 +128,8 @@
 
           <q-card-actions class="flex justify-center" md="justify-end">
             <q-btn
-              class="py-5 px-20 rounded-10px w-120px"
-              color="#39B44A"
+              class="py-5 px-20 rounded-10px w-120px bg-[rgb(22,46,130)] c-white"
+
               @click="sendMail(cred)"
             >{{ labels.send[lang.prefix].toUpperCase() }}
             </q-btn>

@@ -17,10 +17,6 @@
         />
       </a>
     </div>
-
-    <p class="text-justify text-16px mt-20px" sm="text-20px  mx-0"
-       v-html="PartnersContent.description2[lang.prefix]"/>
-
     <subscribe/>
   </div>
   </div>

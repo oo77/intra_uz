@@ -6,7 +6,7 @@
     :swipeable="true"
     animated
     arrows
-    class="rounded-0 sm:rounded-3 min-h-50px h-40 md:h-80 lg:h-120 w-100%"
+    class=" min-h-50px h-40 md:h-80 lg:h-120 w-100%"
     control-color="primary"
     infinite
     md="mx-0"
@@ -16,7 +16,6 @@
   >
     <q-carousel-slide v-for="img in PhotoGalleryList.length"
                       :name="img"
-                      class="rounded-0 lg:rounded-3"
                       :img-src="PhotoGalleryList[img-1]"
 
     >

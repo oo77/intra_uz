@@ -4,7 +4,7 @@
        v-html="PartnersContent.subscribe[lang.prefix]"/>
 
     <q-btn class=" py-1 px-3 rounded-10px w-120px"
-           color="#39B44A"
+           color="[rgb(22,46,130)]"
            to="/contacts">
       {{ PartnersContent.press[lang.prefix].toUpperCase() }}
     </q-btn>

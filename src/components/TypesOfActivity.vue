@@ -2,28 +2,23 @@
   <section class="section">
     <div class="container q-mx-auto">
 
-      <p class="c-#39B44A text-26px ma-0 font-600 text-center mx-3%"
-         md="mb-50px text-32px"
+      <p class="c-[rgb(22,46,130)] text-26px ma-0 font-600 text-center mx-3%"
+         md="my-50px text-32px"
          v-html="Titles.typeOfActivity[lang.prefix]"
       />
 
-      <div class="grid grid-cols-2 mx-10% gap-20px gt-xs"
-           md="mx-0 grid-cols-3"
-           xl="mx-0 grid-cols-6">
+      <div class="grid grid-cols-5 mx-10% gap-20px gt-xs"
+           >
 
         <q-card v-for="act in TypesOfActivtyCard.length"
-                class="transparent b-0 shadow-0 h-75 transition-duration-100 "
-                hover="border-black border-b-5px  transition-duration-100 cursor-pointer"
-                @click="router.push(TypesOfActivtyCard[act-1].route)"
+                class="transparent b-0 shadow-0 h-55 transition-duration-100 "
+                hover="border-[rgb(22,46,130)] border-b-5px transition-duration-100 cursor-pointer"
         >
          <div class="flex w-50 h-50 q-mx-auto">
            <q-img :src="TypesOfActivtyCard[act-1].image"
-                  class="h-90% w-90% animate-bounce q-mx-auto"
+                  class="h-95% w-95% animate-bounce q-mx-auto"
                   fit="contain"/>
          </div>
-
-          <p class=" text-26px font-600 text-center pt-15px"
-             v-html="TypesOfActivtyCard[act-1].title[lang.prefix]"/>
 
         </q-card>
 

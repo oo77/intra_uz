@@ -1,54 +1,38 @@
-import mainImgSlyad1 from 'assets/mainCarousel/mainImgSlayd1.jpg'
-import mainImgSlyad2 from 'assets/mainCarousel/mainImgSlayd2.jpg'
-import mainImgSlyad3 from 'assets/mainCarousel/mainImgSlayd3.jpg'
-import mainImgSlyad4 from 'assets/mainCarousel/mainImgSlayd4.jpg'
-import mainImgSlyad5 from 'assets/mainCarousel/mainImgSlayd5.jpg'
-import mainImgSlyad6 from 'assets/mainCarousel/mainImgSlayd6.jpg'
-import mainImgSlyad7 from 'assets/mainCarousel/mainImgSlayd7.jpg'
-import mainImgSlyad9 from 'assets/mainCarousel/mainImgSlayd9.jpg'
-import mainImgSlyad10 from 'assets/mainCarousel/mainImgSlayd10.jpg'
-import mainImgSlyad11 from 'assets/mainCarousel/mainImgSlayd11.jpg'
-import mainImgSlyad12 from 'assets/mainCarousel/mainImgSlayd12.jpg'
-import mainImgSlyad13 from 'assets/mainCarousel/mainImgSlayd13.jpg'
-import mainImgSlyad14 from 'assets/mainCarousel/mainImgSlayd14.jpg'
-import mainImgSlyad15 from 'assets/mainCarousel/mainImgSlayd15.jpg'
-import mainImgSlyad16 from 'assets/mainCarousel/mainImgSlayd16.jpg'
+import mainPhoto1 from "assets/intra/Gallery/gallery1.jpg"
+import mainPhoto2 from "assets/intra/Gallery/gallery2.jpg"
+import mainPhoto3 from "assets/intra/Gallery/gallery3.jpg"
+import mainPhoto4 from "assets/intra/Gallery/gallery4.jpg"
+import mainPhoto5 from "assets/intra/Gallery/gallery5.jpg"
+import mainPhoto6 from "assets/intra/Gallery/gallery6.jpg"
+import mainPhoto7 from "assets/intra/Gallery/gallery7.jpg"
+import mainPhoto8 from "assets/intra/Gallery/gallery8.jpg"
 
-import locationEn from 'assets/icons/locationEn.jpg'
-import locationUz from 'assets/icons/locationUz.jpg'
-import locationUzK from 'assets/icons/locationUzK.jpg'
-import locationRu from 'assets/icons/locationRu.jpg'
 
 const PhotoMainList = [
-  mainImgSlyad1,
-  mainImgSlyad2,
-  mainImgSlyad3,
-  mainImgSlyad16
+  mainPhoto1,
+  mainPhoto2,
+  mainPhoto3,
+  mainPhoto4,
+  mainPhoto5,
+  mainPhoto6,
+  mainPhoto7,
+  mainPhoto8
 ]
 const PhotoGalleryList = [
-  mainImgSlyad4,
-  mainImgSlyad5,
-  mainImgSlyad6,
-  mainImgSlyad7,
-  mainImgSlyad9,
-  mainImgSlyad10,
-  mainImgSlyad11,
-  mainImgSlyad12,
-  mainImgSlyad13,
-  mainImgSlyad14,
-  mainImgSlyad15,
+  mainPhoto1,
+  mainPhoto2,
+  mainPhoto3,
+  mainPhoto4,
+  mainPhoto5,
+  mainPhoto6,
+  mainPhoto7,
+  mainPhoto8
+
 ]
 
-const location = {
-  ru: locationRu,
-  en: locationEn,
-  uz: locationUz,
-  uzK: locationUzK,
-}
 
 export {
   PhotoMainList,
   PhotoGalleryList,
-  location
 }
 

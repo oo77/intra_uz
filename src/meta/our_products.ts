@@ -17,10 +17,9 @@ export function useOurProductsMeta(lang:any = 'uz') {
     meta: {
       title: {
         name: title[lang],
-        content: "Наша продукция"
+        content: "Проекты"
       },
       description: {name: 'description', content: 'Page 3'},
-      keywords: {name: 'Кролиководствоб', content: 'Кролиководство'},
       equiv: {'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8'},
       // note: for Open Graph type metadata you will need to use SSR, to ensure page is rendered by the server
       ogTitle: {

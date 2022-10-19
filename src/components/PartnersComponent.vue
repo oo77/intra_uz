@@ -1,6 +1,6 @@
 <template>
     <section class="mx-5%">
-        <p class="text-center  text-26px c-#39B44A mb-20px font-600 leading-tight" md=" mb-30px text-32px" v-html="Titles.partnersTitle[lang.prefix]"/>
+        <p class="text-center  text-26px c-[rgb(22,46,130)] mb-20px font-600 leading-tight" md=" mb-30px text-32px" v-html="Titles.partnersTitle[lang.prefix]"/>
        <PartnersSlide/>
     </section>
 </template>

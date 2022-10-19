@@ -1,65 +1,60 @@
 import PartnersMain from 'assets/icons/BackPartner.png'
 import {Partners} from "src/data/types";
-import anaPartner from 'assets/partners/anaPartner.png'
-import CIROCALABRIApartner from 'assets/partners/CIROCALABRIApartner.png'
-import FRAGOLApartner from 'assets/partners/FRAGOLApartner.png'
-import MeneghinPArtner from 'assets/partners/MeneghinPArtner.png'
-import PrimeranoPartner from 'assets/partners/PrimeranoPartner.png'
-import SintPartner from 'assets/partners/SintPartner.png'
-import P4energyPartner from 'assets/partners/P4energyPartner.png'
-import AiaPartner from 'assets/partners/AiaPartner.png'
+
+import partner1 from 'assets/partners/1.png'
+import partner2 from 'assets/partners/2.png'
+import partner3 from 'assets/partners/3.png'
+import partner4 from 'assets/partners/4.png'
+import partner5 from 'assets/partners/5.png'
+import partner6 from 'assets/partners/6.png'
+import partner7 from 'assets/partners/7.png'
+import partner8 from 'assets/partners/8.png'
 
 
 
 const PartnersInfo: Partners[] = [
   {
-    name: 'Ana',
+    name: 'Partner1',
     url: '#',
-    logo:anaPartner,
-    link: 'https://www.anci-aia.it/'
-  },
-  {
-    name: ':CIROCALABRI',
+    logo: partner1,
+    link: '#'
+  },  {
+    name: 'partner2',
     url: '#',
-    logo:CIROCALABRIApartner,
-    link:'https://aziendacalabria.com/'
-  },
-  {
-    name: 'Ana',
+    logo:partner2,
+    link: '#'
+  },  {
+    name: 'partner3',
     url: '#',
-    logo:FRAGOLApartner,
-    link: 'https://www.fragolaspa.com'
-  },
-  {
-    name: 'Meneghin',
+    logo:partner3,
+    link: '#'
+  },  {
+    name: 'partner4',
     url: '#',
-    logo:MeneghinPArtner,
-    link:'https://www.meneghin.it/ita/'
-  },
-  {
-    name: 'Primerano',
+    logo:partner4,
+    link: '#'
+  },  {
+    name: 'partner5',
     url: '#',
-    logo:PrimeranoPartner,
-    link: 'http://www.primeranosrl.eu/'
-  },
-  {
-    name: 'Sint',
+    logo:partner5,
+    link: '#'
+  },  {
+    name: 'partner6',
     url: '#',
-    logo:SintPartner,
-    link: 'https://www.sinttecnologie.com/'
-  },
-  {
-    name: 'P4energy',
+    logo:partner6,
+    link: '#'
+  },{
+    name: 'partner7',
     url: '#',
-    logo: P4energyPartner,
-    link: 'http://www.p4energy.it/'
-  },
-  {
-    name: 'AIA',
+    logo:partner7,
+    link: '#'
+  },{
+    name: 'partner8',
     url: '#',
-    logo: AiaPartner,
-    link: 'http://www.aia.it'
+    logo:partner8,
+    link: '#'
   },
+
 ]
 
 const PartnersContent = {

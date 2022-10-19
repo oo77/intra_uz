@@ -3,8 +3,8 @@
   <div class="carousel gt-sm">
       <div class="slider transparent w-100%">
         <div class="slide-track transparent ">
-          <a v-for="partner in partners" :href="partner.link" class="w-180px flex items-center mx-50px" target="_blank">
-            <q-img :src="partner.logo" class="transparent" fit="contain"/>
+          <a v-for="partner in partners" :href="partner.link" class="w-450px flex items-center mx-50px">
+            <q-img :src="partner.logo" class="transparent h-fit" fit="contain"/>
           </a>
         </div>
       </div>
@@ -14,7 +14,7 @@
     transition="scale"
   >
     <div class="grid gap-10px mx-5% grid-cols-2 lt-md">
-      <a v-for="partner in PartnersInfo" :href="partner.link" target="_blank" >
+      <a v-for="partner in PartnersInfo" target="_blank" >
         <q-img
           :src="partner.logo"
           class="min-w-100px border-1 border-#39B44A rounded-xl h-200px transparent"
@@ -42,7 +42,7 @@ const partners = [...PartnersInfo, ...PartnersInfo, ...PartnersInfo, ...Partners
 }
 
 
-$animationSpeed: 1000s;
+$animationSpeed: 100s;
 
 // Animation
 @keyframes scroll {
@@ -50,7 +50,7 @@ $animationSpeed: 1000s;
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-450px * 30))
+    transform: translateX(calc(-450px * 8 * 5))
   }
 }
 
@@ -59,7 +59,7 @@ $animationSpeed: 1000s;
 .slider {
   display: flex;
   background: white;
-  height: 300px;
+  height: fit-content;
   align-items: center;
   margin: auto;
   overflow: hidden;
@@ -69,7 +69,7 @@ $animationSpeed: 1000s;
   .slide-track {
     animation: scroll $animationSpeed linear infinite;
     display: flex;
-    width: calc(450px * 30);
+    width: calc(450px * 8 * 5);
   }
 }
 </style>

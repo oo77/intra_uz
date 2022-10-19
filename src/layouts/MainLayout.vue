@@ -1,5 +1,5 @@
 <template>
-  <q-layout >
+  <q-layout>
     <q-header>
 
       <navbar/>
@@ -7,9 +7,7 @@
     </q-header>
 
     <q-page-container>
-      <q-img :src="typeProdBack"
-             class="absolute w-100vw top-30vh md:top-80vh lg:top-80vh max-h-90 -z-1"
-             fit="fill"/>
+
       <router-view/>
 
       <Footer/>
@@ -32,10 +30,12 @@
 
 
 <script lang="ts" setup>
-import {typeProdBack} from 'src/data/BarsData/Lang.ts'
 import Navbar from "components/Bars/Navbar.vue";
 import Footer from "components/Bars/Footer.vue";
+
+
 </script>
+
 
 
 <style scoped>

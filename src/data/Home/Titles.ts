@@ -6,7 +6,7 @@
     uzK: 'Бизнинг ҳамкорларимиз',
   },
    typeOfActivity: {
-     ru: 'Направления деятельности',
+     ru: 'Oсновные задачи центра',
      en: 'Areas of activity',
      uz: `Faoliyat yo'nalishlari`,
      uzK: `Фаолият йўналишлари`,

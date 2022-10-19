@@ -4,14 +4,14 @@
     <div class="container pt-30px flex items-start justify-center gap-20px border-b-1 border-white gt-sm z-0">
       <div class="col ml-5vw">
         <div class="h-30% w-150px my-10px">
-          <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="w-100% h-15"/>
+          <img :src="logoLongNegative" alt="logo" class="w-80 my-2 h-fit gt-sm"/>
+<!--          <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="w-100% h-15"/>-->
         </div>
-
-        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company1[lang.prefix]"/>
-        <p class="text-12px c-white opacity-70 mb-5px" v-html="column.company2[lang.prefix]"/>
-        <ul class="list-none pa-0 mt-5px flex gap-15px">
+        <ul class="list-none pa-0 mt-5px flex gap-15px q-mx-auto">
           <li v-for="link in column.socialLink">
-            <q-icon :name="link.icon" class="c-white" size="sm"/>
+            <a :href="link.url" target="_blank">
+              <q-icon :name="link.icon" class="c-white" size="sm" hover="color-yellow"/>
+            </a>
           </li>
         </ul>
       </div>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="px-30px col border-b-1 border-white py-10px lt-md">
-      <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="h-30% w-120px mb-20px q-mx-auto block"/>
+<!--      <q-icon :name="'img:'+ (lang.prefix=='en'? logoWhiteEn : logoWhiteRu)" class="h-30% w-120px mb-20px q-mx-auto block"/>-->
       <p class="text-16px c-white text-center" v-html="column.company1[lang.prefix]"/>
       <p class="text-16px c-white text-center" v-html="column.company2[lang.prefix]"/>
 
@@ -82,8 +82,7 @@
 
 <script lang="ts" setup>
 import {about, column, contactUs, Links, chapter, copyRight} from "src/data/BarsData/Lang"
-import logoWhiteRu from 'src/assets/logoWhiteru.svg'
-import logoWhiteEn from 'src/assets/logoWhiteen.svg'
+import logoLongNegative from 'assets/logoLongNegative.png'
 import {useLanguageStore} from "stores/lang";
 import {useRouter} from "vue-router";
 

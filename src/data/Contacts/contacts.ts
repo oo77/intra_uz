@@ -1,4 +1,4 @@
-import ContactUsMain from "assets/ContactUsMain.jpg"
+import ContactUsMain from "assets/intra/MainImages/contacts.jpg"
 import instagram  from "assets/icons/instagaramIconBlack.svg"
 
 const Contacts = {
@@ -9,10 +9,10 @@ const Contacts = {
     uzK: `Биз билан боғланинг`,
   },
   subtitle: {
-    ru: 'Агрокомплекс <br> «Моя Мечта»',
-    uz: '«Моя Мечта» <br> Agrokompleksi' ,
-    en: 'Agrocomplex <br> «My Dream»',
-    uzK: '«Моя Мечта» <br> Агрокомплекси' ,
+    ru: 'Инновацинный <br> Транспорт',
+    uz: 'Инновацинный <br> Транспорт' ,
+    en: 'Инновацинный <br> Транспорт',
+    uzK: 'Инновацинный <br> Транспорт' ,
   },
   subText: {
     ru: 'Ваша заявка будет рассмотрена нашими специалистами.',
@@ -23,29 +23,33 @@ const Contacts = {
   contact: [
     {
       icon: "fa-solid fa-phone",
-      text: "+998-99-849-60-33",
+      text: "+ (99871) 299-00-01",
     },
     {
       icon: "fa-solid fa-envelope",
-      text: "info@my-dream.uz"
+      text: "tstu_rektorat@tstu.ru"
     }
   ],
   socialLink: [
     {
       socialName: "facebook",
       icon: "fa-brands fa-facebook",
+      url: 'https://www.facebook.com/groups/innovativetransport'
     },
     {
       socialName: "youtube",
       icon: "fa-brands fa-youtube",
+      url: 'https://www.youtube.com/channel/UCNoccNpALAz-M6qLSNMrifQ'
     },
     {
       socialName: "instagram",
-      icon: "img:"+instagram,
+      icon: 'fa-brands fa-linkedin',
+      url: "https://t.me/logkaleidoscope"
     },
     {
       socialName: "telegram",
       icon: "fa-brands fa-telegram",
+      url: 'https://t.me/logkaleidoscope'
     },
   ],
   labels: {

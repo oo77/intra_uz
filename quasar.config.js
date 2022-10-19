@@ -88,7 +88,7 @@ module.exports = configure(function(ctx) {
         framework: {
             config: {
                 brand: {
-                    primary: "#39B44A",
+                    primary: "rgb(22,46,130)",
                 }
             },
 

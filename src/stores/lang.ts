@@ -7,14 +7,15 @@ const timezone = new Intl.DateTimeFormat().resolvedOptions().timeZone
 
 export const useLanguageStore = defineStore('lang', {
   state: () => ({
-    prefix: uz.includes(timezone)? 'uz' : ru.includes(timezone)? 'ru' : 'ru'
+    prefix: 'ru'
   }),
   getters: {
     currentPrefix: state => state.prefix
   },
   actions: {
     setLang(prefix: 'ru' | 'uz' | 'en' ) {
-      this.prefix = prefix || 'ru'
+      this.prefix = 'ru'
+      localStorage.setItem('prefix', this.prefix)
     },
     isPrefix(prefix: string):boolean| undefined {
       return this.prefix == prefix
