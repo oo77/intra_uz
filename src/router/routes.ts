@@ -7,11 +7,6 @@ const routes: RouteRecordRaw[] = [
     component: () => import('src/views/Home.vue'),
   },
   {
-    path: '/project',
-    name: 'Products',
-    component: () => import('src/views/Home.vue'),
-  },
-  {
     path: '/aboutUs',
     name: 'AboutUs',
     component: () => import('src/views/AboutUs.vue'),
@@ -25,16 +20,6 @@ const routes: RouteRecordRaw[] = [
     path: '/contacts',
     name: 'Contacts',
     component: () => import('src/views/Contact.vue'),
-  },
-  {
-    path: '/activity',
-    name: 'Activity',
-    component: () => import('src/views/AboutActivity.vue'),
-  },
-  {
-    path: '/sternBase/:name',
-    name: 'SternBase',
-    component: () => import('src/views/SternBase.vue'),
   },
   // Always leave this as last one,
   // but you can also remove it
