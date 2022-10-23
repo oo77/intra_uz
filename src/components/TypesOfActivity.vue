@@ -7,8 +7,7 @@
          v-html="Titles.typeOfActivity[lang.prefix]"
       />
 
-      <div class="grid grid-cols-5 mx-10% gap-20px gt-xs"
-           >
+      <div class="grid grid-cols-5 mx-10% gap-20px gt-xs">
 
         <q-card v-for="act in TypesOfActivtyCard.length"
                 class="transparent b-0 shadow-0 h-55 transition-duration-100 "

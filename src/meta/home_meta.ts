@@ -15,7 +15,7 @@ export function useHomeMeta(lang: any = 'uz') {
     meta: {
       title: {
         name: title[lang],
-        content: "Агрокомплекс МОЯ МЕЧТА"
+        content: "Инновационный Транспорт"
       },
       description: {name: 'description', content: 'Page 1'},
       keywords: {name: 'keywords', content: 'Quasar website'},

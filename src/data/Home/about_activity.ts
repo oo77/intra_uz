@@ -5,8 +5,6 @@ import Target2 from 'assets/aboutImg/img2.png'
 import Target3 from 'assets/aboutImg/img3.png'
 import Target4 from 'assets/aboutImg/img4.png'
 import Target5 from 'assets/aboutImg/img5.png'
-import Slaughter from 'assets/aboutImg/img6.png'
-import Cooperation from 'assets/aboutImg/img7.png'
 
 
 const rabbit: ICard = {
