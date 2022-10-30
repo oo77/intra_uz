@@ -1,4 +1,4 @@
 on:
   deployment:
     tasks:
-    - export DEPLOYPATH=/home/repositories/intra_uz
+    - export DEPLOYPATH=home/public_html/
